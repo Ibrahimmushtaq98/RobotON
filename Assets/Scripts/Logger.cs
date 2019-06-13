@@ -28,7 +28,7 @@ public class Logger
 	string[] linesUsed = new string[stateLib.NUMBER_OF_TOOLS]; 
 	bool hasWritten = false; 
 
-    public string jsonObj = "";
+    private string jsonObj = "";
 
     IEnumerator Post(string url, string bodyJsonString)
     {
@@ -70,6 +70,47 @@ public class Logger
         GlobalState.toolUse[index]++;
 		linesUsed[index] += lineNumber.ToString() + ' '; 
     }
+
+    public void onStateChangeJson(int projectileCode, int lineNumber, float energy, float currentEnergy, bool progress, int time){
+        if(GlobalState.jsonStates == null || GlobalState.jsonStates == ""){
+            GlobalState.jsonStates += "\"states\":[{";
+        }else{
+            GlobalState.jsonStates += ",{";
+        }
+
+        GlobalState.jsonStates += "\"preEnergy\":\"" + energy.ToString() + "\",";
+        GlobalState.jsonStates += "\"finEnergy\":\"" + currentEnergy.ToString() + "\",";
+
+        if(GlobalState.GameMode == "on"){
+            GlobalState.jsonStates += "\"toolName\":\"" + GlobalState.StringLib.namesON[projectileCode] + "\",";
+        }else{
+            GlobalState.jsonStates += "\"toolName\":\"" + GlobalState.StringLib.namesBug[projectileCode] + "\",";
+        }
+        GlobalState.jsonStates += "\"toolLine\":\"" + lineNumber.ToString() + "\",";
+        GlobalState.jsonStates += "\"position\":\"" + progress.ToString() + "\",";
+        GlobalState.jsonStates += "\"progress\":\"" + progress.ToString() + "\",";
+        GlobalState.jsonStates += "\"time\":\"" + time.ToString() + "\"}";
+    }
+
+    public void onDamageStateJson(int projectileCode, int lineNumber, float energy, float currentEnergy, int time){
+        if(GlobalState.jsonOStates == null || GlobalState.jsonOStates == ""){
+            GlobalState.jsonOStates += "\"states\":[{";
+        }else{
+            GlobalState.jsonOStates += ",{";
+        }
+
+        GlobalState.jsonOStates += "\"preEnergy\":\"" + energy.ToString() + "\",";
+        GlobalState.jsonOStates += "\"finEnergy\":\"" + currentEnergy.ToString() + "\",";
+
+        if(GlobalState.GameMode == "on"){
+            GlobalState.jsonOStates += "\"toolName\":\"" + GlobalState.StringLib.namesON[projectileCode] + "\",";
+        }else{
+            GlobalState.jsonOStates += "\"toolName\":\"" + GlobalState.StringLib.namesBug[projectileCode] + "\",";
+        }
+        GlobalState.jsonOStates += "\"toolLine\":\"" + lineNumber.ToString() + "\",";
+        GlobalState.jsonOStates += "\"time\":\"" + time.ToString() + "\"}";
+
+    }
     public void WriteLog()
     {
         #if UNITY_WEBGL
@@ -90,7 +131,7 @@ public class Logger
                 }else{
                     jsonObj+= "{ \"name\": \"" + GlobalState.StringLib.namesBug[i] + "\",";
                 }
-
+                jsonObj += "\"correctLine\": \"" + GlobalState.correctLine[i] + "\",";
                 jsonObj += "\"reqTask\": \"" + GlobalState.level.Tasks[i] + "\",";
                 jsonObj += "\"compTask\": \"" + GlobalState.level.CompletedTasks[i] + "\",";
                 jsonObj += "\"timeTool\": \"" + GlobalState.toolUse[i] + "\",";
@@ -103,9 +144,14 @@ public class Logger
         }
 
         jsonObj = jsonObj.Substring(0,jsonObj.Length-2);
-        jsonObj +="]}]}";
-        //Debug.Log(jsonObj);
+        jsonObj +="]," + GlobalState.jsonStates + "]}]}";
+        Debug.Log(jsonObj);
+
+        DatabaseHelper.i.url = stringLib.DB_URL + GlobalState.GameMode.ToUpper() + "/" + GlobalState.sessionID.ToString();
+        DatabaseHelper.i.jsonData = jsonObj;
+        DatabaseHelper.i.PutToDataBase();
         //Upload(url, jsonObj);
+        GlobalState.jsonStates = null;
         #endif
 
         #if (UNITY_EDITOR || UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN) && !UNITY_WEBGL

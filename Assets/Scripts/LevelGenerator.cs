@@ -69,6 +69,7 @@ public partial class LevelGenerator : MonoBehaviour {
         output = GameObject.Find("OutputCanvas").transform.GetChild(0).gameObject.GetComponent<Output>();
         sidebar = GameObject.Find("Sidebar").GetComponent<SidebarController>();
         background = GameObject.Find("BackgroundCanvas").GetComponent<BackgroundController>();
+        GlobalState.correctLine = new string[stateLib.NUMBER_OF_TOOLS];
         BuildLevel(); 
 
 	}
@@ -180,7 +181,7 @@ public partial class LevelGenerator : MonoBehaviour {
                 if (childNode.InnerText.Contains("$bug"))
                 {
                     string[] lines = childNode.InnerText.Split('\n');
-                    int row = 0, col = 0;
+                    int row = 0;
                     for (int i = 0; i < lines.Length; i++)
                     {
                         if (lines[i].Contains("$bug"))
@@ -193,6 +194,10 @@ public partial class LevelGenerator : MonoBehaviour {
                     TextColoration color = new TextColoration();
                      GlobalState.level.Code[row] = color.ColorizeText(GlobalState.level.Code[row], GlobalState.level.Language);
                      DrawInnerXmlLinesToScreen();
+                }
+                if (childNode.InnerText.Contains("$O")){
+                    manager.CreateObstacle(childNode, indexOf); 
+
                 }
                 manager.CreateLevelObject(childNode, indexOf);
                 
@@ -212,7 +217,7 @@ public partial class LevelGenerator : MonoBehaviour {
                             manager.CreateHint(childs,tmp);
                         }
                     }catch(Exception e){
-                        //Debug.LogError(e.Message);
+                        Debug.Log(e.Message);
                     }
                     indexOf++;
                 }
@@ -351,17 +356,6 @@ public partial class LevelGenerator : MonoBehaviour {
 					}
 				}
 			}
-
-			// foreach (GameObject variablecolor in manager.robotONvariablecolors) {
-			// 	foreach (GameObject rename in manager.robotONrenamers) {
-			// 		if (variablecolor.GetComponent<VariableColor>().groupid == rename.GetComponent<rename>().groupid) {
-			// 			variablecolor.GetComponent<VariableColor>().CorrectRenameObject = rename;
-			// 			variablecolor.GetComponent<VariableColor>().correct = rename.GetComponent<rename>().correct;
-			// 			break;
-			// 		}
-			// 	}
-			// }
-			// ]--
 		}
 	}
 
@@ -471,7 +465,8 @@ public partial class LevelGenerator : MonoBehaviour {
             nTextSizeConst = leveltext.GetComponent<TextMesh>().fontSize;
         }
         nTextSizeConst = sizes[GlobalState.TextSize]; 
-		hero.transform.position = new Vector3(GlobalState.StringLib.LEFT_CODESCREEN_X_COORDINATE+ 0.5f, properties.initialLineY, hero.transform.position.z);
+		//hero.transform.position = new Vector3(GlobalState.StringLib.LEFT_CODESCREEN_X_COORDINATE+ 0.5f, properties.initialLineY, hero.transform.position.z);
+        hero.GetComponent<Rigidbody2D>().gravityScale = 1; 
         leveltext.transform.position = new Vector3(GlobalState.StringLib.LEFT_CODESCREEN_X_COORDINATE+0.5f, leveltext.transform.position.y, leveltext.transform.position.z);
 		switch (nTextSizeConst) {
 			case stateLib.TEXT_SIZE_SMALL:

@@ -49,88 +49,22 @@ public class OldMenu : MonoBehaviour
     private StreamReader sr;
     private string windowsFilepath = @"\";
     private string unixFilepath = @"/";
-
+    bool firstOption = true; 
     int selectedIndex = -1;
     int textOption = GlobalState.TextSize;
     string[] textsizes;
     int[] fontSizes;
     bool entered = false;
-    bool isDONE = false;
-    string webdata;
 
-    #if UNITY_WEBGL && !UNITY_EDITOR
-        [DllImport("__Internal")]
-        private static extern string GetData(string url);
-    #endif
-
-
-    IEnumerator GetXMLFromServer(string url) {
-        UnityWebRequest www = UnityWebRequest.Get(url);
-        www.SendWebRequest();
-        System.Threading.Thread.Sleep(stringLib.DOWNLOAD_TIME);        
-        if (www.isNetworkError || www.isHttpError) {
-            Debug.Log(www.error);
-        }else {
-            //Debug.Log(www.downloadHandler.text);
-            webdata = www.downloadHandler.text;
-        }
-        yield return new WaitForSeconds(0.5f);
-    }
-
-[System.Serializable]
-    public class JsonObjectNewUser{
-        public string name;
-        public JsonObjectNewUser(string name){
-            this.name = name;
-        }
-    }
-
-    // IEnumerator PostToDB(string url, JsonObjectNewUser jsonData) {
-    //     string tmp = JsonUtility.ToJson(jsonData);
-    //     Debug.Log(tmp);
-    //     using (UnityWebRequest www = UnityWebRequest.Post(url, tmp))
-    //     {
-    //         www.method = UnityWebRequest.kHttpVerbPOST;
-    //         www.SetRequestHeader("Content-Type", "application/json");
-    //         //www.SetRequestHeader("Accept", "application/json");
-
-    //         yield return www.SendWebRequest();
-
-    //         if (www.isNetworkError || www.isHttpError)
-    //         {
-    //             Debug.Log(www.error);
-    //         }
-    //         else
-    //         {
-    //             Debug.Log("Form upload complete!");
-    //         }
-    //     }
-    // }
-
-    IEnumerator Post(string url, string bodyJsonString)
-    {
-        var request = new UnityWebRequest(url, "POST");
-        byte[] bodyRaw = Encoding.UTF8.GetBytes(bodyJsonString);
-        request.uploadHandler = (UploadHandler) new UploadHandlerRaw(bodyRaw);
-        request.downloadHandler = (DownloadHandler) new DownloadHandlerBuffer();
-        request.SetRequestHeader("Content-Type", "application/json");
-        request.SetRequestHeader("Accept", "*");
-
-        yield return request.SendWebRequest();
-
-        //Debug.Log("Status Code: " + request.responseCode);
-    }
-
-
-
-    IEnumerator LoadWEB(string url) {
-        yield return StartCoroutine(GetXMLFromServer(url));
-    }
     //.................................>8.......................................
     // Use this for initialization
     void Start()
     {
         Screen.orientation = ScreenOrientation.Landscape;
+        if (SceneManager.sceneCount > 1){
+            GetComponent<AudioSource>().Stop(); 
+            GetComponent<AudioListener>().enabled = false; 
+        }
         if (!GlobalState.IsResume)
         {
             InitializeGlobals();
@@ -142,7 +76,7 @@ public class OldMenu : MonoBehaviour
         buttontext[stateLib.GAMEMENU_EXIT_GAME].GetComponent<TextMesh>().text = "Exit Game";
         buttontext[stateLib.GAMEMENU_RESUME_GAME].GetComponent<TextMesh>().text = "Resume Game";
         buttons[stateLib.GAMEMENU_RESUME_GAME].GetComponent<SpriteRenderer>().color = Color.grey;
-        textsizes = new string[] { "Small", "Normal", "Large", "Large++" };
+        textsizes = new string[] { "Small", "Text: Normal", "Large", "Large++" };
         fontSizes = new int[] { stateLib.TEXT_SIZE_SMALL, stateLib.TEXT_SIZE_NORMAL, stateLib.TEXT_SIZE_LARGE, stateLib.TEXT_SIZE_VERY_LARGE };
         m2switch(false);
         GlobalState.IsDark = !GlobalState.IsDark;
@@ -150,10 +84,18 @@ public class OldMenu : MonoBehaviour
         GlobalState.sessionID = AnalyticsSessionInfo.sessionId;
         filepath = (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor) ? windowsFilepath : unixFilepath;
         string json = "{ \"name\": \"" + GlobalState.sessionID.ToString()+"\"}";
-        StartCoroutine(Post(stringLib.DB_URL, json));
+
+        DatabaseHelper.i.url = stringLib.DB_URL + "ON/";
+        DatabaseHelper.i.jsonData = json;
+        DatabaseHelper.i.PostToDataBase();
+
+        DatabaseHelper.i.url = stringLib.DB_URL + "BUG/";
+        DatabaseHelper.i.jsonData = json;
+        DatabaseHelper.i.PostToDataBase();
+
+        Console.WriteLine("Cookies: " + WebHelper.i.grabCookies());
 
     }
-
     public void onClick(int index)
     {
         if (GlobalState.IsResume && index == 4)
@@ -306,14 +248,17 @@ public class OldMenu : MonoBehaviour
                         }
                         break;
                     case stateLib.GAMEMENU_EXIT_GAME:
-                        postToDatabase.Start();
                         Application.Quit();
                         break;
                     case stateLib.GAMEMENU_RESUME_GAME:
                         GlobalState.GameState = stateLib.GAMESTATE_IN_GAME;
                         buttons[option].GetComponent<SpriteRenderer>().sprite = bluebutton;
                         GlobalState.IsResume = false;
-                        SceneManager.UnloadSceneAsync("MainMenu");
+                        if (SceneManager.sceneCount > 1)
+                            SceneManager.UnloadSceneAsync("MainMenu");
+                        else {
+                            SceneManager.LoadScene("newgame"); 
+                        }
                         break;
                     default:
                         break;
@@ -441,6 +386,7 @@ public class OldMenu : MonoBehaviour
                         else optionPage = 0;
                         if (optionPage == 0)
                         {
+                            m2buttontext[0].GetComponent<TextMesh>().fontSize = m2buttontext[1].GetComponent<TextMesh>().fontSize; 
                             m2buttontext[0].GetComponent<TextMesh>().text = "Sound: " + (soundon ? GlobalState.StringLib.menu_sound_on_color_tag + "ON" + stringLib.CLOSE_COLOR_TAG : GlobalState.StringLib.menu_sound_off_color_tag + "OFF" + stringLib.CLOSE_COLOR_TAG);
                             m2buttontext[1].GetComponent<TextMesh>().text = (!GlobalState.IsDark) ? "Light Mode" : "Dark Mode";
                             m2buttontext[2].GetComponent<TextMesh>().text = "Next";
@@ -570,18 +516,11 @@ public class OldMenu : MonoBehaviour
                     sr.Close();
                 #endif
 
-                #if UNITY_WEBGL && !UNITY_EDITOR
+                #if UNITY_WEBGL            
                     filepath = "StreamingAssets" + "/" + GlobalState.GameMode + "leveldata" + "/levels.txt";
-                    Console.WriteLine(stringLib.SERVER_URL + filepath);
-                    webdata = GetData(stringLib.SERVER_URL + filepath);
-                #elif UNITY_WEBGL  
-                    filepath = "StreamingAssets" + "/" + GlobalState.GameMode + "leveldata" + "/levels.txt";
-                    StartCoroutine(GetXMLFromServer(stringLib.SERVER_URL + filepath));
-                    Console.WriteLine(stringLib.SERVER_URL + filepath);
-                #endif
-
-                #if UNITY_WEBGL                    
-                    filepath = webdata;
+                    WebHelper.i.url = stringLib.SERVER_URL + filepath;
+                    WebHelper.i.GetWebDataFromWeb();
+                    filepath = WebHelper.i.webData;
                     string[] leveldata = filepath.Split('\n');
                     for (int i = 0; i < leveldata.Length - 1; i++) {
                         string[] tmp = leveldata[i].Split(' ');
@@ -605,7 +544,16 @@ public class OldMenu : MonoBehaviour
         }
     }
 
-
+    private void ResetM2(){
+        m2buttontext[0].GetComponent<TextMesh>().fontSize = m2buttontext[1].GetComponent<TextMesh>().fontSize; 
+         Transform trans = menu2.GetComponent<Transform>();
+                trans.position = new Vector3(trans.position.x, 0, trans.position.z);
+                trans.localScale = new Vector3(trans.localScale.x, 0.8f, trans.localScale.z);
+                Transform button = m2buttons[0].GetComponent<Transform>();
+                button.position = new Vector3(button.position.x, 0.82f, button.position.z);
+                button = m2buttons[1].GetComponent<Transform>();
+                button.position = new Vector3(button.position.x, -0.945f, button.position.z);
+    }
     //.................................>8.......................................
     //************************************************************************//
     // Method: private void m2switch(bool on)
@@ -626,30 +574,34 @@ public class OldMenu : MonoBehaviour
             }
             if (GlobalState.GameState == stateLib.GAMESTATE_MENU_SOUNDOPTIONS)
             {
+                
                 Transform trans = menu2.GetComponent<Transform>();
                 trans.position = new Vector3(trans.position.x, -0.9f, trans.position.z);
                 trans.localScale = new Vector3(trans.localScale.x, 1.2f, trans.localScale.z);
                 Transform button = m2buttons[0].GetComponent<Transform>();
                 button.position = new Vector3(button.position.x, 0.42f, button.position.z);
-                for (int i = 0; i < m2buttons.Length; i++)
+                for (int i = 0; i <2; i++)
                 {
                     Transform thisButton = m2buttons[i].GetComponent<Transform>();
                     thisButton.position = new Vector3(thisButton.position.x, thisButton.position.y + 0.7f, thisButton.position.z);
                 }
+                if (firstOption){
+                    firstOption = false; 
+                for (int i = 2; i < 4 ; i++)
+                {
+                    Transform thisButton = m2buttons[i].GetComponent<Transform>();
+                    thisButton.position = new Vector3(thisButton.position.x, thisButton.position.y + 0.7f, thisButton.position.z);
+                }
+                }
             }
             else
             {
-                Transform trans = menu2.GetComponent<Transform>();
-                trans.position = new Vector3(trans.position.x, 0, trans.position.z);
-                trans.localScale = new Vector3(trans.localScale.x, 0.8f, trans.localScale.z);
-                Transform button = m2buttons[0].GetComponent<Transform>();
-                button.position = new Vector3(button.position.x, 0.82f, button.position.z);
-                button = m2buttons[1].GetComponent<Transform>();
-                button.position = new Vector3(button.position.x, -0.945f, button.position.z);
+               ResetM2(); 
             }
         }
         else
         {
+            ResetM2(); 
             menu2.GetComponent<SpriteRenderer>().enabled = false;
             foreach (GameObject button in m2buttons)
             {
@@ -675,6 +627,7 @@ public class OldMenu : MonoBehaviour
     public void flushButtonColor()
     {
         m2buttons[0].GetComponent<SpriteRenderer>().sprite = bluebutton;
+        m2buttontext[0].GetComponent<TextMesh>().fontSize = m2buttontext[1].GetComponent<TextMesh>().fontSize; 
         m2buttons[1].GetComponent<SpriteRenderer>().sprite = bluebutton;
         option = 0;
         buttons[option].GetComponent<SpriteRenderer>().sprite = greenbutton;

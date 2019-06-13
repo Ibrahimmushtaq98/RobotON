@@ -52,6 +52,10 @@ public class hero2Controller : MonoBehaviour
 	private bool reachedPosition = true; 
 	EnergyController energyController; 
 	private FireButton fire; 
+	bool canTakeDamage = true; 
+
+	int timeStart, timeEnd, totalTime, timeCurrent;
+    DateTime time;
 
 	private AudioClip throwTool; 
 	AudioSource audioSource; 
@@ -73,7 +77,8 @@ public class hero2Controller : MonoBehaviour
 		throwTool = Resources.Load<AudioClip>("Sound/Triggers/throw");  
 		climbTime = 0f;
 		lg = codescreen.GetComponent<LevelGenerator>();
-		controller = Camera.main.GetComponent<GameController>(); 
+		controller = Camera.main.GetComponent<GameController>();
+		timeStart = DateTime.Now.Second;
 	}
 	void Flip(){
 		if (facingRight && anim.GetCurrentAnimatorClipInfo(0)[0].clip.name.Contains("left")){
@@ -82,6 +87,27 @@ public class hero2Controller : MonoBehaviour
 	}
 	public void onFail(){
 		energyController.onFail(projectilecode); 
+	}
+	IEnumerator DamageDelay(){
+		canTakeDamage = false; 
+		float seconds = 2f; 
+		int blinks = 3; 
+
+		for (int i = 0; i < blinks; i++){
+			GetComponent<SpriteRenderer>().color = new Color(0.3f, 0.3f, 0.3f); 
+			yield return new WaitForSecondsRealtime(seconds/(blinks*2)); 
+			GetComponent<SpriteRenderer>().color = new Color(1,1,1); 
+			yield return new WaitForSecondsRealtime(seconds/(blinks*2)); 
+		}
+		canTakeDamage = true; 
+	}
+	public bool onTakeDamange(float damage){
+		if (canTakeDamage){
+			energyController.onDamange(damage); 
+			StartCoroutine(DamageDelay()); 
+			return true; 
+		}
+		return false; 
 	}
 	//.................................>8.......................................
 	void FixedUpdate() {
@@ -185,12 +211,15 @@ public class hero2Controller : MonoBehaviour
 				throwing = true;
 				audioSource.PlayOneShot(throwTool, 2f); 
    				anim.SetBool("throw", true);
+				float currentEnergy = energyController.currentEnergy;
 				energyController.onThrow(projectilecode); 
 				GameObject.Find("FireTool").transform.GetChild(0).GetComponent<FireButton>().Fire();  
 				nextFire = Time.time + fireRate;
    				animDelay = Time.time + animTime;
    				Rigidbody2D newstar =(Rigidbody2D)Instantiate(projectiles[projectilecode], RoundPosition(transform.position), transform.rotation);
-				controller.logger.onToolUse(projectilecode, lastLineNumberactive); 
+				controller.logger.onToolUse(projectilecode, lastLineNumberactive);
+				timeCurrent = DateTime.Now.Second - timeStart;
+				controller.logger.onStateChangeJson(projectilecode, lastLineNumberactive, currentEnergy,energyController.currentEnergy, true, timeCurrent); 
    				if (facingRight) {
    					newstar.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 300);
    				}
@@ -242,7 +271,9 @@ public class hero2Controller : MonoBehaviour
 	}
 	//.................................>8.......................................
 	void Update() {
-		if (GlobalState.GameState == stateLib.GAMESTATE_IN_GAME) {
+		if (GlobalState.GameState == stateLib.GAMESTATE_IN_GAME && 
+			!anim.GetCurrentAnimatorStateInfo(0).IsName(GlobalState.Character.ToLower() + "Die")
+			&& !anim.GetCurrentAnimatorStateInfo(0).IsName(GlobalState.Character.ToLower() + "Dead")) {
 			AudioSource ad = GetComponent<AudioSource>();
 			if (!walkloop && (Input.GetAxis("Horizontal") != 0f && Input.GetAxis("Mouse X") != 0f) &&
 			Input.GetMouseButton(0)&&

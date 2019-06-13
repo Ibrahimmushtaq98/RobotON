@@ -75,11 +75,13 @@
      <Compile Include="Assets\Scripts\CorrectUncomment.cs" />
      <Compile Include="Assets\Scripts\credits.cs" />
      <Compile Include="Assets\Scripts\CreditsController.cs" />
-     <Compile Include="Assets\Scripts\databasehelper.cs" />
+     <Compile Include="Assets\Scripts\DatabaseHelper.cs" />
      <Compile Include="Assets\Scripts\DialogController.cs" />
      <Compile Include="Assets\Scripts\EnergyController.cs" />
      <Compile Include="Assets\Scripts\Fade.cs" />
      <Compile Include="Assets\Scripts\FireButton.cs" />
+     <Compile Include="Assets\Scripts\Firewall.cs" />
+     <Compile Include="Assets\Scripts\FirewallController.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\GenericBug.cs" />
      <Compile Include="Assets\Scripts\GlobalState.cs" />
@@ -98,9 +100,10 @@
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\MenuButton.cs" />
      <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\Obstacle.cs" />
+     <Compile Include="Assets\Scripts\ObstacleFactory.cs" />
      <Compile Include="Assets\Scripts\OldMenu.cs" />
      <Compile Include="Assets\Scripts\Output.cs" />
-     <Compile Include="Assets\Scripts\postToDatabase.cs" />
      <Compile Include="Assets\Scripts\printer.cs" />
      <Compile Include="Assets\Scripts\PrizeBug.cs" />
      <Compile Include="Assets\Scripts\projectile2.cs" />
