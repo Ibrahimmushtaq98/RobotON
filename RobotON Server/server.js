@@ -9,7 +9,9 @@ const mimeType = {
   '.html': 'text/html',
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
-  '.mp3': 'audio/mpeg'
+  '.mp3': 'audio/mpeg',
+  '.mp4': 'video/mp4',
+  '.xml': 'application/xml'
 };
 
 
@@ -38,17 +40,13 @@ http.createServer(function (req, res) {
         res.end(` Error getting the file: ${err}.`);
       } else {
         const ext = path.parse(pathname).ext;
-        // Website you wish to allow to connect
-        res.setHeader('Access-Control-Allow-Origin', '*');
 
-        // Request methods you wish to allow
-        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-
-        // Request headers you wish to allow
-        res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-
-
+        res.setHeader("Access-Control-Allow-Credentiald", "true");
+        res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT");
+        res.setHeader("Access-Control-Allow-Headers", "Accept, X-Access-Token, X-Requested-With,content-type");
+        res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader('Content-type', mimeType[ext] || 'text/plain' );
+        res.request("Accept", "*");("Accept", "*");
         res.end(data);
       }
     });

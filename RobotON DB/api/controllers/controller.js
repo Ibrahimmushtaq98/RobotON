@@ -42,8 +42,6 @@ exports.update_a_log_ON = function(req, res) {
     {$push : {levels: req.body['levels']}}, 
     {new: true},
     function(err, task) {
-    console.log("PUT");
-    console.log(req.body);
     if (err)
       res.send(err);
     

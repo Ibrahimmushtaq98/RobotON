@@ -5,6 +5,10 @@ mongoose = require('mongoose'),
 Task = require('./api/models/model'),
 bodyParser = require('body-parser');
 
+var cors = require('cors');
+
+//app.use(cors)
+
 
 var url = "mongodb://localhost:27017/robo";
 
