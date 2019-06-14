@@ -70,6 +70,7 @@ public partial class LevelGenerator : MonoBehaviour {
         sidebar = GameObject.Find("Sidebar").GetComponent<SidebarController>();
         background = GameObject.Find("BackgroundCanvas").GetComponent<BackgroundController>();
         GlobalState.correctLine = new string[stateLib.NUMBER_OF_TOOLS];
+        GlobalState.obstacleLine= new string[stateLib.NUMBER_OF_OBSTACLE];
         BuildLevel(); 
 
 	}
@@ -165,6 +166,22 @@ public partial class LevelGenerator : MonoBehaviour {
 		leveltext.GetComponent<TextMesh>().text = drawCode;
 	}
 
+    void HandleTutorialPrompts(XmlNode node, int line){
+        DemoBotControl controller = hero.GetComponent<DemoBotControl>(); 
+        string text = node.InnerText; 
+        ActionFactory factory; 
+        if (text.Contains("@")){
+            factory = new DialogFactory(node, line); 
+            if (controller.callstack == null) controller.callstack = new List<Action>(); 
+            controller.callstack.AddRange(factory.GetActions());
+        }
+        if (text.Contains("!!!")){
+            factory = new FireFactory(node, line); 
+            controller.callstack.AddRange(factory.GetActions()); 
+        }
+        DrawInnerXmlLinesToScreen(); 
+    }
+
     /// <summary>
     ///  Read through levelnode XML and create the interactable game objects.
     /// </summary>
@@ -197,31 +214,34 @@ public partial class LevelGenerator : MonoBehaviour {
                 }
                 if (childNode.InnerText.Contains("$O")){
                     manager.CreateObstacle(childNode, indexOf); 
-
+                }
+                Debug.Log("Is Demo: " + GlobalState.level.IsDemo); 
+                if (GlobalState.level.IsDemo){
+                    HandleTutorialPrompts(childNode, indexOf); 
                 }
                 manager.CreateLevelObject(childNode, indexOf);
-                
                 foreach (char c in childNode.OuterXml)
 				{
 					if (c == '\n') indexOf++;
 				}
+                
 			}
-            indexOf = 0;
-            int tmp = 0;
-            foreach (XmlNode node in GlobalState.level.LevelNode){
-                indexOf = 0;
-                foreach(XmlNode childs in node.ChildNodes){
-                    try{
-                        if(childs.Attributes != null && childs.Attributes["hint"].Value != null){
-                            tmp = indexOf +childs.InnerText.Split('\n').Length;
-                            manager.CreateHint(childs,tmp);
-                        }
-                    }catch(Exception e){
-                        Debug.Log(e.Message);
-                    }
-                    indexOf++;
-                }
-            }
+            // indexOf = 0;
+            // int tmp = 0;
+            // foreach (XmlNode node in GlobalState.level.LevelNode){
+            //     indexOf = 0;
+            //     foreach(XmlNode childs in node.ChildNodes){
+            //         try{
+            //             if(childs.Attributes != null && childs.Attributes["hint"].Value != null){
+            //                 tmp = indexOf +childs.InnerText.Split('\n').Length;
+            //                 manager.CreateHint(childs,tmp);
+            //             }
+            //         }catch(Exception e){
+            //             Debug.Log(e.Message);
+            //         }
+            //         indexOf++;
+            //     }
+            // }
             // These are counters to update the blocktext of each object
             int numberOfroboBUGcomments = 0;
             int numberOfrobotONcorrectComments = 0;
@@ -356,6 +376,7 @@ public partial class LevelGenerator : MonoBehaviour {
 					}
 				}
 			}
+            DrawInnerXmlLinesToScreen(); 
 		}
 	}
 
