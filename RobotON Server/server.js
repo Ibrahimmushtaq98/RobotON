@@ -46,7 +46,7 @@ http.createServer(function (req, res) {
         res.setHeader("Access-Control-Allow-Headers", "Accept, X-Access-Token, X-Requested-With,content-type");
         res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader('Content-type', mimeType[ext] || 'text/plain' );
-        res.request("Accept", "*");("Accept", "*");
+        res.setHeader("Accept", "*");
         res.end(data);
       }
     });
