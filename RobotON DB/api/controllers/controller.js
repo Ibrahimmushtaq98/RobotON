@@ -37,15 +37,16 @@ exports.read_a_log_ON = function(req, res) {
 
 
 exports.update_a_log_ON = function(req, res) {
-  console.log(req.body);
-  Task.findOneAndUpdate({name: req.params.sessionID}, 
-    {$push : {levels: req.body['levels']}}, 
+  //console.log(req.body);
+  Task.findOneAndUpdate(
+    {name: req.params.sessionID}, 
+    {$push : {
+      levels: req.body['levels']}}, 
     {new: true},
     function(err, task) {
-    if (err)
+    if (err){
       res.send(err);
-    
-    if(task == null)
+    }
     res.json(task);
     console.log(task);
   });

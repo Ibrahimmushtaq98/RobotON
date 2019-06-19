@@ -35,6 +35,7 @@
                 y_pos: String
             },
             progress: String,
+            time: String,
             timestamp: String
         }],
         obstacal: [{
@@ -62,6 +63,7 @@
         }]
     }]
 });
+
 
 module.exports = mongoose.model('RobotON_Logs', roboSchema);
 module.exports = mongoose.model('RobotBug_Logs', roboSchema);

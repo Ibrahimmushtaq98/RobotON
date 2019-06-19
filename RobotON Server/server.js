@@ -41,10 +41,10 @@ http.createServer(function (req, res) {
       } else {
         const ext = path.parse(pathname).ext;
 
-        // res.setHeader("Access-Control-Allow-Credentiald", "true");
-        // res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT");
-        // res.setHeader("Access-Control-Allow-Headers", "Accept, X-Access-Token, X-Requested-With,content-type");
-        // res.setHeader("Access-Control-Allow-Origin", "*");
+        res.setHeader("Access-Control-Allow-Credentiald", "true");
+        res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT");
+        res.setHeader("Access-Control-Allow-Headers", "Accept, X-Access-Token, X-Requested-With,content-type");
+        res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader('Content-type', mimeType[ext] || 'text/plain' );
         res.setHeader("Accept", "*");
         res.end(data);
