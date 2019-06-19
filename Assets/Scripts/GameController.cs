@@ -36,7 +36,7 @@ public class GameController : MonoBehaviour, ITimeUser
     /// </summary>
     private void CheckWin()
     {
-        if (GlobalState.level != null && !GlobalState.level.IsDemo)
+        if (GlobalState.level != null)
         {
             winning = true;
             //Check if all the tasks have been completed. 
@@ -150,7 +150,7 @@ public class GameController : MonoBehaviour, ITimeUser
         yield return new WaitForSecondsRealtime(2.2f);
         }while(GlobalState.GameState != stateLib.GAMESTATE_IN_GAME); 
         //if the end of the level string is empty then there is no anticipated next level. 
-        Debug.Log(GlobalState.level.NextLevel);
+        //Debug.Log(GlobalState.level.NextLevel);
         if (GlobalState.level.NextLevel != Path.Combine(Application.streamingAssetsPath, GlobalState.GameMode + "leveldata"))
         {
             GlobalState.GameState = stateLib.GAMESTATE_LEVEL_WIN;
@@ -240,6 +240,7 @@ public class GameController : MonoBehaviour, ITimeUser
         if (Input.GetKeyDown(KeyCode.C) && !Output.IsAnswering)
         {
             sidebar.ToggleSidebar(); 
+            EnergyController.ToggleEnergy(); 
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && !Output.IsAnswering)
         {
@@ -267,6 +268,7 @@ public class GameController : MonoBehaviour, ITimeUser
             output.ToggleLight();
             background.ToggleLight(); 
             backButton.ToggleColor();
+            EnergyController.ToggleLight(); 
             GlobalState.level.ToggleLight(); 
             lg.DrawInnerXmlLinesToScreen(); 
         } 
@@ -277,6 +279,7 @@ public class GameController : MonoBehaviour, ITimeUser
             background.ToggleDark(); 
             backButton.ToggleColor();
             GlobalState.level.ToggleDark(); 
+            EnergyController.ToggleDark(); 
             lg.DrawInnerXmlLinesToScreen(); 
         }
     }

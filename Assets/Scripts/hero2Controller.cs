@@ -96,7 +96,7 @@ public class hero2Controller : MonoBehaviour
 			float preEnergy = energyController.currentEnergy;
 			energyController.onDamange(damage);
 			float finEnergy = energyController.currentEnergy;
-			controller.logger.onDamageStateJson(obstacleCode, lastLineNumberactive, RoundPosition(transform.position), preEnergy, finEnergy, DateTime.Now.Second);
+			controller.logger.onDamageStateJson(obstacleCode, lastLineNumberactive, RoundPosition(transform.position), preEnergy, finEnergy);
 			StartCoroutine(DamageDelay()); 
 			return true; 
 		}
@@ -197,6 +197,7 @@ public class hero2Controller : MonoBehaviour
 		if (Time.time > nextFire &&
 			   !onWall &&
 			   !Output.IsAnswering &&
+			   energyController.currentEnergy > 0 &&
 			   GameObject.FindGameObjectsWithTag("Projectile").Length == 0 &&
 			   GetComponent<Rigidbody2D>().velocity == Vector2.zero &&
 			   projectilecode >= 0 &&
