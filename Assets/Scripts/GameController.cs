@@ -188,10 +188,36 @@ public class GameController : MonoBehaviour, ITimeUser
         lg.manager.ResizeObjects(); 
     }
     void Awake(){
-        if (GlobalState.level.IsDemo)
+        // string filepath ="";
+        // #if (UNITY_EDITOR || UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN) && !UNITY_WEBGL
+        //     filepath = Path.Combine(Application.streamingAssetsPath, GlobalState.GameMode + "leveldata");
+        //     if (GlobalState.Language == "python") filepath = Path.Combine(filepath, "python");
+        //     filepath = Path.Combine(filepath, GlobalState.CurrentONLevel);
+        //     filepath = filepath.Replace(" ", ""); 
+        //     Debug.Log("GameController: Start() WINDOWS");
+        // #endif
+
+        // //Want to check if the player is WebGL, and if it is, grab the xml as a string and put it in levelfactory
+        
+        // #if UNITY_WEBGL
+        //     filepath = "StreamingAssets" + "/" + GlobalState.GameMode + "leveldata/";
+        //     if (GlobalState.Language == "python") filepath += "python/";
+        //     filepath+=GlobalState.CurrentONLevel;
+        //     WebHelper.i.url = stringLib.SERVER_URL + filepath;
+        //     WebHelper.i.GetWebDataFromWeb();
+        //     filepath = WebHelper.i.webData;
+        // #endif
+        
+        //factory = new LevelFactory(filepath);
+        if (GlobalState.level.IsDemo || GlobalState.level.FileName.Contains("tutorial")){
             hero = Instantiate(Resources.Load<GameObject>("Prefabs/DemoRobot")); 
-        else 
+            GlobalState.level.IsDemo = true;
+        }
+        else{ 
             hero = Instantiate(Resources.Load<GameObject>("Prefabs/Hero"+GlobalState.Character)); 
+            GlobalState.level.IsDemo = false;
+        }
+        Debug.Log("Awake Demo: " + (GlobalState.level.IsDemo || GlobalState.level.FileName.Contains("tutorial")) + '\n' + GlobalState.level.FileName); 
         hero.name = "Hero"; 
     }
     // Start is called before the first frame update
@@ -202,28 +228,8 @@ public class GameController : MonoBehaviour, ITimeUser
 
         startDate = DateTime.Now;
 
-        string filepath ="";
-        #if (UNITY_EDITOR || UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN) && !UNITY_WEBGL
-            filepath = Path.Combine(Application.streamingAssetsPath, GlobalState.GameMode + "leveldata");
-            if (GlobalState.Language == "python") filepath = Path.Combine(filepath, "python");
-            filepath = Path.Combine(filepath, GlobalState.CurrentONLevel);
-            filepath = filepath.Replace(" ", ""); 
-            Debug.Log("GameController: Start() WINDOWS");
-        #endif
-
-        //Want to check if the player is WebGL, and if it is, grab the xml as a string and put it in levelfactory
         
-        #if UNITY_WEBGL
-            filepath = "StreamingAssets" + "/" + GlobalState.GameMode + "leveldata/";
-            if (GlobalState.Language == "python") filepath += "python/";
-            filepath+=GlobalState.CurrentONLevel;
-            WebHelper.i.url = stringLib.SERVER_URL + filepath;
-            WebHelper.i.GetWebDataFromWeb();
-            filepath = WebHelper.i.webData;
-        #endif
-        
-        factory = new LevelFactory(filepath);
-        GlobalState.level = factory.GetLevel();
+        //GlobalState.level = factory.GetLevel();
         backButton = GameObject.Find("BackButton").GetComponent<BackButton>();
         output = GameObject.Find("OutputCanvas").transform.GetChild(0).gameObject.GetComponent<Output>();
         sidebar = GameObject.Find("Sidebar").GetComponent<SidebarController>();
@@ -242,7 +248,7 @@ public class GameController : MonoBehaviour, ITimeUser
             sidebar.ToggleSidebar(); 
             EnergyController.ToggleEnergy(); 
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && !Output.IsAnswering)
+        else if (Input.GetKeyDown(KeyCode.Escape) && !Output.IsAnswering && !GlobalState.level.IsDemo)
         {
             //SaveGameState();
             GlobalState.IsResume = true; 
