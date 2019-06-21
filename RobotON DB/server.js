@@ -7,13 +7,14 @@ bodyParser = require('body-parser');
 
 var cors = require('cors');
 
-//app.use(cors)
+app.use(cors());
 
 
 var url = "mongodb://localhost:27017/robo";
 
 mongoose.Promise = global.Promise;
 mongoose.connect(url, { useNewUrlParser: true });
+mongoose.set('useFindAndModify', false);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
