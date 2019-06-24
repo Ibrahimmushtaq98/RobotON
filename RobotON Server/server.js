@@ -2,6 +2,7 @@ const http = require('http');
 const url = require('url');
 const fs = require('fs');
 const path = require('path');
+const { parse } = require('querystring');
 
 const port = 8080;
 
@@ -23,16 +24,15 @@ http.createServer(function (req, res) {
   // extract URL path
   // Avoid https://en.wikipedia.org/wiki/Directory_traversal_attack
   if(req.method === "POST"){
-    var body = "";
-    req.on("data", function(chunks){
-      body+=chunks;
+    let body = '';
+    req.on('data', chunk => {
+        body += chunk.toString();
     });
-
-    console.log("Body: " + body);
-
-    req.on("end", function(){
-      res.writeHead(200, { "Content-Type": "text/html" });
-      res.end(body);
+    req.on('end', () => {
+        console.log(
+            parse(body)
+        );
+        res.end('ok');
     });
   }else if(req.method === "GET"){
     const parsedUrl = url.parse(req.url);
@@ -69,3 +69,19 @@ http.createServer(function (req, res) {
 }).listen(parseInt(port));
 
 console.log(`Server listening on port ${port}`);
+
+function collectRequestData(request, callback) {
+  const FORM_URLENCODED = 'application/x-www-form-urlencoded';
+  if(request.headers['content-type'] === FORM_URLENCODED) {
+      let body = '';
+      request.on('data', chunk => {
+          body += chunk.toString();
+      });
+      request.on('end', () => {
+          callback(parse(body));
+      });
+  }
+  else {
+      callback(null);
+  }
+}
