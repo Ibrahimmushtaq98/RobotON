@@ -22,13 +22,13 @@ http.createServer(function (req, res) {
 
   // extract URL path
   // Avoid https://en.wikipedia.org/wiki/Directory_traversal_attack
-  console.log("POSTING HERE");
-
   if(req.method === "POST"){
     var body = "";
     req.on("data", function(chunks){
       body+=chunks;
     });
+
+    console.log("Body: " + body);
 
     req.on("end", function(){
       res.writeHead(200, { "Content-Type": "text/html" });
