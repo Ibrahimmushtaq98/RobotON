@@ -27,11 +27,34 @@ http.createServer(function (req, res) {
     let body = '';
     req.on('data', chunk => {
         body += chunk.toString();
-    });
+    }); 
     req.on('end', () => {
-        console.log(
-            parse(body)
-        );
+      var parsString = body.toString();
+        // console.log(
+        //     parsString
+        // );
+        
+        var jsonString = JSON.parse(parsString);
+        console.log("commits :" + jsonString.commits);
+
+        try{
+          if(jsonString.commits.length != 0){
+            console.log("Git Push Request");
+
+            var sys = require('util'),
+            exec = require('child_process').exec;
+
+            exec("git pull", function(err, stdout, stderr) {
+                    console.log("Git: " + err + " : "  + stdout);
+                    exec(".././runLinux.sh", function(err, stdout, stderr) {
+                        console.log("runLinux: " + err + " : " + stdout);
+                    })
+                });
+          }
+        }catch{
+
+        }
+
         res.end('ok');
     });
   }else if(req.method === "GET"){
