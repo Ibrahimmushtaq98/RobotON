@@ -29,11 +29,7 @@ http.createServer(function (req, res) {
         body += chunk.toString();
     }); 
     req.on('end', () => {
-      var parsString = body.toString();
-        // console.log(
-        //     parsString
-        // );
-        
+      var parsString = body.toString();        
         var jsonString = JSON.parse(parsString);
         console.log("commits :" + jsonString.commits);
 
@@ -44,12 +40,9 @@ http.createServer(function (req, res) {
             var sys = require('util'),
             exec = require('child_process').exec;
 
-            exec("git pull", function(err, stdout, stderr) {
-                    console.log("Git: " + err + " : "  + stdout);
-                    exec(".././runLinux.sh", function(err, stdout, stderr) {
-                        console.log("runLinux: " + err + " : " + stdout);
-                    })
-                });
+            exec("./CompileProject.sh", function(err, stdout, stderr) {
+              console.log("CompileProject.sh: " + err + " : "  + stdout);
+            });
           }
         }catch{
 
