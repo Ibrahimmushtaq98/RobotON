@@ -3,4 +3,4 @@ gnome-terminal --working-directory=/home/ibrahimmushtaq/Desktop/RobotON\ Master/
 gnome-terminal -c sudo 'service mongod restart' 
 gnome-terminal --working-directory=/home/ibrahimmushtaq/Desktop/RobotON\ Master/RobotON\ Ibrahim/RobotON/RobotON\ DB/ -e 'npm start'
 gnome-terminal --working-directory=/home/ibrahimmushtaq/Desktop/RobotON\ Master/RobotON\ Ibrahim/RobotON/RobotON\ Server/ -e 'npm start'
-gnome-terminal --working-directory=/home/ibrahimmushtaq/Desktop/Build/ -e 'http-server /home/ibrahimmushtaq/Desktop/Build/  -p8081'
+gnome-terminal --working-directory=/home/ibrahimmushtaq/Desktop/Build/ -e 'http-server ./ -p8081'
