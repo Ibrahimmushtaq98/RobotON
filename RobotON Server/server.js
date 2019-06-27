@@ -40,8 +40,8 @@ http.createServer(function (req, res) {
             var sys = require('util'),
             exec = require('child_process').exec;
 
-            exec("./CompileProject.sh", function(err, stdout, stderr) {
-              console.log("CompileProject.sh: " + err + " : "  + stdout);
+            exec("run.bat", function(err, stdout, stderr) {
+              console.log("run.bat: " + err + " : "  + stdout);
             });
           }
         }catch{
