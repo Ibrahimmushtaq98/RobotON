@@ -57,7 +57,7 @@ http.createServer(function (req, res) {
     fs.exists(pathname, function (exist) {
       if(!exist) {
         res.statusCode = 404;
-        res.end(`File ${pathname} not found!`);
+        res.end(`File not found!`);
         return;
       }
 

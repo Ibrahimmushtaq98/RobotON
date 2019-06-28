@@ -1,4 +1,6 @@
 using System.IO;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEditor.Build.Reporting;
@@ -21,16 +23,17 @@ public class WebGLBuilder
 
         buildPlayer.locationPathName = "C:\\Users\\Ibrahim Mushtaq\\Desktop\\WebGLBUild";
         buildPlayer.target = BuildTarget.WebGL;
-        buildPlayer.options = BuildOptions.None;
-
+        Screen.SetResolution(1280,720,false,60);
+        WebGLExceptionSupport web = WebGLExceptionSupport.FullWithoutStacktrace;
+        buildPlayer.options = (BuildOptions)web;
         BuildReport report = BuildPipeline.BuildPlayer(buildPlayer);
         BuildSummary summary = report.summary;
 
         if(summary.result == BuildResult.Succeeded){
-            File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes\n");
+            File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
 
         }else if(summary.result == BuildResult.Failed){
-            File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes\n");
+            File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n";
         }
     }
 }
