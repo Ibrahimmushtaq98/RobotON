@@ -33,7 +33,7 @@ public class WebGLBuilder
             File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
 
         }else if(summary.result == BuildResult.Failed){
-            File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n";
+            File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
         }
     }
 }
