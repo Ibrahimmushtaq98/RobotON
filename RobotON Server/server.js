@@ -46,7 +46,7 @@ http.createServer(function (req, res) {
             if(jsonString.commits.length != 0){
               console.log("Git Push Request");
               var dateTime = new Date();
-              sendMail("Unity Compilation Notice!", "Started Compiling at " + dateTime );
+              sendEmail("Unity Compilation Notice!", "Started Compiling at " + dateTime );
 
               var sys = require('util'),
               child = require('child_process');
