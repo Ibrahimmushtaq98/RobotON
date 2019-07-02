@@ -45,9 +45,6 @@ http.createServer(function (req, res) {
           try{
             if(jsonString.commits.length != 0){
               console.log("Git Push Request");
-
-              var sys = require('util'),
-              exec = require('child_process').exec;
               var dateTime = new Date();
 
               var mailOptions = {
@@ -65,24 +62,34 @@ http.createServer(function (req, res) {
                 }
               });
 
-              exec("run.bat", function(err, stdout, stderr) {
-                console.log("run.bat: " + err + " : "  + stdout);
+              var sys = require('util'),
+              child = require('child_process').exec("run.bat");
+              child.stdout.pipe(process.stdout);
+              child.on('exit', function(){
+                process.exit();
+
+                var mailOptions = {
+                  from: config.email,
+                  to: config.email2,
+                  subject: "Compilation Notice!",
+                  text: "Unity is now Done Compiling, End time = " + dateTime
+                };
+  
+                transporter.sendMail(mailOptions, function(err, info){
+                  if(err){
+                    console.log(err);
+                  }else{
+                    console.log("Email Sent"+ info.response);
+                  }
+                });
+
               });
 
-              var mailOptions = {
-                from: config.email,
-                to: config.email2,
-                subject: "Compilation Notice!",
-                text: "Unity is now Done Compiling, End time = " + dateTime
-              };
+              // exec("run.bat", function(err, stdout, stderr) {
+              //   console.log("run.bat: " + err + " : "  + stdout);
+              // });
 
-              transporter.sendMail(mailOptions, function(err, info){
-                if(err){
-                  console.log(err);
-                }else{
-                  console.log("Email Sent"+ info.response);
-                }
-              });
+              // exec.on
             }
           }catch{
 
