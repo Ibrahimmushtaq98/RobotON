@@ -63,12 +63,11 @@ http.createServer(function (req, res) {
               });
 
               var sys = require('util'),
-              child = require('child_process').exec("run.bat");
-              child.stdout.pipe(process.stdout);
-              child.on('exit', function(){
-                process.exit();
-
-                var mailOptions = {
+              child = require('child_process');
+              child.spawn("run.bat");
+              child.on('exit', code=>{
+                console.log('Exit code: ${code}');
+                  var mailOptions = {
                   from: config.email,
                   to: config.email2,
                   subject: "Compilation Notice!",
@@ -91,7 +90,7 @@ http.createServer(function (req, res) {
 
               // exec.on
             }
-          }catch{
+          }catch(e){
 
           }
 
