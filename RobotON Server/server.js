@@ -6,7 +6,6 @@ const { parse } = require('querystring');
 const nodemailer = require('nodemailer');
 const config = require('../config.json');
 const port = 8080;
-const mService = require('./mailingService');
 
 var transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -47,14 +46,14 @@ http.createServer(function (req, res) {
             if(jsonString.commits.length != 0){
               console.log("Git Push Request");
               var dateTime = new Date();
-              mService.sendMail("Unity Compilation Notice!", "Started Compiling at " + dateTime );
+              sendMail("Unity Compilation Notice!", "Started Compiling at " + dateTime );
 
               var sys = require('util'),
               child = require('child_process');
               child.spawn("run.bat");
               child.on('exit', code=>{
                 console.log('Exit code: ${code}');
-                mService.sendMail("Unity Compilation Notice!", "Finished Compiling at " + dateTime );
+                //sendMail("Unity Compilation Notice!", "Finished Compiling at " + dateTime );
               });
 
               // exec("run.bat", function(err, stdout, stderr) {
@@ -111,5 +110,22 @@ http.createServer(function (req, res) {
 
 
 }).listen(parseInt(port));
+
+function sendEmail(subject, message){
+  var mailOptions = {
+      from: config.email,
+      to: config.email2,
+      subject: subject,
+      text: message
+  };
+
+  transporter.sendMail(mailOptions, function(err, info){
+      if(err){
+        console.log(err);
+      }else{
+        console.log("Email Sent"+ info.response);
+      }
+  });
+}
 
 console.log(`Server listening on port ${port}`);
