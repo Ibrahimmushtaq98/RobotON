@@ -23,7 +23,7 @@ public class WebGLBuilder
 
         buildPlayer.locationPathName = "C:\\Users\\Ibrahim Mushtaq\\Desktop\\WebGLBUild";
         buildPlayer.target = BuildTarget.WebGL;
-        Screen.SetResolution(1280,720,false,60);
+        //Screen.SetResolution(1280,720,false,60);
         WebGLExceptionSupport web = WebGLExceptionSupport.FullWithoutStacktrace;
         buildPlayer.options = (BuildOptions)web;
         BuildReport report = BuildPipeline.BuildPlayer(buildPlayer);
@@ -33,7 +33,7 @@ public class WebGLBuilder
             File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
 
         }else if(summary.result == BuildResult.Failed){
-            File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
+            File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Failed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
         }
     }
 }

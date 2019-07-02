@@ -1,1 +1,1 @@
-start CMD /c robocopy /e "C:\Users\Ibrahim Mushtaq\Desktop\WebGLBUild\StreamingAssets" "C:\Users\Ibrahim Mushtaq\Desktop\RobotON\RobotON Server\StreamingAssets"
+start CMD /c robocopy /e "C:\Users\Ibrahim Mushtaq\Desktop\RobotON\StreamingAssets" "C:\Users\Ibrahim Mushtaq\Desktop\RobotON\RobotON Server\StreamingAssets"
