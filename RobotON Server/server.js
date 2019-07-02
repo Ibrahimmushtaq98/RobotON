@@ -3,9 +3,17 @@ const url = require('url');
 const fs = require('fs');
 const path = require('path');
 const { parse } = require('querystring');
-const cors = require('cors')
-
+const nodemailer = require('nodemailer');
+const config = require('../config.json');
 const port = 8080;
+
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: config.email,
+    pass: config.password
+  }
+});
 
 const mimeType = {
   '.html': 'text/html',
@@ -40,9 +48,40 @@ http.createServer(function (req, res) {
 
               var sys = require('util'),
               exec = require('child_process').exec;
+              var dateTime = new Date();
+
+              var mailOptions = {
+                from: config.email,
+                to: config.email2,
+                subject: "Compilation Notice!",
+                text: "Unity is now compiling, start time = " + dateTime
+              };
+
+              transporter.sendMail(mailOptions, function(err, info){
+                if(err){
+                  console.log(err);
+                }else{
+                  console.log("Email Sent"+ info.response);
+                }
+              });
 
               exec("run.bat", function(err, stdout, stderr) {
                 console.log("run.bat: " + err + " : "  + stdout);
+              });
+
+              var mailOptions = {
+                from: config.email,
+                to: config.email2,
+                subject: "Compilation Notice!",
+                text: "Unity is now Done Compiling, End time = " + dateTime
+              };
+
+              transporter.sendMail(mailOptions, function(err, info){
+                if(err){
+                  console.log(err);
+                }else{
+                  console.log("Email Sent"+ info.response);
+                }
               });
             }
           }catch{
