@@ -6,6 +6,7 @@ const { parse } = require('querystring');
 const nodemailer = require('nodemailer');
 const config = require('../config.json');
 const port = 8080;
+const mService = require('./mailingService');
 
 var transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -46,42 +47,14 @@ http.createServer(function (req, res) {
             if(jsonString.commits.length != 0){
               console.log("Git Push Request");
               var dateTime = new Date();
-
-              var mailOptions = {
-                from: config.email,
-                to: config.email2,
-                subject: "Compilation Notice!",
-                text: "Unity is now compiling, start time = " + dateTime
-              };
-
-              transporter.sendMail(mailOptions, function(err, info){
-                if(err){
-                  console.log(err);
-                }else{
-                  console.log("Email Sent"+ info.response);
-                }
-              });
+              mService.sendMail("Unity Compilation Notice!", "Started Compiling at " + dateTime );
 
               var sys = require('util'),
               child = require('child_process');
               child.spawn("run.bat");
               child.on('exit', code=>{
                 console.log('Exit code: ${code}');
-                  var mailOptions = {
-                  from: config.email,
-                  to: config.email2,
-                  subject: "Compilation Notice!",
-                  text: "Unity is now Done Compiling, End time = " + dateTime
-                };
-  
-                transporter.sendMail(mailOptions, function(err, info){
-                  if(err){
-                    console.log(err);
-                  }else{
-                    console.log("Email Sent"+ info.response);
-                  }
-                });
-
+                mService.sendMail("Unity Compilation Notice!", "Finished Compiling at " + dateTime );
               });
 
               // exec("run.bat", function(err, stdout, stderr) {
