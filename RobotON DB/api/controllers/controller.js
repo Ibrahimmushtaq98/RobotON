@@ -4,6 +4,12 @@ var mongoose = require('mongoose'),
     Task = mongoose.model('RobotON_Logs'),
     TaskT = mongoose.model('RobotBug_Logs');
 
+//-------------------------------EXTERNAL FUNCTIONS------------------------------------------->
+function onlyUnique(value, index, self){
+  return self.indexOf(value) === index;
+}
+//-------------------------------EOF EXTERNAL FUNCTIONS!--------------------------------------->
+
 
 //GET REQUEST FOR ALL DATA UNDER ON
 exports.list_all_logs_ON = function(req,res){
@@ -53,6 +59,32 @@ exports.update_a_log_ON = function(req, res) {
   Task.find
 };
 
+exports.retrieve_comp_level_ON = function(req, res){
+  var compLevel = [];
+  var currentLevel;
+  Task.findOne({name: req.params.sessionID}, function(err, task) {
+    if (err){
+      res.send(err);
+    }else{
+      if(task != null && typeof task == "object"){
+        var jsonObjects = task.toJSON();
+        Object.entries(jsonObjects.levels).forEach(([key, value]) =>{
+
+          currentLevel = value.name;
+
+          if(value.progress == "Passed" && currentLevel != ""){
+            compLevel.push(currentLevel);
+            currentLevel = "";
+          }
+        });
+      };
+      compLevel = compLevel.filter(onlyUnique);
+      //sendBack = compLevel.sort();
+      res.json(compLevel);
+    }
+  });
+}
+
 //------------------------------------------------------------------------------->
 exports.list_all_logs_BUG = function(req,res){
   TaskT.find({}, function(err, task) {
@@ -101,3 +133,28 @@ exports.update_a_log_BUG = function(req, res) {
   TaskT.find
 };
 
+exports.retrieve_comp_level_BUG = function(req, res){
+  var compLevel = [];
+  var currentLevel;
+  TaskT.findOne({name: req.params.sessionID}, function(err, task) {
+    if (err){
+      res.send(err);
+    }else{
+      if(task != null && typeof task == "object"){
+        var jsonObjects = task.toJSON();
+        Object.entries(jsonObjects.levels).forEach(([key, value]) =>{
+
+          currentLevel = value.name;
+
+          if(value.progress == "Passed" && currentLevel != ""){
+            compLevel.push(currentLevel);
+            currentLevel = "";
+          }
+        });
+      };
+      compLevel = compLevel.filter(onlyUnique);
+      //sendBack = compLevel.sort();
+      res.json(compLevel);
+    }
+  });
+}
