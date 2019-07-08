@@ -42,10 +42,10 @@ public class WebGLBuilder
         BuildSummary summary = report.summary;
 
         if(summary.result == BuildResult.Succeeded){
-            File.WriteAllText(@"C:\Users\Ibrahim\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
+            File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
 
         }else if(summary.result == BuildResult.Failed){
-            File.WriteAllText(@"C:\Users\Ibrahim\Desktop\RobotON\stdout1.log", "Build Failed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
+            File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Failed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
         }
     }
 }
