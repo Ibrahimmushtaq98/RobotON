@@ -202,6 +202,8 @@ public class stringLib
 
     public string[] nameObstacle = new string[] { "firewall" };
     public const string STREAMING_ASSETS = "StreamingAssets/";
+    public const string ASSETS_BUNDLE = "AssetBundles/";
+    public const string VIDEO_FILE = "videofiles";
     public const string MOVIE_INTRO = "TitleSequence.mp4";
     public const string MOVIE_INTRO_MENU = "Menu.mp4";
     public const string MOVIE_ON = "IntroScene.mp4";
