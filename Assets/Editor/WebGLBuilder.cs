@@ -21,7 +21,7 @@ public class WebGLBuilder
                             "Assets/Credits.unity",
                             "Assets/TutorialDemo.unity"};
 
-        buildPlayer.locationPathName = "C:\\Users\\Ibrahim\\Desktop\\WebGLBuilds";
+        buildPlayer.locationPathName = "C:\\Users\\Ibrahim Mushtaq\\Desktop\\WebGLBuilds";
         buildPlayer.target = BuildTarget.WebGL;
         Application.targetFrameRate = 30;
 
