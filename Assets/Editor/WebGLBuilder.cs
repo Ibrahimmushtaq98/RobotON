@@ -21,19 +21,31 @@ public class WebGLBuilder
                             "Assets/Credits.unity",
                             "Assets/TutorialDemo.unity"};
 
-        buildPlayer.locationPathName = "C:\\Users\\Ibrahim Mushtaq\\Desktop\\WebGLBUild";
+        buildPlayer.locationPathName = "C:\\Users\\Ibrahim\\Desktop\\WebGLBuilds";
         buildPlayer.target = BuildTarget.WebGL;
-        //Screen.SetResolution(1280,720,false,60);
-        WebGLExceptionSupport web = WebGLExceptionSupport.FullWithoutStacktrace;
-        buildPlayer.options = (BuildOptions)web;
+        Application.targetFrameRate = 30;
+
+        PlayerSettings.WebGL.dataCaching = true;
+        PlayerSettings.defaultWebScreenHeight = 720;
+        PlayerSettings.defaultWebScreenWidth = 1280;
+        PlayerSettings.WebGL.memorySize = 1000;
+        PlayerSettings.runInBackground = true;
+        AspectRatio aspectRatio = AspectRatio.Aspect16by9;
+        PlayerSettings.SetAspectRatio(aspectRatio, true);
+
+        WebGLExceptionSupport web = WebGLExceptionSupport.None;
+        WebGLCompressionFormat compressionFormat = WebGLCompressionFormat.Gzip;
+
+        Application.runInBackground = true;
+        buildPlayer.options = (BuildOptions)web | (BuildOptions)compressionFormat;
         BuildReport report = BuildPipeline.BuildPlayer(buildPlayer);
         BuildSummary summary = report.summary;
 
         if(summary.result == BuildResult.Succeeded){
-            File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
+            File.WriteAllText(@"C:\Users\Ibrahim\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
 
         }else if(summary.result == BuildResult.Failed){
-            File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Failed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
+            File.WriteAllText(@"C:\Users\Ibrahim\Desktop\RobotON\stdout1.log", "Build Failed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
         }
     }
 }
