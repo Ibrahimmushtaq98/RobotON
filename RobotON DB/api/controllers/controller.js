@@ -73,14 +73,14 @@ exports.retrieve_comp_level_ON = function(req, res){
           currentLevel = value.name;
 
           if(value.progress == "Passed" && currentLevel != ""){
-            compLevel.push(currentLevel);
+            compLevel.push(currentLevel + " " + 1);
             currentLevel = "";
           }
         });
       };
       compLevel = compLevel.filter(onlyUnique);
       //sendBack = compLevel.sort();
-      res.json(compLevel);
+      res.json(compLevel.toString());
     }
   });
 }
