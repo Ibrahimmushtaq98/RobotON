@@ -290,6 +290,7 @@ public class OldMenu : MonoBehaviour
                         levels.Clear();
                         passed.Clear();
                         //lfile = Application.streamingAssetsPath +"/" + GlobalState.GameMode + "leveldata" + filepath + "levels.txt";
+                        
                         readFromFiles();
                         GlobalState.GameState = -1;
                         option = 0;
@@ -697,18 +698,28 @@ public class OldMenu : MonoBehaviour
         #endif
 
     #if UNITY_WEBGL
-        filepath = "StreamingAssets" + "/" + GlobalState.GameMode + "leveldata" + "/levels.txt";
-        WebHelper.i.url = stringLib.SERVER_URL + filepath;
+
+        if(GlobalState.DebugMode){
+            filepath = stringLib.SERVER_URL + "StreamingAssets" + "/" + GlobalState.GameMode + "leveldata" + "/levels.txt";
+        }else{
+            filepath = stringLib.DB_URL + "logs"  + GlobalState.GameMode.ToUpper() + "/completedlevels/" + GlobalState.sessionID.ToString();
+        }
+        WebHelper.i.url =filepath;
         WebHelper.i.GetWebDataFromWeb();
         filepath = WebHelper.i.webData;
-        string[] leveldata = filepath.Split('\n');
+
+        string [] leveldata;
+        if(GlobalState.DebugMode){
+            leveldata = filepath.Split('\n');
+        }else{
+            leveldata = filepath.Split(',');
+        }
         for (int i = 0; i < leveldata.Length - 1; i++) {
             string[] tmp = leveldata[i].Split(' ');
             string[] tmpTwo = tmp[1].Split('\r');
             levels.Add(tmp[0]);
             passed.Add(tmpTwo[0]);
         }
-        Debug.Log("OldMenu: Update() WEBGL AND WINDOW");
     #endif
 
     }
