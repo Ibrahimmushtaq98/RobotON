@@ -8,6 +8,8 @@ using UnityEditor.Build.Reporting;
 public class WebGLBuilder
 {
     static void build() {
+        File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Started!, time: " + System.DateTime.Now.ToString());
+
 
         BuildPlayerOptions buildPlayer = new BuildPlayerOptions();
         buildPlayer.scenes = new [] {"Assets/TitleScene.unity",
@@ -29,12 +31,15 @@ public class WebGLBuilder
         PlayerSettings.defaultWebScreenHeight = 720;
         PlayerSettings.defaultWebScreenWidth = 1280;
         PlayerSettings.WebGL.memorySize = 1000;
+        PlayerSettings.stripEngineCode = true;
         PlayerSettings.runInBackground = true;
         AspectRatio aspectRatio = AspectRatio.Aspect16by9;
         PlayerSettings.SetAspectRatio(aspectRatio, true);
 
         WebGLExceptionSupport web = WebGLExceptionSupport.None;
         WebGLCompressionFormat compressionFormat = WebGLCompressionFormat.Gzip;
+
+        PlayerSettings.WebGL.compressionFormat = compressionFormat;
 
         Application.runInBackground = true;
         buildPlayer.options = (BuildOptions)web | (BuildOptions)compressionFormat;
