@@ -59,6 +59,7 @@ exports.update_a_log_ON = function(req, res) {
   Task.find
 };
 
+//Todo: Clean the retreived level from sub level, such as level2.1.xml is accepted, however level2.1b.xml isnt
 exports.retrieve_comp_level_ON = function(req, res){
   var compLevel = [];
   var currentLevel;
@@ -82,6 +83,58 @@ exports.retrieve_comp_level_ON = function(req, res){
       //sendBack = compLevel.sort();
       res.json(compLevel.toString());
     }
+  });
+}
+
+exports.list_current_level_ON = function(req, res){
+  console.log("SessionID: " + req.params.sessionID);
+
+  Task.findOne({name: req.params.sessionID},{'levels': {$slice: -1}}, function(err, task){
+    if(err){
+      res.json(err);
+    }else{
+      res.json(task._id)
+    }
+    
+  })
+};
+
+exports.put_current_level_ON = function(req, res){
+  var objName = req.params.name;
+  var positionalID = req.params.sessionID;
+  var currentLevelID = req.params.currentlevelID;
+  var conds = "levels." + positionalID + "." + objName 
+
+ Task.findOneAndUpdate(
+   {"levels._id": currentLevelID},
+   {$push :{
+     conds : req.body[objName]
+   }},
+   function(err,task){
+     if(err){
+       res.json("ERR " + err);
+     }else{
+       res.json(task);
+     }
+   }
+ )
+};
+
+exports.get_total_level_ON = function(req, res){
+  Task.findOne({name: req.params.sessionID}, 'levels.name', function(err, task){
+    var i = 0;
+
+    if(task != null && typeof task == "object"){
+      if(err){
+        res.json(0);
+      }else{
+        var taskObj = task.toJSON();
+        Object.entries(taskObj.levels).forEach(([key, value]) =>{
+          i = i + 1;
+        });
+      }
+    }
+    res.json(i);
   });
 }
 
@@ -157,4 +210,57 @@ exports.retrieve_comp_level_BUG = function(req, res){
       res.json(compLevel.toString());
     }
   });
+
+
+  exports.list_current_level_BUG = function(req, res){
+    console.log("SessionID: " + req.params.sessionID);
+  
+    TaskT.findOne({name: req.params.sessionID},{'levels': {$slice: -1}}, function(err, task){
+      if(err){
+        res.json(err);
+      }else{
+        res.json(task._id)
+      }
+      
+    })
+  };
+  
+  exports.put_current_level_BUG = function(req, res){
+    var objName = req.params.name;
+    var positionalID = req.params.sessionID;
+    var currentLevelID = req.params.currentlevelID;
+    var conds = "levels." + positionalID + "." + objName 
+  
+   TaskT.findOneAndUpdate(
+     {"levels._id": currentLevelID},
+     {$push :{
+       conds : req.body[objName]
+     }},
+     function(err,task){
+       if(err){
+         res.json("ERR " + err);
+       }else{
+         res.json(task);
+       }
+     }
+   )
+  };
+  
+  exports.get_total_level_BUG = function(req, res){
+    TaskT.findOne({name: req.params.sessionID}, 'levels.name', function(err, task){
+      var i = 0;
+  
+      if(task != null && typeof task == "object"){
+        if(err){
+          res.json(0);
+        }else{
+          var taskObj = task.toJSON();
+          Object.entries(taskObj.levels).forEach(([key, value]) =>{
+            i = i + 1;
+          });
+        }
+      }
+      res.json(i);
+    });
+  }
 }

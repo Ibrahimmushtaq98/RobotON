@@ -1,6 +1,4 @@
 'use strict';
-var cors = require('cors')
-
 module.exports = function(app){
     var logControl = require('../controllers/controller');
 
@@ -11,6 +9,15 @@ module.exports = function(app){
     app.route('/logsON/:sessionID')
     .get(logControl.read_a_log_ON)
     .put(logControl.update_a_log_ON);
+
+    app.route('/logsON/currentlevel/:sessionID')
+    .get(logControl.list_current_level_ON)
+
+    app.route('/logsON/totallevel/:sessionID')
+    .get(logControl.get_total_level_ON);
+
+    app.route('/logsON/currentlevel/:sessionID/:currentlevelID/:name')
+    .put(logControl.put_current_level_ON);
 
     app.route('/logsON/completedlevels/:sessionID')
     .get(logControl.retrieve_comp_level_ON);
@@ -25,5 +32,15 @@ module.exports = function(app){
 
     app.route('/logsBUG/completedlevels/:sessionID')
     .get(logControl.retrieve_comp_level_BUG);
+
+
+    app.route('/logsBUG/currentlevel/:sessionID')
+    .get(logControl.list_current_level_BUG)
+
+    app.route('/logsBUG/totallevel/:sessionID')
+    .get(logControl.get_total_level_BUG);
+
+    app.route('/logsBUG/currentlevel/:sessionID/:currentlevelID/:name')
+    .put(logControl.put_current_level_BUG);
 
 };
