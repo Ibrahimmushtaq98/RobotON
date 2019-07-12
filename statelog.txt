@@ -1,2 +1,0 @@
-NewState, PreviousState#, Time, CurrentLevel
-LevelBegin, 10, 7.785127, tut1.xml
