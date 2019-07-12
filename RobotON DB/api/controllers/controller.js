@@ -87,15 +87,17 @@ exports.retrieve_comp_level_ON = function(req, res){
 
 exports.list_current_level_ON = function(req, res){
   console.log("SessionID: " + req.params.sessionID);
+  console.log("BODY: " + req.body);
 
   Task.findOne({name: req.params.sessionID},{'levels': {$slice: -1}}, function(err, task){
     if(err){
       res.json(err);
     }else{
+      console.log(task);
       try{
         res.json(task.levels[0]._id);
       }catch(err){
-        
+        console.log(err);
       }
     }
     
