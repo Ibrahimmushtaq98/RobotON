@@ -42,6 +42,7 @@ public class Logger
         startLogging();
         WebHelper.i.url = stringLib.DB_URL + GlobalState.GameMode.ToUpper() + "/totallevel/" + GlobalState.sessionID.ToString();
         WebHelper.i.GetWebDataFromWeb();
+        Debug.Log("POS ID" + WebHelper.i.webData);
         GlobalState.positionalID = Convert.ToInt32(WebHelper.i.webData);
 
         WebHelper.i.url = stringLib.DB_URL + GlobalState.GameMode.ToUpper() + "/currentlevel/" + GlobalState.sessionID.ToString();
@@ -221,8 +222,7 @@ public class Logger
         jsonObj += "], \"states\" :[], \"obstacal\" : [], \"obstacalState\" : [], \"enemy\" : []}]}"; 
 
         string url = stringLib.DB_URL + GlobalState.GameMode.ToUpper() + "/" + GlobalState.sessionID.ToString();
-        Debug.Log(url);
-        sendDatatoDB(jsonObj,stringLib.DB_URL + GlobalState.GameMode.ToUpper() + "/" + GlobalState.sessionID.ToString());
+        sendDatatoDB(jsonObj,url);
 
     }
 

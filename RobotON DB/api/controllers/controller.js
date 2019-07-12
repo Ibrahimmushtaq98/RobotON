@@ -92,7 +92,11 @@ exports.list_current_level_ON = function(req, res){
     if(err){
       res.json(err);
     }else{
-      res.json(task.levels[0]._id);
+      try{
+        res.json(task.levels[0]._id);
+      }catch(err){
+        
+      }
     }
     
   })
