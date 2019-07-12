@@ -8,7 +8,7 @@ using UnityEditor.Build.Reporting;
 public class WebGLBuilder
 {
     static void build() {
-        File.WriteAllText(@"home/ibrahim/Desktop/RobotON/stdout1.log", "Build Started!, time: " + System.DateTime.Now.ToString());
+        File.WriteAllText(@"/home/ibrahim/Desktop/RobotON/stdout1.log", "Build Started!, time: " + System.DateTime.Now.ToString());
 
 
         BuildPlayerOptions buildPlayer = new BuildPlayerOptions();
