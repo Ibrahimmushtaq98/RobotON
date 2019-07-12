@@ -33,7 +33,6 @@ module.exports = function(app){
     app.route('/logsBUG/completedlevels/:sessionID')
     .get(logControl.retrieve_comp_level_BUG);
 
-
     app.route('/logsBUG/currentlevel/:sessionID')
     .get(logControl.list_current_level_BUG)
 
