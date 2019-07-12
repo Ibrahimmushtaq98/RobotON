@@ -50,7 +50,7 @@ http.createServer(function (req, res) {
 
               var sys = require('util'),
               child = require('child_process');
-              child.spawn("run.bat");
+              child.spawn("CompileProject.sh");
               child.on('exit', code=>{
                 console.log('Exit code: ${code}');
                 //sendMail("Unity Compilation Notice!", "Finished Compiling at " + dateTime );

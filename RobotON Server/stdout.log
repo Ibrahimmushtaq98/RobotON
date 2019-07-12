@@ -1,0 +1,1379 @@
+Initiating legacy licensing module
+
+LICENSE SYSTEM [2019712 12:21:6] Next license update check is after 2019-07-04T20:31:21
+
+[Package Manager] Server::Start -- Port 43973 was selected
+
+ COMMAND LINE ARGUMENTS:
+/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Unity
+-quit
+-force-free
+-nographics
+-batchmode
+-logFile
+stdout.log
+-projectPath
+/home/ibrahim/Desktop/RobotON/
+-executeMethod
+WebGLBuilder.build
+Successfully changed project path to: /home/ibrahim/Desktop/RobotON/
+/home/ibrahim/Desktop/RobotON
+Using Asset Import Pipeline V1.
+DisplayProgressbar: Unity Package Manager
+Loading GUID <-> Path mappings...0.000047 seconds
+Loading Asset Database...0.153362 seconds
+AssetDatabase consistency checks...0.313936 seconds
+[Package Manager] Done resolving packages in 0.72s seconds
+[Package Manager] Done checking package constraints in 0.00s seconds
+[Package Manager] 
+Registered 47 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ads@2.0.8 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ads@2.0.8)
+    com.unity.analytics@3.3.2 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.analytics@3.3.2)
+    com.unity.collab-proxy@1.2.16 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.collab-proxy@1.2.16)
+    com.unity.ext.nunit@1.0.0 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ext.nunit@1.0.0)
+    com.unity.ide.rider@1.0.8 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ide.rider@1.0.8)
+    com.unity.ide.visualstudio@1.0.11 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ide.visualstudio@1.0.11)
+    com.unity.ide.vscode@1.0.7 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ide.vscode@1.0.7)
+    com.unity.purchasing@2.0.6 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.purchasing@2.0.6)
+    com.unity.test-framework@1.0.13 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.test-framework@1.0.13)
+    com.unity.textmeshpro@2.0.1 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.textmeshpro@2.0.1)
+    com.unity.xr.legacyinputhelpers@2.0.2 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.xr.legacyinputhelpers@2.0.2)
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.2d.sprite)
+    com.unity.2d.tilemap@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.2d.tilemap)
+    com.unity.package-manager-ui@2.2.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.package-manager-ui)
+    com.unity.timeline@1.1.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.timeline)
+    com.unity.ugui@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui)
+    com.unity.modules.ai@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vehicles@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.xr)
+
+[XR] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.04s seconds
+Refreshing native plugins compatible for Editor in 45.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2019.2.0b7 (87c9ecb96495)
+[XR] Discovering subsystems at path /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/UnitySubsystems
+[XR] Discovering subsystems at path /home/ibrahim/Desktop/RobotON/Assets
+Forcing GfxDevice: Null
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+[EnlightenBakeManager] m_Clear = false;
+Initialize mono
+Mono path[0] = '/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed'
+Mono path[1] = '/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56810
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.035202 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.557 seconds
+Registering precompiled user dll's ...
+Registered in 0.099273 seconds.
+Platform modules already initialized, skipping
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.116 seconds
+Platform modules already initialized, skipping
+[ScriptCompilation] Recompiling all scripts because: Reload of assemblies failed, assemblies are invalid or forced recompiled
+- Starting compile Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+- Starting compile Library/ScriptAssemblies/UnityEngine.UI.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+- Starting compile Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.UI.dll
+- Finished compile Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+- Starting compile Library/ScriptAssemblies/UnityEditor.UI.dll
+- Finished compile Library/ScriptAssemblies/UnityEditor.UI.dll
+- Starting compile Library/ScriptAssemblies/Unity.TextMeshPro.dll
+- Starting compile Library/ScriptAssemblies/Unity.Timeline.dll
+- Starting compile Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+- Starting compile Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll
+- Starting compile Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+- Starting compile Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll
+- Starting compile Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+- Starting compile Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll
+- Starting compile Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll
+- Finished compile Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+- Starting compile Library/ScriptAssemblies/Unity.Rider.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+- Starting compile Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+- Starting compile Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll
+- Finished compile Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.Timeline.dll
+- Starting compile Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.TextMeshPro.dll
+- Starting compile Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll
+- Starting compile Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll
+- Finished compile Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll
+- Finished compile Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.Rider.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+- Finished compile Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.038 seconds
+Platform modules already initialized, skipping
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp.dll
+
+-----Compiler Commandline Arguments:
+Filename: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Tools/RoslynScripts/unity_csc.sh
+Arguments: /noconfig @Temp/UnityTempFile-1b01647769a22253bbbfd9e3c845bc4b
+Responsefile: Temp/UnityTempFile-1b01647769a22253bbbfd9e3c845bc4b Contents: 
+/target:library
+/nowarn:0169
+/out:"Temp/Assembly-CSharp.dll"
+/debug:portable
+/optimize-
+/nostdlib+
+/preferreduilang:en-US
+/langversion:latest
+/reference:"Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed/UnityEditor.dll"
+/reference:"Library/ScriptAssemblies/Unity.Timeline.Editor.dll"
+/reference:"Library/ScriptAssemblies/Unity.VSCode.Editor.dll"
+/reference:"Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.UI.dll"
+/reference:"Library/ScriptAssemblies/Unity.Timeline.dll"
+/reference:"Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll"
+/reference:"Library/ScriptAssemblies/Unity.Rider.Editor.dll"
+/reference:"Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll"
+/reference:"Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll"
+/reference:"Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll"
+/reference:"Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll"
+/reference:"Library/ScriptAssemblies/Unity.TextMeshPro.dll"
+/reference:"Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll"
+/reference:"Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll"
+/reference:"Library/ScriptAssemblies/UnityEditor.UI.dll"
+/reference:"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll"
+/reference:"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll"
+/reference:"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll"
+/define:UNITY_2019_2_0
+/define:UNITY_2019_2
+/define:UNITY_2019
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2019_1_OR_NEWER
+/define:UNITY_2019_2_OR_NEWER
+/define:UNITY_INCLUDE_TESTS
+/define:ENABLE_AUDIO
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_PHYSICS
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_UNET
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_WEBCAM
+/define:ENABLE_WWW
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:ENABLE_MANAGED_AUDIO_JOBS
+/define:ENABLE_MONO_BDWGC
+/define:RENDER_SOFTWARE_CURSOR
+/define:ENABLE_VIDEO
+/define:PLATFORM_WEBGL
+/define:UNITY_WEBGL
+/define:UNITY_WEBGL_API
+/define:UNITY_DISABLE_WEB_VERIFICATION
+/define:UNITY_GFX_USE_PLATFORM_VSYNC
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_ENGINE_CODE_STRIPPING
+/define:ENABLE_VR
+/define:ENABLE_SPATIALTRACKING
+/define:ENABLE_MONO
+/define:NET_STANDARD_2_0
+/define:ENABLE_PROFILER
+/define:DEBUG
+/define:TRACE
+/define:UNITY_ASSERTIONS
+/define:UNITY_EDITOR
+/define:UNITY_EDITOR_64
+/define:UNITY_EDITOR_LINUX
+/define:ENABLE_UNITY_COLLECTIONS_CHECKS
+/define:ENABLE_BURST_AOT
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_DIRECTOR
+/define:ENABLE_LOCALIZATION
+/define:ENABLE_SPRITES
+/define:ENABLE_TERRAIN
+/define:ENABLE_TILEMAP
+/define:ENABLE_TIMELINE
+/define:CSHARP_7_OR_LATER
+/define:CSHARP_7_3_OR_NEWER
+"Assets/Scripts/Action.cs"
+"Assets/Scripts/ActionFactory.cs"
+"Assets/Scripts/BackButton.cs"
+"Assets/Scripts/BackgroundController.cs"
+"Assets/Scripts/Banner.cs"
+"Assets/Scripts/beacon.cs"
+"Assets/Scripts/Breakpoint.cs"
+"Assets/Scripts/BugComment.cs"
+"Assets/Scripts/Camera2.cs"
+"Assets/Scripts/CharacterSelect.cs"
+"Assets/Scripts/Checklist.cs"
+"Assets/Scripts/Cinematic.cs"
+"Assets/Scripts/ClickableMenu.cs"
+"Assets/Scripts/CodeFormater.cs"
+"Assets/Scripts/CodeProperties.cs"
+"Assets/Scripts/Comic.cs"
+"Assets/Scripts/comment.cs"
+"Assets/Scripts/CommentTypeFactory.cs"
+"Assets/Scripts/CorrectComment.cs"
+"Assets/Scripts/CorrectUncomment.cs"
+"Assets/Scripts/credits.cs"
+"Assets/Scripts/CreditsController.cs"
+"Assets/Scripts/DatabaseHelperV2.cs"
+"Assets/Scripts/DemoBotControl.cs"
+"Assets/Scripts/DemoBoyControl.cs"
+"Assets/Scripts/DialogController.cs"
+"Assets/Scripts/EnergyController.cs"
+"Assets/Scripts/Fade.cs"
+"Assets/Scripts/FireButton.cs"
+"Assets/Scripts/Firewall.cs"
+"Assets/Scripts/FirewallController.cs"
+"Assets/Scripts/GameController.cs"
+"Assets/Scripts/GamePicker.cs"
+"Assets/Scripts/GenericBug.cs"
+"Assets/Scripts/GlobalState.cs"
+"Assets/Scripts/HandControl.cs"
+"Assets/Scripts/hero2Controller.cs"
+"Assets/Scripts/HintCollider.cs"
+"Assets/Scripts/HintDispayController.cs"
+"Assets/Scripts/IncorrectComment.cs"
+"Assets/Scripts/IncorrentUncomment.cs"
+"Assets/Scripts/ITimeUser.cs"
+"Assets/Scripts/Level.cs"
+"Assets/Scripts/LevelFactory.cs"
+"Assets/Scripts/LevelGenerator.cs"
+"Assets/Scripts/LevelManager.cs"
+"Assets/Scripts/LoadingController.cs"
+"Assets/Scripts/Logger.cs"
+"Assets/Scripts/Menu.cs"
+"Assets/Scripts/MenuButton.cs"
+"Assets/Scripts/NewBehaviourScript.cs"
+"Assets/Scripts/Obstacle.cs"
+"Assets/Scripts/ObstacleFactory.cs"
+"Assets/Scripts/OldMenu.cs"
+"Assets/Scripts/Output.cs"
+"Assets/Scripts/printer.cs"
+"Assets/Scripts/PrizeBug.cs"
+"Assets/Scripts/projectile2.cs"
+"Assets/Scripts/question.cs"
+"Assets/Scripts/rename.cs"
+"Assets/Scripts/ResumeState.cs"
+"Assets/Scripts/SelectedTool.cs"
+"Assets/Scripts/SelectTitle.cs"
+"Assets/Scripts/SidebarController.cs"
+"Assets/Scripts/stateLib.cs"
+"Assets/Scripts/stringLib.cs"
+"Assets/Scripts/Submenu.cs"
+"Assets/Scripts/TextColoration.cs"
+"Assets/Scripts/TimeController.cs"
+"Assets/Scripts/TimeDisplayController.cs"
+"Assets/Scripts/TitleController.cs"
+"Assets/Scripts/ToolFactory.cs"
+"Assets/Scripts/ToolManager.cs"
+"Assets/Scripts/Tools.cs"
+"Assets/Scripts/TransitionController.cs"
+"Assets/Scripts/VariableColor.cs"
+"Assets/Scripts/warper.cs"
+"Assets/Scripts/WebHelper.cs"
+"Assets/Scripts/XMLChecker.cs"
+"Assets/Scripts/XMLParser.cs"
+"Assets/Scripts/XMLReader.cs"
+"Assets/ToggleTool.cs"
+
+-----CompilerOutput:-stdout--exitcode: 1--compilationhadfailure: True--outfile: Temp/Assembly-CSharp.dll
+Microsoft (R) Visual C# Compiler version 2.9.1.65535 (9d34608e)
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+error CS2001: Source file '/home/ibrahim/Desktop/RobotON/Assets/ToggleTool.cs' could not be found.
+-----CompilerOutput:-stderr----------
+-----EndCompilerOutput---------------
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp.dll
+Microsoft (R) Visual C# Compiler version 2.9.1.65535 (9d34608e)
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+error CS2001: Source file '/home/ibrahim/Desktop/RobotON/Assets/ToggleTool.cs' could not be found.
+Validating Project structure ... 0.028728 seconds.
+Refresh: detecting if any assets need to be imported or removed ...
+
+Hashing assets (54 files)... 0.061 seconds
+  file read: 0.059 seconds (0.778 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.058 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.001 seconds
+----- Compute hash(es) for 54 asset(s).
+
+*** assets/scripts/toggletool.cs replaces assets/toggletool.cs for guid e1feac9961186a44bb0505e21d197e14 
+Refresh: trashing asset d3bcd46b47fbb824bb5c366d5aa9ecda
+
+Hashing assets (122 files)... 0.051 seconds
+  file read: 0.010 seconds (39.515 MB)
+  wait for write: 0.022 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.001 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.047 seconds
+Updating Assets/Progression.unity - GUID: 52603c2c4ca178240b3d3f6f7a17d9df...
+ done. [Time: 76.634620 ms] 
+Updating Assets/Cinematic.unity - GUID: 8f4da42722c0cec4581c1fd86a834976...
+ done. [Time: 11.680442 ms] 
+Updating Assets/newgame.unity - GUID: 9abd8467a13e13148bf7370789937b0b...
+ done. [Time: 1.983276 ms] 
+Updating Assets/TitleMenu.unity - GUID: c31e53013458d9444936ebccb9bcbb0f...
+ done. [Time: 2.066515 ms] 
+Updating Assets/MainMenu.unity - GUID: eedbf13a456cd2e4d807f9f8bfb5fab9...
+ done. [Time: 2.087971 ms] 
+Updating Assets/StreamingAssets/onleveldata/Ending.txt - GUID: 151634585f694c74a9da56dce5b1cc90...
+./Editor/Platform/Linux/TempStubs.cpp:PlatformImageForIconForExtension
+ done. [Time: 2.783310 ms] 
+Updating Assets/StreamingAssets/onleveldata/tutorial0.xml - GUID: 1cf5c0c7dc2f4c640bbb9b803c8ea01c...
+./Editor/Platform/Linux/TempStubs.cpp:PlatformImageForIconForExtension
+ done. [Time: 2.236306 ms] 
+Updating Assets/StreamingAssets/onleveldata/EndingBug.txt - GUID: 2c212753c23f0a54cab6415cf6f32121...
+./Editor/Platform/Linux/TempStubs.cpp:PlatformImageForIconForExtension
+ done. [Time: 2.247707 ms] 
+Updating Assets/Resources/Sprites/Timer - GUID: 2e0804300c4f9df4dbbe46e3da06f964...
+ done. [Time: 2.119365 ms] 
+Updating Assets/StreamingAssets/onleveldata/credits.txt - GUID: 54a16752016670a4f90e48c6586bafa3...
+./Editor/Platform/Linux/TempStubs.cpp:PlatformImageForIconForExtension
+ done. [Time: 2.161163 ms] 
+Updating Assets/StreamingAssets/onleveldata/level0-1.xml - GUID: 7c7fa192f67952f4ca17ebd91b02f9db...
+./Editor/Platform/Linux/TempStubs.cpp:PlatformImageForIconForExtension
+ done. [Time: 2.128223 ms] 
+Updating Assets/StreamingAssets/onleveldata/level0-2.xml - GUID: 85702f4accceab04794f50a4f17ca4c5...
+./Editor/Platform/Linux/TempStubs.cpp:PlatformImageForIconForExtension
+ done. [Time: 2.175253 ms] 
+Updating Assets/Resources/Sprites/Spark - GUID: 9043f5d1b5d3c984b83f156b6dd59f65...
+ done. [Time: 2.105777 ms] 
+Updating Assets/Resources/Sprites/icons - GUID: c9c6a3b224224064090045d99901f180...
+ done. [Time: 2.024761 ms] 
+Updating Assets/StreamingAssets/onleveldata/level1-2b.xml - GUID: d6dc14ab089b1e64299332914b015294...
+./Editor/Platform/Linux/TempStubs.cpp:PlatformImageForIconForExtension
+ done. [Time: 1.993180 ms] 
+Updating Assets/StreamingAssets/onleveldata/level0.xml - GUID: e2f7e1e29b5318045bcd927c93baa178...
+./Editor/Platform/Linux/TempStubs.cpp:PlatformImageForIconForExtension
+ done. [Time: 3.449107 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace - GUID: 915c51b3f48495d40b18fda9fd9adf0e...
+ done. [Time: 2.592181 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1 - GUID: 920e191fd80d71645bbdb80883c3afbe...
+ done. [Time: 2.050138 ms] 
+Updating Assets/Scripts/WebHelper.cs - GUID: 03d3415a69d3ef849a3eaf9b44cc1d34...
+ done. [Time: 29.218142 ms] 
+Updating Assets/Scripts/beacon.cs - GUID: 04615dec72044934f9e32febd61672b8...
+ done. [Time: 4.792734 ms] 
+Updating Assets/Scripts/DatabaseHelperV2.cs - GUID: 0eca0a471dd32a64cb2b36fec8c86eda...
+ done. [Time: 4.134556 ms] 
+Updating Assets/Scripts/DemoBotControl.cs - GUID: 1f5f655dbaead4e43b294c1fa06385ce...
+ done. [Time: 4.958084 ms] 
+Updating Assets/Scripts/GameController.cs - GUID: 1f94ee837fdfbf244be6c223f807cea7...
+ done. [Time: 8.867813 ms] 
+Updating Assets/Scripts/ScoreText.cs - GUID: 23d2116dc640238428b26ed021157174...
+ done. [Time: 3.149413 ms] 
+Updating Assets/Scripts/SidebarController.cs - GUID: 2e3d8fc711251564e9942a822f5827dc...
+ done. [Time: 6.009946 ms] 
+Updating Assets/Scripts/warper.cs - GUID: 34cad2238fec56343b188b7e88f6120f...
+ done. [Time: 3.993226 ms] 
+Updating Assets/Scripts/TransitionController.cs - GUID: 393fb37d3b4a5054e87e9984624953b2...
+ done. [Time: 8.037475 ms] 
+Updating Assets/Scripts/CorrectComment.cs - GUID: 3a8b49d61b7e64e4bb5bbb9560e88542...
+ done. [Time: 5.924011 ms] 
+Updating Assets/Scripts/SelectedTool.cs - GUID: 438024e6829ba8c4e8f2f1597ccd356f...
+ done. [Time: 10.325877 ms] 
+Updating Assets/Scripts/GlobalState.cs - GUID: 44c28637272daa54a82c7a7c4f256726...
+ done. [Time: 3.332130 ms] 
+Updating Assets/Scripts/LevelFactory.cs - GUID: 4759e3890f9d93248b647b9c0cc6dd49...
+ done. [Time: 5.293801 ms] 
+Updating Assets/Scripts/CharacterStats.cs - GUID: 494cbf0493d1576479dd7e976058a484...
+ done. [Time: 3.613322 ms] 
+Updating Assets/Scripts/EnergyController.cs - GUID: 49bb4594c96dccc49b53a4352d96f9bc...
+ done. [Time: 8.124491 ms] 
+Updating Assets/Scripts/projectile2.cs - GUID: 4dcd7ff6c50dc5248943ae8e6a7f9632...
+ done. [Time: 3.855483 ms] 
+Updating Assets/Scripts/stateLib.cs - GUID: 541523e4c4b322e45a1e563caa3c571c...
+ done. [Time: 4.315565 ms] 
+Updating Assets/Scripts/CharacterSelect.cs - GUID: 5d0f73cb1e7942147bfb5889fb938f35...
+ done. [Time: 4.155494 ms] 
+Updating Assets/Scripts/OldMenu.cs - GUID: 6035f53e073e9354e83d50988e99781d...
+ done. [Time: 22.686253 ms] 
+Updating Assets/Scripts/Cinematic.cs - GUID: 6248fdf6673852d489e238f7914da58a...
+ done. [Time: 11.810866 ms] 
+Updating Assets/Scripts/GenericBug.cs - GUID: 625997dc82ffe094f9604e2fa62c8faf...
+ done. [Time: 3.708657 ms] 
+Updating Assets/Scripts/TitleController.cs - GUID: 68e094143e4d3a74ba8fa6520b2d7971...
+ done. [Time: 4.700566 ms] 
+Updating Assets/Scripts/ProgressionPanel.cs - GUID: 6c296b622685f6d4b9b25d17ffe239a9...
+ done. [Time: 3.948330 ms] 
+Updating Assets/Scripts/hero2Controller.cs - GUID: 6e0a3c65d9a1c11489c911f3dad5a14e...
+ done. [Time: 11.472881 ms] 
+Updating Assets/Scripts/CorrectUncomment.cs - GUID: 7b1a1613e4d856c4ea891c06203b292c...
+ done. [Time: 6.062631 ms] 
+Updating Assets/Scripts/SparkController.cs - GUID: 81515b444cc5aae4ba9f01701ebf491a...
+ done. [Time: 3.299590 ms] 
+Updating Assets/Scripts/Output.cs - GUID: 9027f66911f59774280d6f5f43105119...
+ done. [Time: 4.642237 ms] 
+Updating Assets/Scripts/stringLib.cs - GUID: 959f046adc48e55428d977d432d119d2...
+ done. [Time: 11.069132 ms] 
+Updating Assets/Editor/WebGLBuilder.cs - GUID: 9e260df911d0c814294d83ed311ad0f5...
+ done. [Time: 4.054648 ms] 
+Updating Assets/Scripts/rename.cs - GUID: b17cc9435e53b2c428f970fe21f888dc...
+ done. [Time: 6.855472 ms] 
+Updating Assets/Scripts/StatLib.cs - GUID: bd4e320054fe7da45af0286ab7a03a2b...
+ done. [Time: 2.857319 ms] 
+Updating Assets/Scripts/FireButton.cs - GUID: cecffef8ffb3c254ab694dbb81c4039a...
+ done. [Time: 3.704084 ms] 
+Updating Assets/Scripts/Logger.cs - GUID: d8243601bbfa5824bae6c09520fed10a...
+ done. [Time: 8.542366 ms] 
+Updating Assets/Scripts/question.cs - GUID: d87e358c45a6bb044955147502d3a78d...
+ done. [Time: 8.050135 ms] 
+Updating Assets/Scripts/DialogController.cs - GUID: db0d634dd23f5d54b9f2e1ba0513f1c0...
+ done. [Time: 8.105550 ms] 
+Updating Assets/Scripts/ToggleTool.cs - GUID: e1feac9961186a44bb0505e21d197e14...
+ done. [Time: 3.074523 ms] 
+Updating Assets/Scripts/printer.cs - GUID: e29f0861cce81a448b84d4485b07dfd9...
+ done. [Time: 4.387384 ms] 
+Updating Assets/Scripts/GamePicker.cs - GUID: e7ac6f40c7568d546a213b5801e8cc4a...
+ done. [Time: 4.339241 ms] 
+Updating Assets/Scripts/Breakpoint.cs - GUID: f9d969ce6056e1c46a97cc62185d2d21...
+ done. [Time: 3.537246 ms] 
+AssetDatabase: script compilation time: 0.023754s
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+Assets/Scripts/BackgroundController.cs(9,20): warning CS0108: 'BackgroundController.light' hides inherited member 'Component.light'. Use the new keyword if hiding was intended.
+Assets/Scripts/TimeDisplayController.cs(10,17): warning CS0108: 'TimeDisplayController.audio' hides inherited member 'Component.audio'. Use the new keyword if hiding was intended.
+Assets/Scripts/rename.cs(23,16): warning CS0108: 'rename.correct' hides inherited member 'Tools.correct'. Use the new keyword if hiding was intended.
+Assets/Scripts/Menu.cs(160,4): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(194,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(202,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(205,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(213,4): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(224,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(230,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(238,4): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(250,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(258,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(302,4): warning CS0162: Unreachable code detected
+Assets/Scripts/question.cs(179,13): warning CS0219: The variable 'sOpenCommentSymbol' is assigned but its value is never used
+Assets/Scripts/question.cs(180,13): warning CS0219: The variable 'sCloseCommentSymbol' is assigned but its value is never used
+Assets/Scripts/ToolFactory.cs(187,26): warning CS0168: The variable 'ex' is declared but never used
+Assets/Scripts/LevelGenerator.cs(186,13): warning CS0219: The variable 'row' is assigned but its value is never used
+Assets/Scripts/LevelGenerator.cs(186,22): warning CS0219: The variable 'col' is assigned but its value is never used
+Assets/Scripts/ActionFactory.cs(40,12): warning CS0649: Field 'DialogFactory.ans' is never assigned to, and will always have its default value null
+Assets/Scripts/Camera2.cs(11,14): warning CS0414: The field 'Camera2.trackmax' is assigned but its value is never used
+Assets/Scripts/Comic.cs(28,17): warning CS0414: The field 'Comic.credtext' is assigned but its value is never used
+Assets/Scripts/SelectedTool.cs(42,18): warning CS0414: The field 'SelectedTool.isBugActive' is assigned but its value is never used
+Assets/Scripts/Camera2.cs(10,14): warning CS0414: The field 'Camera2.laststate' is assigned but its value is never used
+Assets/Scripts/LevelGenerator.cs(47,18): warning CS0414: The field 'LevelGenerator.winning' is assigned but its value is never used
+Assets/Scripts/rename.cs(41,15): warning CS0414: The field 'rename.isChecked' is assigned but its value is never used
+Assets/Scripts/rename.cs(34,15): warning CS0414: The field 'rename.colorOnce' is assigned but its value is never used
+Assets/Scripts/rename.cs(40,15): warning CS0414: The field 'rename.hasHappened' is assigned but its value is never used
+Assets/Scripts/ActionFactory.cs(39,9): warning CS0414: The field 'DialogFactory.order' is assigned but its value is never used
+Assets/Scripts/FireButton.cs(14,10): warning CS0414: The field 'FireButton.mouseOver' is assigned but its value is never used
+Assets/Scripts/TransitionController.cs(18,10): warning CS0414: The field 'TransitionController.started' is assigned but its value is never used
+Assets/Scripts/beacon.cs(30,6): warning CS0414: The field 'beacon.flashCounter' is assigned but its value is never used
+Reloading assemblies after forced synchronous recompile.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.993 seconds
+Platform modules already initialized, skipping
+Unloading 122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 29.8 MB.
+System memory in use after: 29.8 MB.
+
+Unloading 131 unused Assets to reduce memory usage. Loaded Objects now: 1504.
+Total: 3.811474 ms (FindLiveObjects: 0.386315 ms CreateObjectMapping: 0.055285 ms MarkObjects: 2.874989 ms  DeleteObjects: 0.489708 ms)
+
+Refreshing native plugins compatible for Editor in 4.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Refresh: detecting if any assets need to be imported or removed ...
+
+Hashing assets (124 files)... 0.048 seconds
+  file read: 0.010 seconds (39.615 MB)
+  wait for write: 0.020 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.046 seconds
+----- Compute hash(es) for 124 asset(s).
+
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00010.png - GUID: 00a4f8842354823459e9d4bb94f02e2f...
+ done. [Time: 181.776193 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00009.png - GUID: 01ae2e1a720eb8c439c7e80fc502a647...
+ done. [Time: 18.196214 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00041.png - GUID: 0563cdd755868684da622c291ba25caf...
+ done. [Time: 13.022907 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00065.png - GUID: 057b2880413b61644bab475c35f138a5...
+ done. [Time: 12.972761 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00040.png - GUID: 08af0ccf1782d614da752fbd7ede6b71...
+ done. [Time: 13.091987 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00005.png - GUID: 0b89e80a0428fe04785b71e13bda5fa9...
+ done. [Time: 12.738585 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00061.png - GUID: 0c276510dcbb41d4aa338e5400b067b3...
+ done. [Time: 12.882235 ms] 
+Updating Assets/Resources/Sprites/icons/uncommenter.png - GUID: 1051938a420df344d9f9aec9c77c97c6...
+ done. [Time: 15.010218 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00001.png - GUID: 106e4b45a8752d24ea7b980aee6b2788...
+ done. [Time: 12.749536 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00033.png - GUID: 140a2a6ba134fcd45a0bfa15ae81ab84...
+ done. [Time: 12.690168 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00048.png - GUID: 14f3680afbf1b8a4882c509340be2119...
+ done. [Time: 12.674338 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00063.png - GUID: 1584db52e91ca1f4b9e8abaf689f9a2d...
+ done. [Time: 12.674458 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00019.png - GUID: 16ff70695d1188c4da6394a44bd46a20...
+ done. [Time: 13.686938 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00046.png - GUID: 17fca5abf44d6774da1842a3ac4965fb...
+ done. [Time: 12.674400 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00058.png - GUID: 184518a475873c4468d1a48c541b86b1...
+ done. [Time: 12.578782 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00062.png - GUID: 18e084db94273014daf36e78bdc162ac...
+ done. [Time: 12.779692 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00043.png - GUID: 21bbb801d9ae41541bd1f447d98da7b2...
+ done. [Time: 12.831146 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00009.png - GUID: 235111c0cefe28e4bb3a3a835b02716d...
+ done. [Time: 14.965455 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00067.png - GUID: 2558ce9a5e33a3d4e82021f8b3f96543...
+ done. [Time: 12.728890 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00006.png - GUID: 25feb8ec0793626428495c869381e766...
+ done. [Time: 12.613549 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00024.png - GUID: 27ce15aaecc65c54d9d9c362acd60a35...
+ done. [Time: 12.488938 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00031.png - GUID: 2e1d980a50ccf0e4daa8bf9a6f75383e...
+ done. [Time: 12.830837 ms] 
+Updating Assets/Resources/Sprites/icons/printer.png - GUID: 2eb1e8fea481c7c4195c6c4705572e63...
+ done. [Time: 15.302699 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00044.png - GUID: 307ce2cd4b58cec4380c4fed123a1367...
+ done. [Time: 12.792063 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00060.png - GUID: 310b699312f0f164b887a2d0c3766281...
+ done. [Time: 12.620882 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00008.png - GUID: 31bf55dcb9249864bb24a7a44fcb6967...
+ done. [Time: 14.237061 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00053.png - GUID: 33da2f5f4aeb80b4ca859f510b1def32...
+ done. [Time: 12.654027 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00036.png - GUID: 36e47d6a632e7f849871c3feb7028359...
+ done. [Time: 12.586882 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00021.png - GUID: 383950893bb1cdd44be51d10a2257b5b...
+ done. [Time: 12.584363 ms] 
+Updating Assets/Resources/Sprites/icons/renamer.png - GUID: 38604c742cc90154eaa558d2c74bc20f...
+ done. [Time: 15.265095 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00057.png - GUID: 398f0a2af59ab3e408801d589eddeb05...
+ done. [Time: 12.625527 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00011.png - GUID: 4072f990e722b8040984e776b96b0ff6...
+ done. [Time: 14.969834 ms] 
+Updating Assets/Resources/Sprites/icons/question.png - GUID: 427d96ea10e149448871d95dfce98e7f...
+ done. [Time: 15.067695 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00068.png - GUID: 42a96ed72b864cb41b252036654e3edb...
+ done. [Time: 12.555612 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00017.png - GUID: 42e735ed64055494ab408460f459a971...
+ done. [Time: 13.435522 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00027.png - GUID: 4aefe858eacfb6f43a93710d4e6c4f6c...
+ done. [Time: 12.663559 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00012.png - GUID: 4b2233d8d988f1341af165eed9bcc5af...
+ done. [Time: 12.702016 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00066.png - GUID: 4cdf7d7d22d9dc940972136db8f20580...
+ done. [Time: 12.733334 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00000.png - GUID: 4ee5a2030fedcec46b71e574883beb9d...
+ done. [Time: 12.545539 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00038.png - GUID: 512ae1fa398e7544d82ca37871c18175...
+ done. [Time: 12.877931 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00015.png - GUID: 539f6254548d7eb47ad0dfef2d874ca3...
+ done. [Time: 12.640253 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00069.png - GUID: 54b27f2c10d6aeb4b9d8b066ae716440...
+ done. [Time: 12.817415 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00054.png - GUID: 56cb7bf28b854c241a57eda7c8a7ec42...
+ done. [Time: 12.659017 ms] 
+Updating Assets/Resources/Sprites/icons/bugfixer.png - GUID: 59259033ad079ac48984c6fd0d1cafb3...
+ done. [Time: 15.151057 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00039.png - GUID: 5c6ad46790051e0418b98c076ce405bc...
+ done. [Time: 12.754654 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00059.png - GUID: 5e2d37796c83f9f4e82926bb6788abc6...
+ done. [Time: 12.735442 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00071.png - GUID: 5fa574d3ed1079b4ebb29f6fc898105f...
+ done. [Time: 12.703784 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00020.png - GUID: 5fe2795d328c0fe4cb2d12537c1f76e4...
+ done. [Time: 12.571990 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00055.png - GUID: 607c68ab70dfc194588737c7f2fc1fcb...
+ done. [Time: 12.611063 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00052.png - GUID: 629b629afa53fd7478e597315e5d9c93...
+ done. [Time: 12.674468 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00035.png - GUID: 636fbcdfc6ebb954098eed1ed9ef4cf1...
+ done. [Time: 12.599375 ms] 
+Updating Assets/Resources/Sprites/icons/comment.png - GUID: 671a5bb97167ba847b51c3b8f77054e1...
+ done. [Time: 15.158888 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00008.png - GUID: 6741ebaddf7e6084f89dc3de5af5d0fa...
+ done. [Time: 12.649426 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00010.png - GUID: 6a6ddb26f8bee534eab1c2d2722f0cad...
+ done. [Time: 12.603167 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00007.png - GUID: 6c3e579829660344794476792ef9f7c3...
+ done. [Time: 12.657432 ms] 
+Updating Assets/Resources/Sprites/icons/breakpointer.png - GUID: 712ead787789cbd44aa1bc025470d1ba...
+ done. [Time: 14.869523 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00014.png - GUID: 71a9f4bc9f0acd849a3be073667039cd...
+ done. [Time: 12.555251 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00003.png - GUID: 7fd8a583991478045958f5b7684a5e5b...
+ done. [Time: 12.592766 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00005.png - GUID: 82223e508875da94587eb48888f7cb82...
+ done. [Time: 13.076411 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00042.png - GUID: 82410dee3ec5c2943ac220c417a215f3...
+ done. [Time: 12.795865 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00019.png - GUID: 82ffafd3e8376b247ba23d49c3324e11...
+ done. [Time: 12.574684 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00020.png - GUID: 85a78d5f321fcc64a9341245fd0463bd...
+ done. [Time: 13.587906 ms] 
+Updating Assets/Resources/Sprites/icons/beacon.png - GUID: 876e54f9606b0ca44a97881b2747f328...
+ done. [Time: 15.089422 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00023.png - GUID: 893efd0a4e751a343ac7b221215cca3f...
+ done. [Time: 12.689121 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00016.png - GUID: 8d80ab3d3ebea6347a2415b14eecfc81...
+ done. [Time: 13.429097 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00028.png - GUID: 8f675b22c6c1c6346b7857968bd63ef5...
+ done. [Time: 12.758519 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00006.png - GUID: 9e8b0294bcf776746b6328b15965c51b...
+ done. [Time: 13.393507 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00056.png - GUID: 9ed728f1a21c253438308dc113767d68...
+ done. [Time: 12.641156 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00034.png - GUID: a4dd6f85d1056b0428c796e1d2cba739...
+ done. [Time: 12.559141 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00016.png - GUID: a66c8ba925bfdca4aa7b3bf12a1420f0...
+ done. [Time: 12.576562 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00015.png - GUID: a80574e90bd410b4d9cadde52a5cd77f...
+ done. [Time: 16.006441 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00003.png - GUID: a943e3686eb1cf043a9a99bac87235eb...
+ done. [Time: 13.106043 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00004.png - GUID: aae23c0a05ae33443b32a2ef22410d31...
+ done. [Time: 12.887013 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00000.png - GUID: ab34d76be37551a4e8e10bc2bae3c879...
+ done. [Time: 10.899488 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00014.png - GUID: ab9a6f92ff6b48d45890bb9f6a37f9b5...
+ done. [Time: 14.986234 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00002.png - GUID: ac511e5a60a6f3b49bf5f731fe0ae4cc...
+ done. [Time: 11.920449 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00001.png - GUID: aee5050f5640084438155b67453b9625...
+ done. [Time: 12.034025 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00012.png - GUID: b753206bc8de735438912cdaf56ac1f3...
+ done. [Time: 15.329602 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00037.png - GUID: b83484228346d9148a7343032c1a5ef3...
+ done. [Time: 13.149975 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00013.png - GUID: b93075981332c51478e03b2a6a9a5f97...
+ done. [Time: 14.681622 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00002.png - GUID: c1414a2d370f0a7418960ce77ce90058...
+ done. [Time: 14.630917 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00070.png - GUID: c16dcfbc5aba7b2498636efae9649db9...
+ done. [Time: 13.335940 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00045.png - GUID: c4df8f5edcdbb184b8922bcc665b4020...
+ done. [Time: 13.450075 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00004.png - GUID: c630c1f22871d9849ae281492bc93d98...
+ done. [Time: 14.372752 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00011.png - GUID: c73063966d3082d4fab8559599db3fb8...
+ done. [Time: 15.086396 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00022.png - GUID: c7c8d525a8962f543b7035599b647aea...
+ done. [Time: 13.226807 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00064.png - GUID: cab5cd9e0902547448faa764fd2a6a4b...
+ done. [Time: 13.043273 ms] 
+Updating Assets/Resources/Sprites/icons/warper.png - GUID: cb19bf60c4876004994444c3f1ad7b17...
+ done. [Time: 15.121042 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00050.png - GUID: cd42476ecfaf33f4dadf5f11a467f7b1...
+ done. [Time: 13.027522 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00018.png - GUID: ce54ef58f6c25794ba5ddc2724b5557c...
+ done. [Time: 13.013204 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00025.png - GUID: d23147c2a9392c148ba413b46f7d78f1...
+ done. [Time: 13.032876 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00018.png - GUID: d3e1e3ecbff813e40a3ea8049a15c11e...
+ done. [Time: 13.996405 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00032.png - GUID: d40d08228723d494db52c03e0bca40a9...
+ done. [Time: 13.147486 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00021.png - GUID: d897178da54942743b35000f2f10c9c7...
+ done. [Time: 14.594632 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00029.png - GUID: ddee93f084da0cb449dc4b5c598df7c7...
+ done. [Time: 13.105678 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00030.png - GUID: e0219c6ffab8bf044a1b5a8be477757c...
+ done. [Time: 13.391754 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00047.png - GUID: e3196e4e2f9534f41a6af309cb7cab57...
+ done. [Time: 13.178868 ms] 
+Updating Assets/Resources/Sprites/Spark/Comp 1/Spark_00007.png - GUID: e8451539dae5dcc418545f5431b5b3fd...
+ done. [Time: 14.386958 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00049.png - GUID: e8fbfda8176d6a14a97303054bc7e64e...
+ done. [Time: 13.070558 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00026.png - GUID: ed135889388953047a0a9bb279c4c23b...
+ done. [Time: 12.875794 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00051.png - GUID: f6abe6754df80cf43ba8399f11fa70bd...
+ done. [Time: 14.316609 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00017.png - GUID: f910d1a311ef57c4da702fd25caa0376...
+ done. [Time: 14.173580 ms] 
+Updating Assets/Resources/Sprites/Timer/TimeFace/TimeFace_00013.png - GUID: fe6a53433af892747bdff3ee6e69db5c...
+ done. [Time: 13.298993 ms] 
+Updating Assets/Animations/BoxAnims/idle.anim - GUID: 101c0e8c7c6412a44ad83b068b9634b2...
+ done. [Time: 46.501121 ms] 
+Updating Assets/Animations/Sidebar/closing.anim - GUID: 14b3c9f8718086d448a69469468ed908...
+ done. [Time: 28.384494 ms] 
+Updating Assets/Animations/StarAnim/timeSustain.anim - GUID: 2fef1f234ad3d4d4f9cb2b2e0f2d304a...
+ done. [Time: 2.230428 ms] 
+Updating Assets/Animations/Sidebar/energyOpen.anim - GUID: 3656c9288e502a34182560de473123ca...
+ done. [Time: 9.849901 ms] 
+Updating Assets/Animations/Sidebar/opening.anim - GUID: 52eebc581eb69e2408ef515ec6875318...
+ done. [Time: 8.545687 ms] 
+Updating Assets/Animations/StarAnim/timeAnimIn.anim - GUID: 6240880ceef06e64ba74b1102f1c6805...
+ done. [Time: 2.297465 ms] 
+Updating Assets/Animations/Sidebar/close.anim - GUID: 6faa8227321fa1745a196f8421cd905b...
+ done. [Time: 12.390762 ms] 
+Updating Assets/Animations/Sidebar/energyClosing.anim - GUID: 71c03af0ff5dd9a469bd48b4368096bb...
+ done. [Time: 11.687280 ms] 
+Updating Assets/Animations/animate.anim - GUID: a4c8418a1a60b774e9290e47882cd872...
+ done. [Time: 2.108869 ms] 
+Updating Assets/Animations/Sidebar/energyClosed.anim - GUID: ba65d423430bb9c4eb0c22724d38bb81...
+ done. [Time: 2.235454 ms] 
+Updating Assets/Animations/StarAnim/timeHidden.anim - GUID: d6970b7b734c95145883d337ee29c066...
+ done. [Time: 2.213941 ms] 
+Updating Assets/Animations/Sidebar/open.anim - GUID: ee96038d86d685c408d4194d303d5695...
+ done. [Time: 4.869641 ms] 
+Updating Assets/Animations/Sidebar/energyOpening.anim - GUID: f94da2a5c5620644fb0483be4a7a6def...
+ done. [Time: 7.849692 ms] 
+Updating Assets/Animations/MouseSpark.controller - GUID: 16d834a3312170143b00f186f35fc696...
+ done. [Time: 20.644674 ms] 
+Updating Assets/Animations/Sidebar/Energy.controller - GUID: a956b42fff3469447b21d824152cda58...
+ done. [Time: 14.349676 ms] 
+Updating Assets/Animations/StarAnim/Image.controller - GUID: e7ea3e3c5e071444e943b22fb38e6575...
+ done. [Time: 2.361213 ms] 
+Updating ProjectSettings/ProjectSettings.asset - GUID: 00000000000000004000000000000000...
+ done. [Time: 17.469538 ms] 
+Updating ProjectSettings/UnityConnectSettings.asset - GUID: 0000000000000000a100000000000000...
+ done. [Time: 5.239858 ms] 
+Updating ProjectSettings/EditorBuildSettings.asset - GUID: 0000000000000000b000000000000000...
+ done. [Time: 14.153261 ms] 
+Updating Assets/Plugins/serverFunction.jslib - GUID: ce561bf0f7abc2c44b29a139cf91f502...
+ done. [Time: 3.144546 ms] 
+Updating Assets/Resources/Prefabs/bug.prefab - GUID: 80502c70a781f02409cd04bda0d02521...
+ done. [Time: 24.942009 ms] 
+Updating Assets/Resources/Prefabs/Spark.prefab - GUID: 8153a3c1e3f99d14b89212034f3dc3e0...
+ done. [Time: 41.719514 ms] 
+Updating Assets/Resources/Video/RoboBugEnding.mp4 - GUID: 3d8d69cdf6896c64a85a4e23d8751d90...
+Error while reading movie: /home/ibrahim/Desktop/RobotON/Assets/Resources/Video/RoboBugEnding.mp4
+VideoClip import error for Assets/Resources/Video/RoboBugEnding.mp4
+ done. [Time: 3.018157 ms] 
+Updating Assets/Resources/Video/RobotONEnding.mp4 - GUID: f30bba3ce65f41e4899417b28017066d...
+Error while reading movie: /home/ibrahim/Desktop/RobotON/Assets/Resources/Video/RobotONEnding.mp4
+VideoClip import error for Assets/Resources/Video/RobotONEnding.mp4
+ done. [Time: 2.727676 ms] 
+Unloading 157 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 33.0 MB.
+System memory in use after: 32.8 MB.
+
+Unloading 174 unused Assets to reduce memory usage. Loaded Objects now: 1505.
+Total: 4.324563 ms (FindLiveObjects: 0.446373 ms CreateObjectMapping: 0.073932 ms MarkObjects: 3.318150 ms  DeleteObjects: 0.480987 ms)
+
+Refreshing native plugins compatible for Editor in 4.02 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Refresh Completed time: 2.110754s
+	Asset Scan time: 0.038579s
+	Asset Hashing: 0.048328s [39.6 MB, 819.705688 mb/s]
+	Asset Import (Scripting) time: 0.000000s (count: 0)
+	Post Processs Assets (Scripting) time: 0.000000s
+	Asset Rehashing: 0.000000s [0 B, 0.000000 mb/s]
+	Asset Import (Non Scripting) time: 1.864172s (count: 127)
+	Post Process Assets (Non Scripting) time: 0.034251s
+	Dependent Assets to Import Queue time: 0.001114s
+
+./Editor/Platform/Linux/UsbDevices.cpp:UsbDevicesQuery
+Warming cache for 3382 main assets: 0.013616 seconds elapsed
+Initializing Unity extensions:
+ '/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll'  GUID: 4ba2329b63d54f0187bcaa12486b1b0f
+UpdateMenuTitleForLanguage: 10
+Unloading 125 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 29.8 MB.
+System memory in use after: 29.8 MB.
+
+Unloading 127 unused Assets to reduce memory usage. Loaded Objects now: 1512.
+Total: 4.815484 ms (FindLiveObjects: 0.432737 ms CreateObjectMapping: 0.065337 ms MarkObjects: 4.095857 ms  DeleteObjects: 0.215824 ms)
+
+Refreshing native plugins compatible for Editor in 2.54 ms, found 0 plugins.
+Updating ProjectSettings/ProjectSettings.asset - GUID: 00000000000000004000000000000000...
+ done. [Time: 2.560817 ms] 
+Updating ProjectSettings/UnityConnectSettings.asset - GUID: 0000000000000000a100000000000000...
+ done. [Time: 2.031926 ms] 
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[ScriptCompilation] Recompiling all scripts because: Recompiling scripts for player build.
+BuildPlayer: start building target 20
+- Starting compile Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+- Starting compile Library/ScriptAssemblies/UnityEngine.UI.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.UI.dll
+- Starting compile Library/ScriptAssemblies/Unity.TextMeshPro.dll
+- Starting compile Library/ScriptAssemblies/Unity.Timeline.dll
+- Starting compile Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+- Starting compile Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll
+- Starting compile Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll
+- Finished compile Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+- Finished compile Library/ScriptAssemblies/Unity.Timeline.dll
+- Finished compile Library/ScriptAssemblies/Unity.TextMeshPro.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp.dll
+Assets/Scripts/rename.cs(23,16): warning CS0108: 'rename.correct' hides inherited member 'Tools.correct'. Use the new keyword if hiding was intended.
+Assets/Scripts/Menu.cs(160,4): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(194,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(202,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(205,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(213,4): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(224,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(230,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(238,4): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(250,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(258,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(302,4): warning CS0162: Unreachable code detected
+Assets/Scripts/question.cs(179,13): warning CS0219: The variable 'sOpenCommentSymbol' is assigned but its value is never used
+Assets/Scripts/question.cs(180,13): warning CS0219: The variable 'sCloseCommentSymbol' is assigned but its value is never used
+Assets/Scripts/ToolFactory.cs(187,26): warning CS0168: The variable 'ex' is declared but never used
+Assets/Scripts/LevelGenerator.cs(186,13): warning CS0219: The variable 'row' is assigned but its value is never used
+Assets/Scripts/LevelGenerator.cs(186,22): warning CS0219: The variable 'col' is assigned but its value is never used
+Assets/Scripts/ActionFactory.cs(40,12): warning CS0649: Field 'DialogFactory.ans' is never assigned to, and will always have its default value null
+Assets/Scripts/Camera2.cs(11,14): warning CS0414: The field 'Camera2.trackmax' is assigned but its value is never used
+Assets/Scripts/SelectedTool.cs(42,18): warning CS0414: The field 'SelectedTool.isBugActive' is assigned but its value is never used
+Assets/Scripts/Camera2.cs(10,14): warning CS0414: The field 'Camera2.laststate' is assigned but its value is never used
+Assets/Scripts/Comic.cs(28,17): warning CS0414: The field 'Comic.credtext' is assigned but its value is never used
+Assets/Scripts/rename.cs(40,15): warning CS0414: The field 'rename.hasHappened' is assigned but its value is never used
+Assets/Scripts/rename.cs(41,15): warning CS0414: The field 'rename.isChecked' is assigned but its value is never used
+Assets/Scripts/ActionFactory.cs(39,9): warning CS0414: The field 'DialogFactory.order' is assigned but its value is never used
+Assets/Scripts/LevelGenerator.cs(47,18): warning CS0414: The field 'LevelGenerator.winning' is assigned but its value is never used
+Assets/Scripts/FireButton.cs(14,10): warning CS0414: The field 'FireButton.mouseOver' is assigned but its value is never used
+Assets/Scripts/beacon.cs(30,6): warning CS0414: The field 'beacon.flashCounter' is assigned but its value is never used
+Assets/Scripts/rename.cs(34,15): warning CS0414: The field 'rename.colorOnce' is assigned but its value is never used
+Assets/Scripts/TransitionController.cs(18,10): warning CS0414: The field 'TransitionController.started' is assigned but its value is never used
+Library/PackageCache/com.unity.analytics@3.3.2/DataPrivacy/DataPrivacyButton.cs(28,13): warning CS0618: 'Application.ExternalEval(string)' is obsolete: 'Application.ExternalEval is deprecated. See https://docs.unity3d.com/Manual/webgl-interactingwithbrowserscripting.html for alternatives.'
+DisplayProgressbar: Building Player
+Opening scene 'Assets/TitleScene.unity'
+Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/TitleScene.unity'
+	Deserialize:            87.839 ms
+	Integration:            844.925 ms
+	Integration of assets:  0.566 ms
+	Thread Wait Time:       13.315 ms
+	Total Operation Time:   946.645 ms
+System memory in use before: 36.6 MB.
+System memory in use after: 36.3 MB.
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 1656.
+Total: 9.486292 ms (FindLiveObjects: 0.387357 ms CreateObjectMapping: 0.069273 ms MarkObjects: 8.347456 ms  DeleteObjects: 0.677069 ms)
+
+Script attached to 'VideoController' in scene 'Assets/TitleScene.unity' is missing or no valid script is attached.
+ 
+(Filename: ./Runtime/Mono/ManagedMonoBehaviourRef.cpp Line: 181)
+
+Opening scene 'Assets/TitleMenu.unity'
+Unloading 1378 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/TitleMenu.unity'
+	Deserialize:            5.643 ms
+	Integration:            387.740 ms
+	Integration of assets:  0.009 ms
+	Thread Wait Time:       14.631 ms
+	Total Operation Time:   408.023 ms
+System memory in use before: 0.65 GB.
+System memory in use after: 127.9 MB.
+
+Unloading 3088 unused Assets to reduce memory usage. Loaded Objects now: 1901.
+Total: 22.835025 ms (FindLiveObjects: 0.727880 ms CreateObjectMapping: 0.235491 ms MarkObjects: 8.276476 ms  DeleteObjects: 13.589586 ms)
+
+Opening scene 'Assets/MainMenu.unity'
+Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/MainMenu.unity'
+	Deserialize:            15.666 ms
+	Integration:            103.214 ms
+	Integration of assets:  0.110 ms
+	Thread Wait Time:       14.765 ms
+	Total Operation Time:   133.754 ms
+System memory in use before: 132.7 MB.
+System memory in use after: 45.5 MB.
+
+Unloading 189 unused Assets to reduce memory usage. Loaded Objects now: 1901.
+Total: 21.088049 ms (FindLiveObjects: 0.457260 ms CreateObjectMapping: 0.073714 ms MarkObjects: 7.443277 ms  DeleteObjects: 13.108687 ms)
+
+Opening scene 'Assets/newgame.unity'
+LightmapEditorSettings: switching bake backend from 1 to 0.
+Unloading 28 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/newgame.unity'
+	Deserialize:            25.362 ms
+	Integration:            1331.211 ms
+	Integration of assets:  1.220 ms
+	Thread Wait Time:       15.295 ms
+	Total Operation Time:   1373.087 ms
+System memory in use before: 60.7 MB.
+System memory in use after: 53.5 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2098.
+Total: 10.710053 ms (FindLiveObjects: 0.549118 ms CreateObjectMapping: 0.085481 ms MarkObjects: 9.269751 ms  DeleteObjects: 0.799725 ms)
+
+Opening scene 'Assets/Cinematic.unity'
+Unloading 431 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Cinematic.unity'
+	Deserialize:            13.891 ms
+	Integration:            740.038 ms
+	Integration of assets:  0.094 ms
+	Thread Wait Time:       16.430 ms
+	Total Operation Time:   770.453 ms
+System memory in use before: 58.8 MB.
+System memory in use after: 45.0 MB.
+
+Unloading 557 unused Assets to reduce memory usage. Loaded Objects now: 1852.
+Total: 22.705997 ms (FindLiveObjects: 0.485425 ms CreateObjectMapping: 0.089480 ms MarkObjects: 8.123076 ms  DeleteObjects: 14.002973 ms)
+
+Opening scene 'Assets/CharacterSelect.unity'
+Unloading 232 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/CharacterSelect.unity'
+	Deserialize:            14.564 ms
+	Integration:            254.255 ms
+	Integration of assets:  0.087 ms
+	Thread Wait Time:       15.781 ms
+	Total Operation Time:   284.687 ms
+System memory in use before: 46.6 MB.
+System memory in use after: 44.0 MB.
+
+Unloading 176 unused Assets to reduce memory usage. Loaded Objects now: 1816.
+Total: 8.756403 ms (FindLiveObjects: 0.450796 ms CreateObjectMapping: 0.078657 ms MarkObjects: 7.587937 ms  DeleteObjects: 0.634078 ms)
+
+Opening scene 'Assets/IntroScene.unity'
+Unloading 86 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/IntroScene.unity'
+	Deserialize:            2.893 ms
+	Integration:            14.639 ms
+	Integration of assets:  0.058 ms
+	Thread Wait Time:       17.318 ms
+	Total Operation Time:   34.907 ms
+System memory in use before: 44.0 MB.
+System memory in use after: 41.6 MB.
+
+Unloading 135 unused Assets to reduce memory usage. Loaded Objects now: 1644.
+Total: 10.769604 ms (FindLiveObjects: 0.501086 ms CreateObjectMapping: 0.083225 ms MarkObjects: 9.432081 ms  DeleteObjects: 0.747428 ms)
+
+Opening scene 'Assets/Transition.unity'
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Transition.unity'
+	Deserialize:            9.010 ms
+	Integration:            5.888 ms
+	Integration of assets:  0.009 ms
+	Thread Wait Time:       11.198 ms
+	Total Operation Time:   26.104 ms
+System memory in use before: 41.4 MB.
+System memory in use after: 41.3 MB.
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1639.
+Total: 9.619679 ms (FindLiveObjects: 0.472946 ms CreateObjectMapping: 0.075627 ms MarkObjects: 9.018625 ms  DeleteObjects: 0.046801 ms)
+
+Opening scene 'Assets/Credits.unity'
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Credits.unity'
+	Deserialize:            8.548 ms
+	Integration:            103.697 ms
+	Integration of assets:  0.009 ms
+	Thread Wait Time:       11.575 ms
+	Total Operation Time:   123.830 ms
+System memory in use before: 43.0 MB.
+System memory in use after: 43.1 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1657.
+Total: 9.967982 ms (FindLiveObjects: 0.400021 ms CreateObjectMapping: 0.058077 ms MarkObjects: 9.480507 ms  DeleteObjects: 0.023798 ms)
+
+Opening scene 'Assets/TutorialDemo.unity'
+LightmapEditorSettings: switching bake backend from 1 to 0.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/TutorialDemo.unity'
+	Deserialize:            10.953 ms
+	Integration:            910.252 ms
+	Integration of assets:  1.083 ms
+	Thread Wait Time:       19.443 ms
+	Total Operation Time:   941.731 ms
+System memory in use before: 46.6 MB.
+System memory in use after: 41.7 MB.
+
+Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 1917.
+Total: 9.678111 ms (FindLiveObjects: 0.481882 ms CreateObjectMapping: 0.080223 ms MarkObjects: 8.846479 ms  DeleteObjects: 0.264040 ms)
+
+
+
+Mono dependencies included in the build
+Dependency assembly - System.Diagnostics.StackTrace.dll
+Dependency assembly - System.Globalization.Extensions.dll
+Dependency assembly - System.Runtime.Serialization.Xml.dll
+Dependency assembly - System.Xml.XPath.XDocument.dll
+Dependency assembly - netstandard.dll
+Dependency assembly - Mono.Security.dll
+Dependency assembly - System.ComponentModel.Composition.dll
+Dependency assembly - System.Configuration.dll
+Dependency assembly - System.Core.dll
+Dependency assembly - System.Data.dll
+Dependency assembly - System.Drawing.dll
+Dependency assembly - System.EnterpriseServices.dll
+Dependency assembly - System.IO.Compression.FileSystem.dll
+Dependency assembly - System.IO.Compression.dll
+Dependency assembly - System.Net.Http.dll
+Dependency assembly - System.Numerics.dll
+Dependency assembly - System.Runtime.Serialization.dll
+Dependency assembly - System.ServiceModel.Internals.dll
+Dependency assembly - System.Transactions.dll
+Dependency assembly - System.Xml.Linq.dll
+Dependency assembly - System.Xml.dll
+Dependency assembly - System.dll
+Dependency assembly - mscorlib.dll
+Dependency assembly - Assembly-CSharp-firstpass.dll
+Dependency assembly - Assembly-CSharp.dll
+Dependency assembly - Unity.Analytics.DataPrivacy.dll
+Dependency assembly - Unity.TextMeshPro.dll
+Dependency assembly - Unity.Timeline.dll
+Dependency assembly - UnityEngine.SpatialTracking.dll
+Dependency assembly - UnityEngine.UI.dll
+Dependency assembly - UnityEngine.XR.LegacyInputHelpers.dll
+Dependency assembly - UnityEngine.Purchasing.dll
+
+Unloading 421 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.5 MB.
+System memory in use after: 57.2 MB.
+
+Unloading 482 unused Assets to reduce memory usage. Loaded Objects now: 1572.
+Total: 8.150385 ms (FindLiveObjects: 0.398366 ms CreateObjectMapping: 0.073351 ms MarkObjects: 5.928146 ms  DeleteObjects: 1.745911 ms)
+
+[EnlightenBakeManager] m_Clear = false;
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 7f27595fc700 -> priority: 1 
+  Thread -> id: 7f2758dfb700 -> priority: 1 
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 39.8 MB.
+System memory in use after: 39.9 MB.
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 1580.
+Total: 9.735729 ms (FindLiveObjects: 0.455694 ms CreateObjectMapping: 0.098817 ms MarkObjects: 9.165937 ms  DeleteObjects: 0.010289 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 123.9 MB.
+System memory in use after: 40.1 MB.
+
+Unloading 162 unused Assets to reduce memory usage. Loaded Objects now: 1572.
+Total: 27.081659 ms (FindLiveObjects: 0.541441 ms CreateObjectMapping: 0.097037 ms MarkObjects: 9.430023 ms  DeleteObjects: 17.007189 ms)
+
+Launched and connected shader compiler UnityShaderCompiler after 0.10 seconds
+DisplayProgressbar: Compiling shader variants
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+DisplayProgressbar: Building Player
+DisplayProgressbar: Compiling shader variants
+Script attached to 'fp' in scene '' is missing or no valid script is attached.
+ 
+(Filename: ./Runtime/Mono/ManagedMonoBehaviourRef.cpp Line: 181)
+
+Script attached to 'Return' in scene '' is missing or no valid script is attached.
+ 
+(Filename: ./Runtime/Mono/ManagedMonoBehaviourRef.cpp Line: 181)
+
+Script attached to 'baduncom' in scene '' is missing or no valid script is attached.
+ 
+(Filename: ./Runtime/Mono/ManagedMonoBehaviourRef.cpp Line: 181)
+
+Script attached to 'commentblock' in scene '' is missing or no valid script is attached.
+ 
+(Filename: ./Runtime/Mono/ManagedMonoBehaviourRef.cpp Line: 181)
+
+Script attached to 'uncom' in scene '' is missing or no valid script is attached.
+ 
+(Filename: ./Runtime/Mono/ManagedMonoBehaviourRef.cpp Line: 181)
+
+Script attached to 'oncomment' in scene '' is missing or no valid script is attached.
+ 
+(Filename: ./Runtime/Mono/ManagedMonoBehaviourRef.cpp Line: 181)
+
+Script attached to 'badcomment' in scene '' is missing or no valid script is attached.
+ 
+(Filename: ./Runtime/Mono/ManagedMonoBehaviourRef.cpp Line: 181)
+
+Unloading 1349 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.7 MB.
+System memory in use after: 95.8 MB.
+
+Unloading 2133 unused Assets to reduce memory usage. Loaded Objects now: 1580.
+Total: 19.125741 ms (FindLiveObjects: 0.655112 ms CreateObjectMapping: 0.167528 ms MarkObjects: 8.111161 ms  DeleteObjects: 10.186532 ms)
+
+DisplayProgressbar: Building Player
+DisplayProgressbar: Compiling shader variants
+Compiled shader 'Hidden/Internal-DepthNormalsTexture' in 1.03s
+    gles (total internal programs: 20, unique: 11)
+    gles3 (total internal programs: 20, unique: 11)
+Compiled shader 'Hidden/Internal-GUITextureClip' in 1.01s
+    gles (total internal programs: 4, unique: 2)
+    gles3 (total internal programs: 4, unique: 2)
+Compiled shader 'Hidden/Internal-ODSWorldTexture' in 1.01s
+    gles (total internal programs: 20, unique: 10)
+    gles3 (total internal programs: 20, unique: 10)
+Compiled shader 'Hidden/VideoDecode' in 1.12s
+    gles (total internal programs: 40, unique: 21)
+    gles3 (total internal programs: 40, unique: 21)
+DisplayProgressbar: Building Player
