@@ -8,7 +8,7 @@ using UnityEditor.Build.Reporting;
 public class WebGLBuilder
 {
     static void build() {
-        File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Started!, time: " + System.DateTime.Now.ToString());
+        File.WriteAllText(@"home/ibrahim/Desktop/RobotON/stdout1.log", "Build Started!, time: " + System.DateTime.Now.ToString());
 
 
         BuildPlayerOptions buildPlayer = new BuildPlayerOptions();
@@ -23,7 +23,7 @@ public class WebGLBuilder
                             "Assets/Credits.unity",
                             "Assets/TutorialDemo.unity"};
 
-        buildPlayer.locationPathName = "C:\\Users\\Ibrahim Mushtaq\\Desktop\\WebGLBuilds";
+        buildPlayer.locationPathName = "/home/ibrahim/DesktopWebGLBuilds";
         buildPlayer.target = BuildTarget.WebGL;
         Application.targetFrameRate = 30;
 
@@ -47,10 +47,10 @@ public class WebGLBuilder
         BuildSummary summary = report.summary;
 
         if(summary.result == BuildResult.Succeeded){
-            File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
+            File.WriteAllText(@"/home/ibrahim/Desktop/RobotON/stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
 
         }else if(summary.result == BuildResult.Failed){
-            File.WriteAllText(@"C:\Users\Ibrahim Mushtaq\Desktop\RobotON\stdout1.log", "Build Failed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
+            File.WriteAllText(@"/home/ibrahim/Desktop/RobotON/stdout1.log", "Build Failed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
         }
     }
 }
