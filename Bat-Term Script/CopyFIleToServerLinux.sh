@@ -1,1 +1,1 @@
-cp -r -f ../Assets/StreamingAssets/* ../RobotON\ Server/StreamingAssets/
+rsync -ah --progress ../Assets/StreamingAssets/* ../RobotON\ Server/StreamingAssets/ 
