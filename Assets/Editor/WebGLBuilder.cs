@@ -30,19 +30,18 @@ public class WebGLBuilder
         PlayerSettings.WebGL.dataCaching = true;
         PlayerSettings.defaultWebScreenHeight = 720;
         PlayerSettings.defaultWebScreenWidth = 1280;
-        PlayerSettings.WebGL.memorySize = 1000;
-        PlayerSettings.stripEngineCode = true;
         PlayerSettings.runInBackground = true;
         AspectRatio aspectRatio = AspectRatio.Aspect16by9;
         PlayerSettings.SetAspectRatio(aspectRatio, true);
 
-        WebGLExceptionSupport web = WebGLExceptionSupport.None;
+        WebGLExceptionSupport web = WebGLExceptionSupport.FullWithoutStacktrace;
         WebGLCompressionFormat compressionFormat = WebGLCompressionFormat.Gzip;
 
         PlayerSettings.WebGL.compressionFormat = compressionFormat;
 
         Application.runInBackground = true;
-        buildPlayer.options = (BuildOptions)web | (BuildOptions)compressionFormat;
+        //buildPlayer.options = (BuildOptions)web | (BuildOptions)compressionFormat;
+        buildPlayer.options = BuildOptions.None;
         BuildReport report = BuildPipeline.BuildPlayer(buildPlayer);
         BuildSummary summary = report.summary;
 
