@@ -1,8 +1,8 @@
 Initiating legacy licensing module
 
-LICENSE SYSTEM [2019712 20:49:21] Next license update check is after 2019-07-13T21:41:20
+LICENSE SYSTEM [2019712 21:50:42] Next license update check is after 2019-07-13T21:41:20
 
-[Package Manager] Server::Start -- Port 58820 was selected
+[Package Manager] Server::Start -- Port 53009 was selected
 
  COMMAND LINE ARGUMENTS:
 /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Unity
@@ -20,17 +20,662 @@ Successfully changed project path to: /home/ibrahim/Desktop/RobotON/
 /home/ibrahim/Desktop/RobotON
 Using Asset Import Pipeline V1.
 DisplayProgressbar: Unity Package Manager
-Rebuilding Library because the asset database could not be found!
- 
-(Filename: ./Modules/AssetDatabase/Editor/Shared/AssetDatabaseInitialization.cpp Line: 108)
+Loading GUID <-> Path mappings...0.000065 seconds
+Loading Asset Database...0.023823 seconds
+AssetDatabase consistency checks...0.053683 seconds
+[Package Manager] Done resolving packages in 0.57s seconds
+[Package Manager] Done checking package constraints in 0.00s seconds
+[Package Manager] 
+Registered 49 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ads@2.0.8 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ads@2.0.8)
+    com.unity.analytics@3.3.2 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.analytics@3.3.2)
+    com.unity.collab-proxy@1.2.16 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.collab-proxy@1.2.16)
+    com.unity.ext.nunit@1.0.0 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ext.nunit@1.0.0)
+    com.unity.ide.rider@1.0.8 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ide.rider@1.0.8)
+    com.unity.ide.visualstudio@1.0.11 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ide.visualstudio@1.0.11)
+    com.unity.ide.vscode@1.0.7 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ide.vscode@1.0.7)
+    com.unity.multiplayer-hlapi@1.0.2 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2)
+    com.unity.purchasing@2.0.6 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.purchasing@2.0.6)
+    com.unity.test-framework@1.0.13 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.test-framework@1.0.13)
+    com.unity.textmeshpro@2.0.1 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.textmeshpro@2.0.1)
+    com.unity.xr.legacyinputhelpers@2.0.2 (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.xr.legacyinputhelpers@2.0.2)
+    nuget.mono-cecil@0.1.5-preview (location: /home/ibrahim/Desktop/RobotON/Library/PackageCache/nuget.mono-cecil@0.1.5-preview)
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.2d.sprite)
+    com.unity.2d.tilemap@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.2d.tilemap)
+    com.unity.package-manager-ui@2.2.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.package-manager-ui)
+    com.unity.timeline@1.1.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.timeline)
+    com.unity.ugui@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui)
+    com.unity.modules.ai@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vehicles@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.xr)
 
-Loading GUID <-> Path mappings...0.000040 seconds
-Loading Asset Database...0.000007 seconds
-AssetDatabase consistency checks...0.000052 seconds
-[Package Manager] Done resolving packages in 1.33s seconds
-An error occurred while resolving packages:
-  Project has invalid dependencies:
-    com.unity.package-manager-ui: Package [com.unity.package-manager-ui@2.1.2] cannot be found
-    com.unity.timeline: Package [com.unity.timeline@1.0.0] cannot be found
+[XR] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00s seconds
+Refreshing native plugins compatible for Editor in 4.06 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2019.2.0b7 (87c9ecb96495)
+[XR] Discovering subsystems at path /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Resources/UnitySubsystems
+[XR] Discovering subsystems at path /home/ibrahim/Desktop/RobotON/Assets
+Forcing GfxDevice: Null
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+[EnlightenBakeManager] m_Clear = false;
+Initialize mono
+Mono path[0] = '/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Managed'
+Mono path[1] = '/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56087
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.001993 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.676 seconds
+Registering precompiled user dll's ...
+Registered in 0.066194 seconds.
+Platform modules already initialized, skipping
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.184 seconds
+Platform modules already initialized, skipping
+Validating Project structure ... 0.032094 seconds.
+Refresh: detecting if any assets need to be imported or removed ...
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Refresh: detecting if any assets need to be imported or removed ...
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
 
-A re-import of the project may be required to fix the issue or a manual modification of /home/ibrahim/Desktop/RobotON/Packages/manifest.json file.
+Refresh Completed time: 0.119528s
+	Asset Scan time: 0.044347s
+	Asset Hashing: 0.000000s [0 B, 0.000000 mb/s]
+	Asset Import (Scripting) time: 0.000000s (count: 0)
+	Post Processs Assets (Scripting) time: 0.000000s
+	Asset Rehashing: 0.000000s [0 B, 0.000000 mb/s]
+	Asset Import (Non Scripting) time: 0.000000s (count: 0)
+	Post Process Assets (Non Scripting) time: 0.000000s
+	Dependent Assets to Import Queue time: 0.000000s
+
+Warming cache for 3632 main assets: 0.014097 seconds elapsed
+Initializing Unity extensions:
+ '/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll'  GUID: 4ba2329b63d54f0187bcaa12486b1b0f
+UpdateMenuTitleForLanguage: 10
+Unloading 1319 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.9 MB.
+System memory in use after: 57.8 MB.
+
+Unloading 212 unused Assets to reduce memory usage. Loaded Objects now: 1648.
+Total: 4.682848 ms (FindLiveObjects: 0.475113 ms CreateObjectMapping: 0.104074 ms MarkObjects: 3.655964 ms  DeleteObjects: 0.441529 ms)
+
+Refreshing native plugins compatible for Editor in 5.27 ms, found 0 plugins.
+Updating ProjectSettings/ProjectSettings.asset - GUID: 00000000000000004000000000000000...
+ done. [Time: 62.161335 ms] 
+Updating ProjectSettings/GraphicsSettings.asset - GUID: 00000000000000006100000000000000...
+ done. [Time: 1.859174 ms] 
+Updating ProjectSettings/UnityConnectSettings.asset - GUID: 0000000000000000a100000000000000...
+ done. [Time: 1.494372 ms] 
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[ScriptCompilation] Recompiling all scripts because: Recompiling scripts for player build.
+BuildPlayer: start building target 20
+- Starting compile Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+- Starting compile Library/ScriptAssemblies/UnityEngine.UI.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.UI.dll
+- Starting compile Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll
+- Starting compile Library/ScriptAssemblies/Unity.TextMeshPro.dll
+- Starting compile Library/ScriptAssemblies/Unity.Timeline.dll
+- Starting compile Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+- Starting compile Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll
+
+-----Compiler Commandline Arguments:
+Filename: /home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/Tools/RoslynScripts/unity_csc.sh
+Arguments: /noconfig @Temp/UnityTempFile-35cccda50c2df453a991c9e99808614d
+Responsefile: Temp/UnityTempFile-35cccda50c2df453a991c9e99808614d Contents: 
+/target:library
+/nowarn:0169
+/out:"Temp/com.unity.multiplayer-hlapi.Runtime.dll"
+/debug:portable
+/optimize+
+/nostdlib+
+/preferreduilang:en-US
+/langversion:latest
+/reference:"Library/ScriptAssemblies/UnityEngine.UI.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.AIModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.ARModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.AccessibilityModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.AndroidJNIModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.AnimationModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.AssetBundleModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.AudioModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.ClothModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.CoreModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.CrashReportingModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.DSPGraphModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.DirectorModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.FileSystemHttpModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.GameCenterModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.GridModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.HotReloadModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.IMGUIModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.ImageConversionModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.InputModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.InputLegacyModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.JSONSerializeModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.LocalizationModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.ParticleSystemModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.PerformanceReportingModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.PhysicsModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.Physics2DModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.ProfilerModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.ScreenCaptureModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.SharedInternalsModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.SpriteMaskModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.SpriteShapeModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.StreamingModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.SubstanceModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.TLSModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.TerrainModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.TerrainPhysicsModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.TextCoreModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.TextRenderingModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.TilemapModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.UIModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.UIElementsModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.UNETModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.UmbraModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.UnityAnalyticsModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.UnityConnectModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.UnityTestProtocolModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.UnityWebRequestModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.UnityWebRequestAudioModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.UnityWebRequestTextureModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.UnityWebRequestWWWModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.VFXModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.VRModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.VehiclesModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.VideoModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WindModule.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.XRModule.dll"
+/reference:"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll"
+/reference:"/home/ibrahim/Unity/Hub/Editor/2019.2.0b7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll"
+/define:UNITY_2019_2_0
+/define:UNITY_2019_2
+/define:UNITY_2019
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2019_1_OR_NEWER
+/define:UNITY_2019_2_OR_NEWER
+/define:ENABLE_AUDIO
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_PHYSICS
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_UNET
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_WEBCAM
+/define:ENABLE_WWW
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:ENABLE_MANAGED_AUDIO_JOBS
+/define:ENABLE_MONO_BDWGC
+/define:RENDER_SOFTWARE_CURSOR
+/define:ENABLE_VIDEO
+/define:PLATFORM_WEBGL
+/define:UNITY_WEBGL
+/define:UNITY_WEBGL_API
+/define:UNITY_DISABLE_WEB_VERIFICATION
+/define:UNITY_GFX_USE_PLATFORM_VSYNC
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_ENGINE_CODE_STRIPPING
+/define:ENABLE_VR
+/define:ENABLE_SPATIALTRACKING
+/define:ENABLE_IL2CPP
+/define:NET_STANDARD_2_0
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_DIRECTOR
+/define:ENABLE_LOCALIZATION
+/define:ENABLE_SPRITES
+/define:ENABLE_TERRAIN
+/define:ENABLE_TILEMAP
+/define:ENABLE_TIMELINE
+/define:CSHARP_7_OR_LATER
+/define:CSHARP_7_3_OR_NEWER
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/ChannelBuffer.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/ChannelPacket.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/ClientScene.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/ConnectionArray.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/CustomAttributes.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/DefaultNetworkTransport.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/DotNetCompatibility.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/INetworkTransport.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/LocalClient.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/LocalConnections.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/LogFilter.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/Messages.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkAnimator.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkBehaviour.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkBuffer.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkCallbacks.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkClient.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkConnection.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkCRC.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkDiscovery.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkHash128.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkIdentity.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkInstanceId.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkLobbyManager.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkLobbyPlayer.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkManager.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkManagerHUD.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkMessageHandlers.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkMigrationManager.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkProximityChecker.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkReader.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkScene.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkSceneId.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkServer.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkServerSimple.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkStartPosition.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkTranformChild.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkTransform.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkTransformVisualizer.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkWriter.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/PlayerController.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/Properties/AssemblyInfo.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/SyncList.cs"
+"/home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/UNetwork.cs"
+
+-----CompilerOutput:-stdout--exitcode: 1--compilationhadfailure: True--outfile: Temp/com.unity.multiplayer-hlapi.Runtime.dll
+Microsoft (R) Visual C# Compiler version 2.9.1.65535 (9d34608e)
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkDiscovery.cs(317,30): error CS0117: 'NetworkTransport' does not contain a definition for 'SetMulticastLock'
+Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkDiscovery.cs(348,30): error CS0117: 'NetworkTransport' does not contain a definition for 'SetMulticastLock'
+Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkDiscovery.cs(388,30): error CS0117: 'NetworkTransport' does not contain a definition for 'SetMulticastLock'
+Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkDiscovery.cs(449,34): error CS0117: 'NetworkTransport' does not contain a definition for 'SetMulticastLock'
+-----CompilerOutput:-stderr----------
+-----EndCompilerOutput---------------
+- Finished compile Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll
+- Finished compile Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+- Finished compile Library/ScriptAssemblies/Unity.Timeline.dll
+- Finished compile Library/ScriptAssemblies/Unity.TextMeshPro.dll
+Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkDiscovery.cs(317,30): error CS0117: 'NetworkTransport' does not contain a definition for 'SetMulticastLock'
+Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkDiscovery.cs(348,30): error CS0117: 'NetworkTransport' does not contain a definition for 'SetMulticastLock'
+Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkDiscovery.cs(388,30): error CS0117: 'NetworkTransport' does not contain a definition for 'SetMulticastLock'
+Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Runtime/NetworkDiscovery.cs(449,34): error CS0117: 'NetworkTransport' does not contain a definition for 'SetMulticastLock'
+Library/PackageCache/com.unity.analytics@3.3.2/DataPrivacy/DataPrivacyButton.cs(28,13): warning CS0618: 'Application.ExternalEval(string)' is obsolete: 'Application.ExternalEval is deprecated. See https://docs.unity3d.com/Manual/webgl-interactingwithbrowserscripting.html for alternatives.'
+[ScriptCompilation] Recompiling all scripts because: Recompiling scripts for editor because player build failed.
+Error building Player because scripts had compiler errors
+DisplayProgressbar: 
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 32.2 MB.
+System memory in use after: 32.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 1675.
+Total: 9.297500 ms (FindLiveObjects: 0.441951 ms CreateObjectMapping: 0.106521 ms MarkObjects: 8.346804 ms  DeleteObjects: 0.397345 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.999 ms
+	Integration:            10.862 ms
+	Integration of assets:  0.009 ms
+	Thread Wait Time:       19.217 ms
+	Total Operation Time:   31.088 ms
+System memory in use before: 31.8 MB.
+System memory in use after: 31.9 MB.
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 1675.
+Total: 7.247084 ms (FindLiveObjects: 0.393830 ms CreateObjectMapping: 0.069287 ms MarkObjects: 6.769974 ms  DeleteObjects: 0.009048 ms)
+
+- Starting compile Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+- Starting compile Library/ScriptAssemblies/UnityEngine.UI.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+- Starting compile Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.UI.dll
+- Finished compile Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+- Starting compile Library/ScriptAssemblies/UnityEditor.UI.dll
+- Finished compile Library/ScriptAssemblies/UnityEditor.UI.dll
+- Starting compile Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll
+- Starting compile Library/ScriptAssemblies/Unity.TextMeshPro.dll
+- Starting compile Library/ScriptAssemblies/Unity.Timeline.dll
+- Starting compile Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+- Starting compile Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll
+- Starting compile Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+- Starting compile Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll
+- Starting compile Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll
+- Finished compile Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+- Starting compile Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll
+- Starting compile Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.Timeline.dll
+- Starting compile Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+- Starting compile Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+- Starting compile Library/ScriptAssemblies/Unity.Rider.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll
+- Starting compile Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+- Finished compile Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll
+- Starting compile Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll
+- Finished compile Library/ScriptAssemblies/Unity.TextMeshPro.dll
+- Starting compile Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+- Finished compile Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll
+- Starting compile Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll
+- Finished compile Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+- Finished compile Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll
+- Starting compile Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.Rider.Editor.dll
+- Finished compile Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll
+- Finished compile Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+- Finished compile Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll
+- Finished compile Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+Assets/Scripts/BackgroundController.cs(9,20): warning CS0108: 'BackgroundController.light' hides inherited member 'Component.light'. Use the new keyword if hiding was intended.
+Assets/Scripts/TimeDisplayController.cs(10,17): warning CS0108: 'TimeDisplayController.audio' hides inherited member 'Component.audio'. Use the new keyword if hiding was intended.
+Assets/Scripts/rename.cs(23,16): warning CS0108: 'rename.correct' hides inherited member 'Tools.correct'. Use the new keyword if hiding was intended.
+Assets/Scripts/Menu.cs(160,4): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(194,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(202,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(205,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(213,4): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(224,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(230,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(238,4): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(250,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(258,6): warning CS0162: Unreachable code detected
+Assets/Scripts/Menu.cs(302,4): warning CS0162: Unreachable code detected
+Assets/Scripts/question.cs(173,13): warning CS0219: The variable 'sOpenCommentSymbol' is assigned but its value is never used
+Assets/Scripts/question.cs(174,13): warning CS0219: The variable 'sCloseCommentSymbol' is assigned but its value is never used
+Assets/Scripts/ToolFactory.cs(187,26): warning CS0168: The variable 'ex' is declared but never used
+Assets/Scripts/TransitionController.cs(102,16): warning CS0219: The variable 'bug' is assigned but its value is never used
+Assets/Scripts/LevelGenerator.cs(186,13): warning CS0219: The variable 'row' is assigned but its value is never used
+Assets/Scripts/LevelGenerator.cs(186,22): warning CS0219: The variable 'col' is assigned but its value is never used
+Assets/Scripts/ActionFactory.cs(40,12): warning CS0649: Field 'DialogFactory.ans' is never assigned to, and will always have its default value null
+Assets/Scripts/Logger.cs(23,12): warning CS0649: Field 'Logger.id' is never assigned to, and will always have its default value null
+Assets/Scripts/Camera2.cs(11,14): warning CS0414: The field 'Camera2.trackmax' is assigned but its value is never used
+Assets/Scripts/Camera2.cs(10,14): warning CS0414: The field 'Camera2.laststate' is assigned but its value is never used
+Assets/Scripts/rename.cs(41,15): warning CS0414: The field 'rename.isChecked' is assigned but its value is never used
+Assets/Scripts/beacon.cs(30,6): warning CS0414: The field 'beacon.flashCounter' is assigned but its value is never used
+Assets/Scripts/FireButton.cs(13,10): warning CS0414: The field 'FireButton.mouseOver' is assigned but its value is never used
+Assets/Scripts/ActionFactory.cs(39,9): warning CS0414: The field 'DialogFactory.order' is assigned but its value is never used
+Assets/Scripts/rename.cs(40,15): warning CS0414: The field 'rename.hasHappened' is assigned but its value is never used
+Assets/Scripts/SelectedTool.cs(43,18): warning CS0414: The field 'SelectedTool.isBugActive' is assigned but its value is never used
+Assets/Scripts/TransitionController.cs(18,10): warning CS0414: The field 'TransitionController.started' is assigned but its value is never used
+Assets/Scripts/Comic.cs(28,17): warning CS0414: The field 'Comic.credtext' is assigned but its value is never used
+Assets/Scripts/LevelGenerator.cs(47,18): warning CS0414: The field 'LevelGenerator.winning' is assigned but its value is never used
+Assets/Scripts/rename.cs(34,15): warning CS0414: The field 'rename.colorOnce' is assigned but its value is never used
+Assets/Editor/WebGLBuilder.cs(37,31): warning CS0219: The variable 'web' is assigned but its value is never used
+Reloading assemblies after script compilation.
+Begin MonoManager ReloadAssembly
+./Editor/Platform/Linux/UsbDevices.cpp:UsbDevicesQuery
+Symbol file LoadedFromMemory doesn't match image /home/ibrahim/Desktop/RobotON/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+- Completed reload, in  1.362 seconds
+Platform modules already initialized, skipping
+Batchmode quit successfully invoked - shutting down!
+[Performance] Application.InitializeProject                                         :        1 samples, Peak.  34.6 s (1.0x), Avg.  34.6 s, Total. 34.55 s (43.0%)
+[Performance] Application.PackageManager.StartServer                                :        1 samples, Peak.  1.15 ms (1.0x), Avg.  1.15 ms, Total. 1.147 ms (0.0%)
+[Performance] Application.AcquireProjectLock                                        :        1 samples, Peak.  3.89 ms (1.0x), Avg.  3.89 ms, Total. 3.894 ms (0.0%)
+[Performance] Application.InitializeEngineNoGraphics                                :        1 samples, Peak.  9.31 ms (1.0x), Avg.  9.31 ms, Total. 9.312 ms (0.0%)
+[Performance] Application.PackageManager.Initialize                                 :        1 samples, Peak.  1.03 s (1.0x), Avg.  1.03 s, Total. 1.027 s (1.3%)
+[Performance] CurlRequestCheck                                                      :       21 samples, Peak.  43.7 us (2.2x), Avg.  19.7 us, Total. 414.6 us (0.0%)
+[Performance] PackageManager::RunRequestSynchronously                               :       12 samples, Peak.   253 us (8.4x), Avg.  30.3 us, Total. 363.7 us (0.0%)
+[Performance] Application.EngineGraphics.Initialize                                 :        1 samples, Peak.  39.4 ms (1.0x), Avg.  39.4 ms, Total. 39.44 ms (0.0%)
+[Performance] Application.GI.Initialize                                             :        1 samples, Peak.   227 ms (1.0x), Avg.   227 ms, Total. 227.3 ms (0.3%)
+[Performance] Application.LoadAllDefaultResourcesFromEditor                         :        1 samples, Peak.  4.48 ms (1.0x), Avg.  4.48 ms, Total. 4.481 ms (0.0%)
+[Performance] Application.LoadMonoAssembliesAndRecompileIfNecessary                 :        1 samples, Peak.  3.45 s (1.0x), Avg.  3.45 s, Total. 3.454 s (4.3%)
+[Performance] Application.ReadLicenseInfo                                           :        1 samples, Peak.   329 us (1.0x), Avg.   329 us, Total. 328.7 us (0.0%)
+[Performance] Application.AssetDatabase.Refresh                                     :        1 samples, Peak.   120 ms (1.0x), Avg.   120 ms, Total. 119.6 ms (0.1%)
+[Performance] Application.OnUsbDevicesChanged                                       :        1 samples, Peak.  11.8 us (1.0x), Avg.  11.8 us, Total. 11.76 us (0.0%)
+[Performance] Application.AssetInstanceCacheUpdate                                  :        1 samples, Peak.  14.1 ms (1.0x), Avg.  14.1 ms, Total. 14.13 ms (0.0%)
+[Performance] Application.UnityExtensions.Initialize                                :        1 samples, Peak.   840 us (1.0x), Avg.   840 us, Total. 839.6 us (0.0%)
+[Performance] Application.InitializeManagedCompilationPipeline                      :        1 samples, Peak.  46.0 ms (1.0x), Avg.  46.0 ms, Total. 46.04 ms (0.1%)
+[Performance] Application.ExecuteStartups                                           :        1 samples, Peak.  78.7 ms (1.0x), Avg.  78.7 ms, Total. 78.65 ms (0.1%)
+[Performance] Application.editorInitializingProject                                 :        1 samples, Peak.  22.3 us (1.0x), Avg.  22.3 us, Total. 22.30 us (0.0%)
+[Performance] Application.WriteEditorInstanceJsonFile                               :        1 samples, Peak.   241 us (1.0x), Avg.   241 us, Total. 240.8 us (0.0%)
+[Performance] Application.CheckForAvailableDiskSpaceInProjectLocationAndEmitW       :        1 samples, Peak.  21.1 us (1.0x), Avg.  21.1 us, Total. 21.13 us (0.0%)
+[Performance] GUIView.RepaintAll.PlayerLoopController                               :        2 samples, Peak.   923 ns (1.0x), Avg.   908 ns, Total. 1.817 us (0.0%)
+[Performance] SceneVisibilityState.ClearScene                                       :        1 samples, Peak.  1.41 us (1.0x), Avg.  1.41 us, Total. 1.411 us (0.0%)
+[Performance] Application.InvokeFinishedLoadingProject                              :        1 samples, Peak.  1.05 ms (1.0x), Avg.  1.05 ms, Total. 1.045 ms (0.0%)
+Refresh: detecting if any assets need to be imported or removed ...
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Refresh Completed time: 0.123395s
+	Asset Scan time: 0.045789s
+	Asset Hashing: 0.000000s [0 B, 0.000000 mb/s]
+	Asset Import (Scripting) time: 0.000000s (count: 0)
+	Post Processs Assets (Scripting) time: 0.000000s
+	Asset Rehashing: 0.000000s [0 B, 0.000000 mb/s]
+	Asset Import (Non Scripting) time: 0.000000s (count: 0)
+	Post Process Assets (Non Scripting) time: 0.000000s
+	Dependent Assets to Import Queue time: 0.000000s
+
+Refresh: detecting if any assets need to be imported or removed ...
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Refresh Completed time: 0.122942s
+	Asset Scan time: 0.045717s
+	Asset Hashing: 0.000000s [0 B, 0.000000 mb/s]
+	Asset Import (Scripting) time: 0.000000s (count: 0)
+	Post Processs Assets (Scripting) time: 0.000000s
+	Asset Rehashing: 0.000000s [0 B, 0.000000 mb/s]
+	Asset Import (Non Scripting) time: 0.000000s (count: 0)
+	Post Process Assets (Non Scripting) time: 0.000000s
+	Dependent Assets to Import Queue time: 0.000000s
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 7fb5df7fd700 -> priority: 1 
+  Thread -> id: 7fb5deffc700 -> priority: 1 
+  Thread -> id: 7fb5dfffe700 -> priority: 1 
+  Thread -> id: 7fb663fff700 -> priority: 1 
+[Package Manager] Server::Kill -- Server was shutdown
+Cleanup mono
+Exiting batchmode successfully now!
