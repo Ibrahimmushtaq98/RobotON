@@ -33,6 +33,8 @@ public class WebGLBuilder
         PlayerSettings.runInBackground = true;
         AspectRatio aspectRatio = AspectRatio.Aspect16by9;
         PlayerSettings.SetAspectRatio(aspectRatio, true);
+        PlayerSettings.productName = "RoboGames";
+        PlayerSettings.companyName = "UOIT";
 
         WebGLExceptionSupport web = WebGLExceptionSupport.FullWithoutStacktrace;
         WebGLCompressionFormat compressionFormat = WebGLCompressionFormat.Gzip;
@@ -40,8 +42,8 @@ public class WebGLBuilder
         PlayerSettings.WebGL.compressionFormat = compressionFormat;
 
         Application.runInBackground = true;
-        //buildPlayer.options = (BuildOptions)web | (BuildOptions)compressionFormat;
-        buildPlayer.options = BuildOptions.None;
+        buildPlayer.options = (BuildOptions)web | (BuildOptions)compressionFormat;
+        //buildPlayer.options = BuildOptions.None;
         BuildReport report = BuildPipeline.BuildPlayer(buildPlayer);
         BuildSummary summary = report.summary;
 
