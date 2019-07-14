@@ -1,4 +1,4 @@
-using System.IO;
+﻿using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -8,7 +8,7 @@ using UnityEditor.Build.Reporting;
 public class WebGLBuilder
 {
     static void build() {
-        File.WriteAllText(@"/home/ibrahim/Desktop/RobotON/stdout1.log", "Build Started!, time: " + System.DateTime.Now.ToString());
+        File.AppendAllText(@"/home/ibrahim/Desktop/RobotON/stdout1.log", "Build Started!, time: " + System.DateTime.Now.ToString());
 
 
         BuildPlayerOptions buildPlayer = new BuildPlayerOptions();
@@ -37,21 +37,18 @@ public class WebGLBuilder
         PlayerSettings.companyName = "UOIT";
 
         WebGLExceptionSupport web = WebGLExceptionSupport.FullWithoutStacktrace;
-        WebGLCompressionFormat compressionFormat = WebGLCompressionFormat.Gzip;
-
-        PlayerSettings.WebGL.compressionFormat = compressionFormat;
-
+        PlayerSettings.WebGL.exceptionSupport = web;
         Application.runInBackground = true;
-        buildPlayer.options = (BuildOptions)web | (BuildOptions)compressionFormat;
-        //buildPlayer.options = BuildOptions.None;
+       // buildPlayer.options = (BuildOptions)web | (BuildOptions)compressionFormat;
+        buildPlayer.options = (BuildOptions)web;
         BuildReport report = BuildPipeline.BuildPlayer(buildPlayer);
         BuildSummary summary = report.summary;
 
         if(summary.result == BuildResult.Succeeded){
-            File.WriteAllText(@"/home/ibrahim/Desktop/RobotON/stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
+            File.AppendAllText(@"/home/ibrahim/Desktop/RobotON/stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
 
         }else if(summary.result == BuildResult.Failed){
-            File.WriteAllText(@"/home/ibrahim/Desktop/RobotON/stdout1.log", "Build Failed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
+            File.AppendAllText(@"/home/ibrahim/Desktop/RobotON/stdout1.log", "Build Failed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
         }
     }
 }
