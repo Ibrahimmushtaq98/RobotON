@@ -1,0 +1,45 @@
+Passed Level
+-16 Seconds
+Question Tool Use: 
+	Required Tasks: 3
+	Completed Tasks: 3
+	Times Tool Used: 5
+	Lines Used: 5 6 9 12 15 
+
+Commenter Tool Use: 
+	Required Tasks: 5
+	Completed Tasks: 5
+	Times Tool Used: 5
+	Lines Used: 2 4 6 12 14 
+
+--------------------------------------------------------
+Passed Level
+40 Seconds
+Question Tool Use: 
+	Required Tasks: 3
+	Completed Tasks: 3
+	Times Tool Used: 5
+	Lines Used: 5 9 11 15 15 
+
+Commenter Tool Use: 
+	Required Tasks: 5
+	Completed Tasks: 5
+	Times Tool Used: 5
+	Lines Used: 2 4 6 12 14 
+
+--------------------------------------------------------
+Failed Level
+-29 Seconds
+Question Tool Use: 
+	Required Tasks: 3
+	Completed Tasks: 2
+	Times Tool Used: 3
+	Lines Used: 5 5 9 
+
+Commenter Tool Use: 
+	Required Tasks: 5
+	Completed Tasks: 5
+	Times Tool Used: 6
+	Lines Used: 2 4 6 11 12 14 
+
+--------------------------------------------------------

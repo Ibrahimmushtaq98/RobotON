@@ -1,121 +1,166 @@
 Passed Level
+22 Seconds
+Question Tool Use: 
+	Required Tasks: 1
+	Completed Tasks: 1
+	Times Tool Used: 1
+	Lines Used: 12 
+
+Commenter Tool Use: 
+	Required Tasks: 5
+	Completed Tasks: 5
+	Times Tool Used: 5
+	Lines Used: 9 6 4 3 2 
+
+--------------------------------------------------------
+Passed Level
+19 Seconds
+Question Tool Use: 
+	Required Tasks: 1
+	Completed Tasks: 1
+	Times Tool Used: 1
+	Lines Used: 12 
+
+Commenter Tool Use: 
+	Required Tasks: 5
+	Completed Tasks: 5
+	Times Tool Used: 5
+	Lines Used: 2 3 4 6 9 
+
+--------------------------------------------------------
+Passed Level
 -28 Seconds
 Question Tool Use: 
 	Required Tasks: 1
 	Completed Tasks: 1
 	Times Tool Used: 1
-	Lines Used: 8 
+	Lines Used: 12 
 
 Commenter Tool Use: 
-	Required Tasks: 4
-	Completed Tasks: 4
-	Times Tool Used: 5
-	Lines Used: 5 10 11 13 16 
+	Required Tasks: 5
+	Completed Tasks: 5
+	Times Tool Used: 6
+	Lines Used: 2 12 3 4 6 9 
 
 --------------------------------------------------------
 Passed Level
--36 Seconds
+35 Seconds
+Question Tool Use: 
+	Required Tasks: 1
+	Completed Tasks: 1
+	Times Tool Used: 1
+	Lines Used: 12 
+
+Commenter Tool Use: 
+	Required Tasks: 5
+	Completed Tasks: 5
+	Times Tool Used: 5
+	Lines Used: 3 2 4 6 9 
+
+--------------------------------------------------------
+Failed Level
+8 Seconds
+Question Tool Use: 
+	Required Tasks: 1
+	Completed Tasks: 0
+	Times Tool Used: 5
+	Lines Used: 2 3 4 3 3 
+
+Commenter Tool Use: 
+	Required Tasks: 5
+	Completed Tasks: 0
+	Times Tool Used: 0
+	Lines Used: 
+
+--------------------------------------------------------
+Passed Level
+7 Seconds
 Question Tool Use: 
 	Required Tasks: 1
 	Completed Tasks: 1
 	Times Tool Used: 2
-	Lines Used: 8 8 
+	Lines Used: 3 12 
 
 Commenter Tool Use: 
-	Required Tasks: 4
-	Completed Tasks: 4
-	Times Tool Used: 4
-	Lines Used: 5 11 13 16 
-
---------------------------------------------------------
-Passed Level
-17 Seconds
-Question Tool Use: 
-	Required Tasks: 1
-	Completed Tasks: 1
-	Times Tool Used: 1
-	Lines Used: 8 
-
-Commenter Tool Use: 
-	Required Tasks: 4
-	Completed Tasks: 4
+	Required Tasks: 5
+	Completed Tasks: 5
 	Times Tool Used: 5
-	Lines Used: 4 5 11 13 16 
+	Lines Used: 3 2 4 6 9 
 
 --------------------------------------------------------
 Passed Level
-11 Seconds
+18 Seconds
 Question Tool Use: 
 	Required Tasks: 1
 	Completed Tasks: 1
 	Times Tool Used: 1
-	Lines Used: 8 
+	Lines Used: 12 
 
 Commenter Tool Use: 
-	Required Tasks: 4
-	Completed Tasks: 4
-	Times Tool Used: 4
-	Lines Used: 5 11 13 16 
-
---------------------------------------------------------
-Passed Level
-17 Seconds
-Question Tool Use: 
-	Required Tasks: 1
-	Completed Tasks: 1
-	Times Tool Used: 1
-	Lines Used: 8 
-
-Commenter Tool Use: 
-	Required Tasks: 4
-	Completed Tasks: 4
+	Required Tasks: 5
+	Completed Tasks: 5
 	Times Tool Used: 5
-	Lines Used: 5 8 11 13 16 
+	Lines Used: 2 3 4 6 9 
 
 --------------------------------------------------------
 Passed Level
-31 Seconds
+44 Seconds
 Question Tool Use: 
 	Required Tasks: 1
 	Completed Tasks: 1
 	Times Tool Used: 1
-	Lines Used: 8 
+	Lines Used: 12 
 
 Commenter Tool Use: 
-	Required Tasks: 4
-	Completed Tasks: 4
-	Times Tool Used: 4
-	Lines Used: 5 11 13 16 
-
---------------------------------------------------------
-Passed Level
-11 Seconds
-Question Tool Use: 
-	Required Tasks: 1
-	Completed Tasks: 1
-	Times Tool Used: 1
-	Lines Used: 8 
-
-Commenter Tool Use: 
-	Required Tasks: 4
-	Completed Tasks: 4
+	Required Tasks: 5
+	Completed Tasks: 5
 	Times Tool Used: 5
-	Lines Used: 5 11 13 17 16 
+	Lines Used: 2 3 4 6 9 
 
 --------------------------------------------------------
 Passed Level
--47 Seconds
+-38 Seconds
 Question Tool Use: 
 	Required Tasks: 1
 	Completed Tasks: 1
 	Times Tool Used: 1
-	Lines Used: 8 
+	Lines Used: 12 
 
 Commenter Tool Use: 
-	Required Tasks: 4
-	Completed Tasks: 4
+	Required Tasks: 5
+	Completed Tasks: 5
 	Times Tool Used: 6
-	Lines Used: 5 8 11 13 17 16 
+	Lines Used: 2 3 4 5 6 9 
+
+--------------------------------------------------------
+Passed Level
+28 Seconds
+Question Tool Use: 
+	Required Tasks: 1
+	Completed Tasks: 1
+	Times Tool Used: 1
+	Lines Used: 12 
+
+Commenter Tool Use: 
+	Required Tasks: 5
+	Completed Tasks: 5
+	Times Tool Used: 6
+	Lines Used: 2 2 3 4 6 9 
+
+--------------------------------------------------------
+Passed Level
+-28 Seconds
+Question Tool Use: 
+	Required Tasks: 1
+	Completed Tasks: 1
+	Times Tool Used: 2
+	Lines Used: 12 12 
+
+Commenter Tool Use: 
+	Required Tasks: 5
+	Completed Tasks: 5
+	Times Tool Used: 5
+	Lines Used: 2 3 4 6 9 
 
 --------------------------------------------------------
 Passed Level
@@ -124,42 +169,27 @@ Question Tool Use:
 	Required Tasks: 1
 	Completed Tasks: 1
 	Times Tool Used: 1
-	Lines Used: 8 
+	Lines Used: 12 
 
 Commenter Tool Use: 
-	Required Tasks: 4
-	Completed Tasks: 4
-	Times Tool Used: 4
-	Lines Used: 5 11 13 16 
+	Required Tasks: 5
+	Completed Tasks: 5
+	Times Tool Used: 5
+	Lines Used: 2 3 4 6 9 
 
 --------------------------------------------------------
-Passed Level
-10 Seconds
+Failed Level
+35 Seconds
 Question Tool Use: 
 	Required Tasks: 1
-	Completed Tasks: 1
-	Times Tool Used: 1
-	Lines Used: 8 
+	Completed Tasks: 0
+	Times Tool Used: 6
+	Lines Used: 1 1 1 1 1 6 
 
 Commenter Tool Use: 
-	Required Tasks: 4
-	Completed Tasks: 4
-	Times Tool Used: 4
-	Lines Used: 5 11 13 16 
-
---------------------------------------------------------
-Passed Level
-11 Seconds
-Question Tool Use: 
-	Required Tasks: 1
-	Completed Tasks: 1
-	Times Tool Used: 1
-	Lines Used: 8 
-
-Commenter Tool Use: 
-	Required Tasks: 4
-	Completed Tasks: 4
-	Times Tool Used: 4
-	Lines Used: 5 11 13 16 
+	Required Tasks: 5
+	Completed Tasks: 0
+	Times Tool Used: 0
+	Lines Used: 
 
 --------------------------------------------------------
