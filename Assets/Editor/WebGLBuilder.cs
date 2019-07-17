@@ -21,7 +21,8 @@ public class WebGLBuilder
                             "Assets/IntroScene.unity",
                             "Assets/Transition.unity",
                             "Assets/Credits.unity",
-                            "Assets/TutorialDemo.unity"};
+                            "Assets/TutorialDemo.unity",
+                            "Assets/Progression"};
 
         buildPlayer.locationPathName = "/home/ibrahim/Desktop/WebGLBuilds";
         buildPlayer.target = BuildTarget.WebGL;
