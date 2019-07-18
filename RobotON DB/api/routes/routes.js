@@ -10,13 +10,7 @@ module.exports = function(app){
     .get(logControl.read_a_log_ON)
     .put(logControl.update_a_log_ON);
 
-    app.route('/logsON/currentlevel/:sessionID')
-    .get(logControl.list_current_level_ON)
-
-    app.route('/logsON/totallevel/:sessionID')
-    .get(logControl.get_total_level_ON);
-
-    app.route('/logsON/currentlevel/:sessionID/:currentlevelID/:name')
+    app.route('/logsON/currentlevel/:sessionID/:name')
     .put(logControl.put_current_level_ON);
 
     app.route('/logsON/completedlevels/:sessionID')
@@ -33,13 +27,7 @@ module.exports = function(app){
     app.route('/logsBUG/completedlevels/:sessionID')
     .get(logControl.retrieve_comp_level_BUG);
 
-    app.route('/logsBUG/currentlevel/:sessionID')
-    .get(logControl.list_current_level_BUG)
-
-    app.route('/logsBUG/totallevel/:sessionID')
-    .get(logControl.get_total_level_BUG);
-
-    app.route('/logsBUG/currentlevel/:sessionID/:currentlevelID/:name')
+    app.route('/logsBUG/currentlevel/:sessionID/:name')
     .put(logControl.put_current_level_BUG);
 
 };

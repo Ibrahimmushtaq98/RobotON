@@ -42,7 +42,6 @@ exports.read_a_log_ON = function(req, res) {
 
 
 exports.update_a_log_ON = function(req, res) {
-  //console.log(req.body);
   Task.findOneAndUpdate(
     {name: req.params.sessionID}, 
     {$push : {
@@ -72,7 +71,7 @@ exports.retrieve_comp_level_ON = function(req, res){
 
           currentLevel = value.name;
 
-          if(currentLevel != ""){
+          if(value.progress == "Passed" && currentLevel != ""){
             compLevel.push(currentLevel + " " + 1);
             currentLevel = "";
           }
@@ -85,89 +84,67 @@ exports.retrieve_comp_level_ON = function(req, res){
   });
 }
 
-exports.list_current_level_ON = function(req, res){
-  console.log("SessionID: " + req.params.sessionID);
-  console.log("BODY: " + req.body);
-
-  Task.findOne({name: req.params.sessionID},{'levels': {$slice: -1}}, function(err, task){
-    if(err){
-      res.json(err);
-    }else{
-      console.log(task);
-      try{
-        res.json(task.levels[0]._id);
-      }catch(err){
-        console.log(err);
-      }
-    }
-    
-  })
-};
-
 exports.put_current_level_ON = function(req, res){
   var objName = req.params.name;
-  var positionalID = req.params.sessionID.toString();
-  var currentLevelID = req.params.currentlevelID.toString();
-  console.log(positionalID + " " + currentLevelID);
+  var sessionID = req.params.sessionID.toString();
 
-  var query1 = {}
-  var criteria1 = "levels." + positionalID + "." + objName; 
-  query1[criteria1] = req.body[objName];
-
-  var query = {};
-  var criteria = "levels." + positionalID + "._id";
-  query[criteria] = currentLevelID;
-
-  if(req.body['timeEnded'] || req.body['progress']){
-    Task.updateOne(
-      query,
-      {$set : query1}, 
-      {new:true},
-      function(err,task){
-        if(err){
-          res.json("ERR " + err);
-        }else{
-          //console.log("task: " + task);
-          res.json(task);
-        }
-      }
-    )
-
-  }else{
-    Task.findOneAndUpdate(
-      query,
-      {$push : query1}, 
-      {new:true},
-      function(err,task){
-        if(err){
-          res.json("ERR " + err);
-        }else{
-          //console.log("task: " + task);
-          res.json(task);
-        }
-      }
-    )
-
-  }
-};
-
-exports.get_total_level_ON = function(req, res){
   Task.findOne({name: req.params.sessionID}, 'levels.name', function(err, task){
     var i = 0;
-
     if(task != null && typeof task == "object"){
       if(err){
-        res.json(0);
+        res.json(err);
       }else{
         var taskObj = task.toJSON();
         Object.entries(taskObj.levels).forEach(([key, value]) =>{
-          i = i + 1;
+
+          i +=1;
         });
       }
     }
-    res.json(i);
+    i -=1;
+
+    var query1 = {}
+    var criteria1 = "levels." + i + "." + objName; 
+    query1[criteria1] = req.body[objName];
+  
+    var query = {};
+    var criteria = "name";
+    query[criteria] = sessionID;
+  
+    if(req.body['timeEnded'] || req.body['progress']){
+      Task.updateOne(
+        query,
+        {$set : query1}, 
+        {new:true},
+        function(err1,task1){
+          if(err){
+            res.json("ERR " + err1);
+          }else{
+            //console.log("task: " + task);
+            res.json(task1);
+          }
+        }
+      )
+  
+    }else{
+      Task.findOneAndUpdate(
+        query,
+        {$push : query1}, 
+        {new:true},
+        function(err1,task1){
+          if(err){
+            res.json("ERR " + err1);
+          }else{
+            //console.log("task: " + task);
+            res.json(task1);
+          }
+        }
+      )
+  
+    }
+
   });
-}
+};
 
 //------------------------------------------------------------------------------->
 exports.list_all_logs_BUG = function(req,res){
@@ -230,7 +207,7 @@ exports.retrieve_comp_level_BUG = function(req, res){
 
           currentLevel = value.name;
 
-          if(currentLevel != ""){
+          if(value.progress == "Passed" && currentLevel != ""){
             compLevel.push(currentLevel + " " + 1);
             currentLevel = "";
           }
@@ -243,80 +220,63 @@ exports.retrieve_comp_level_BUG = function(req, res){
   });
 }
 
-exports.list_current_level_BUG = function(req, res){
-  console.log("SessionID: " + req.params.sessionID);
-
-  TaskT.findOne({name: req.params.sessionID},{'levels': {$slice: -1}}, function(err, task){
-    if(err){
-      res.json(err);
-    }else{
-      res.json(task.levels[0]._id);
-    }
-    
-  })
-};
-
 exports.put_current_level_BUG = function(req, res){
   var objName = req.params.name;
-  var positionalID = req.params.sessionID.toString();
-  var currentLevelID = req.params.currentlevelID.toString();
-  console.log(positionalID + " " + currentLevelID);
+  var sessionID = req.params.sessionID.toString();
 
-  var query1 = {}
-  var criteria1 = "levels." + positionalID + "." + objName; 
-  query1[criteria1] = req.body[objName];
-
-  var query = {};
-  var criteria = "levels." + positionalID + "._id";
-  query[criteria] = currentLevelID;
-
-  if(req.body['timeEnded'] || req.body['progress']){
-    TaskT.updateOne(
-      query,
-      {$set : query1}, 
-      {new:true},
-      function(err,task){
-        if(err){
-          res.json("ERR " + err);
-        }else{
-          //console.log("task: " + task);
-          res.json(task);
-        }
-      }
-    )
-
-  }else{
-    TaskT.findOneAndUpdate(
-      query,
-      {$push : query1}, 
-      {new:true},
-      function(err,task){
-        if(err){
-          res.json("ERR " + err);
-        }else{
-          //console.log("task: " + task);
-          res.json(task);
-        }
-      }
-    )
-
-  }
-};
-
-exports.get_total_level_BUG = function(req, res){
   TaskT.findOne({name: req.params.sessionID}, 'levels.name', function(err, task){
     var i = 0;
-
     if(task != null && typeof task == "object"){
       if(err){
-        res.json(0);
+        res.json(err);
       }else{
         var taskObj = task.toJSON();
         Object.entries(taskObj.levels).forEach(([key, value]) =>{
-          i = i + 1;
+          i +=1;
         });
       }
     }
-    res.json(i);
+    i -=1;
+
+    var query1 = {}
+    var criteria1 = "levels." + i + "." + objName; 
+    query1[criteria1] = req.body[objName];
+  
+    var query = {};
+    var criteria = "name";
+    query[criteria] = sessionID;
+  
+    if(req.body['timeEnded'] || req.body['progress']){
+      TaskT.updateOne(
+        query,
+        {$set : query1}, 
+        {new:true},
+        function(err1,task1){
+          if(err){
+            res.json("ERR " + err1);
+          }else{
+            //console.log("task: " + task);
+            res.json(task1);
+          }
+        }
+      )
+  
+    }else{
+      TaskT.findOneAndUpdate(
+        query,
+        {$push : query1}, 
+        {new:true},
+        function(err1,task1){
+          if(err){
+            res.json("ERR " + err1);
+          }else{
+            //console.log("task: " + task);
+            res.json(task1);
+          }
+        }
+      )
+  
+    }
+
   });
-}
+};
