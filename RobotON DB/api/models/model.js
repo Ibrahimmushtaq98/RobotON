@@ -18,6 +18,7 @@
         timeEnded: String,
         stars: String,
         points: String,
+        timeBonus: String,
         tools :[{
             name: String,
             correctLine: String,
@@ -39,11 +40,11 @@
             time: String,
             timestamp: String
         }],
-        obstacal: [{
+        obstacle: [{
             name: String,
             line: String
         }],
-        obstacalState: [{
+        obstacleState: [{
             name: String,
             preEnergy: String,
             finEnergy: String,
