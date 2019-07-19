@@ -20,6 +20,7 @@ exports.list_all_logs_ON = function(req,res){
       });
 };
 
+//Creates a new log for that sessionID
 exports.create_a_log_ON = function(req, res) {
   var new_task = new Task(req.body);
   new_task.save(function(err, task) {
@@ -31,6 +32,7 @@ exports.create_a_log_ON = function(req, res) {
 };
 
 
+//GET REQUEST FOR info Related to the SessionID
 exports.read_a_log_ON = function(req, res) {
     console.log(req.params);
   Task.findOne({name: req.params.sessionID}, function(err, task) {
@@ -40,7 +42,7 @@ exports.read_a_log_ON = function(req, res) {
   });
 };
 
-
+//Update the log that is tied with the sessionID
 exports.update_a_log_ON = function(req, res) {
   Task.findOneAndUpdate(
     {name: req.params.sessionID}, 
@@ -58,6 +60,7 @@ exports.update_a_log_ON = function(req, res) {
 };
 
 //Todo: Clean the retreived level from sub level, such as level2.1.xml is accepted, however level2.1b.xml isnt
+//Gets the retrieved list of completed level
 exports.retrieve_comp_level_ON = function(req, res){
   var compLevel = [];
   var currentLevel;
@@ -83,7 +86,7 @@ exports.retrieve_comp_level_ON = function(req, res){
     }
   });
 }
-
+//Updates the current level with the related info
 exports.put_current_level_ON = function(req, res){
   var objName = req.params.name;
   var sessionID = req.params.sessionID.toString();

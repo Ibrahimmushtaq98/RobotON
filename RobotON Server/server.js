@@ -1,3 +1,4 @@
+//Importing node_module
 const http = require('http');
 const url = require('url');
 const fs = require('fs');
@@ -7,6 +8,7 @@ const nodemailer = require('nodemailer');
 const config = require('../config.json');
 const port = 8080;
 
+//Set up the mailing service
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -32,6 +34,7 @@ http.createServer(function (req, res) {
   // extract URL path
   // Avoid https://en.wikipedia.org/wiki/Directory_traversal_attack
   if(req.method === "POST"){
+    // Within this statement, it will check if it recieved a payload from GitHub, and start the autocompiler
     try{
       let body = '';
       req.on('data', chunk => {
@@ -72,6 +75,7 @@ http.createServer(function (req, res) {
 
     }
   }else if(req.method === "GET"){
+    // Within this statement, it will check if there is a GET request, and return the file
     try{
     const parsedUrl = url.parse(req.url);
     const sanitizePath = path.normalize(parsedUrl.pathname).replace(/^(\.\.[\/\\])+/, '');
@@ -111,6 +115,7 @@ http.createServer(function (req, res) {
 
 }).listen(parseInt(port));
 
+// Method will send a mail
 function sendEmail(subject, message){
   var mailOptions = {
       from: config.email,

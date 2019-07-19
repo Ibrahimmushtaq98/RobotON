@@ -1,6 +1,7 @@
 'use strict';
  var mongoose = require('mongoose');
  var Schema = mongoose.Schema;
+//Models for the DB
 
  var roboSchema = new Schema({
     name: {
