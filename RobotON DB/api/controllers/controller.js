@@ -114,7 +114,7 @@ exports.put_current_level_ON = function(req, res){
     var criteria = "name";
     query[criteria] = sessionID;
   
-    if(req.body['timeEnded'] || req.body['progress']){
+    if(req.body['timeEnded'] || req.body['progress'] || req.body['timeBonus'] ||req.body['points'] ){
       Task.updateOne(
         query,
         {$set : query1}, 
@@ -249,7 +249,7 @@ exports.put_current_level_BUG = function(req, res){
     var criteria = "name";
     query[criteria] = sessionID;
   
-    if(req.body['timeEnded'] || req.body['progress']){
+    if(req.body['timeEnded'] || req.body['progress'] || req.body['timeBonus'] ||req.body['points'] ){
       TaskT.updateOne(
         query,
         {$set : query1}, 
