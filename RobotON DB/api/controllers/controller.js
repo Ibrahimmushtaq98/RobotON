@@ -135,7 +135,7 @@ exports.put_current_level_ON = function(req, res){
       )
 
     }else if(req.body['timeEnded'] || req.body['progress'] || req.body['timeBonus'] ||
-    req.body['points'] || req.body['totalPoint'] || req.body['finalEnergy']){
+    req.body['points'] || req.body['totalPoint'] || req.body['finalEnergy'], req.body['time']){
       Task.updateOne(
         query,
         {$set : query1}, 
