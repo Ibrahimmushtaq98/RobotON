@@ -4,17 +4,20 @@ using System.Diagnostics;
 /// Only one instance of this is kept in Global State.
 /// </summary>
 public class CharacterStats{
-    public bool FreeFall{get;set;}
+    public int XPBoost{get;set;}
     public float Speed {get;set;}
     public int Points {get;set;}
     public int Energy{get;set;}
     public float DamageLevel{get;set;}
     public CharacterStats(bool reset = false){
         if (reset){
-            FreeFall = true; 
+            XPBoost = StatLib.xpboost[0]; 
             Speed = StatLib.speeds[0]; 
             Energy = StatLib.energyLevels[0];
-            DamageLevel = StatLib.damageLevels[0]; 
+            if (GlobalState.GameMode == stringLib.GAME_MODE_BUG){
+                DamageLevel = StatLib.bug_damageLevels[0];
+            }
+            else DamageLevel = StatLib.on_damageLevels[0]; 
             Points = 0; 
         }
     }
