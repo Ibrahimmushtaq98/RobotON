@@ -113,8 +113,29 @@ exports.put_current_level_ON = function(req, res){
     var query = {};
     var criteria = "name";
     query[criteria] = sessionID;
-  
-    if(req.body['timeEnded'] || req.body['progress'] || req.body['timeBonus'] ||req.body['points'] ){
+    
+    if(req.body['totalPoints']){
+
+      var query2 = {}
+      var criteria2 = objName; 
+      query2[criteria2] = req.body[objName];
+
+      Task.updateOne(
+        query,
+        {$set : query2}, 
+        {new:true},
+        function(err1,task1){
+          if(err){
+            res.json("ERR " + err1);
+          }else{
+            //console.log("task: " + task);
+            res.json(task1);
+          }
+        }
+      )
+
+    }else if(req.body['timeEnded'] || req.body['progress'] || req.body['timeBonus'] ||
+    req.body['points'] || req.body['totalPoint'] || req.body['finalEnergy']){
       Task.updateOne(
         query,
         {$set : query1}, 
@@ -248,8 +269,29 @@ exports.put_current_level_BUG = function(req, res){
     var query = {};
     var criteria = "name";
     query[criteria] = sessionID;
-  
-    if(req.body['timeEnded'] || req.body['progress'] || req.body['timeBonus'] ||req.body['points'] ){
+    
+    if(req.body['totalPoints']){
+
+      var query2 = {}
+      var criteria2 = objName; 
+      query2[criteria2] = req.body[objName];
+
+      TaskT.updateOne(
+        query,
+        {$set : query2}, 
+        {new:true},
+        function(err1,task1){
+          if(err){
+            res.json("ERR " + err1);
+          }else{
+            //console.log("task: " + task);
+            res.json(task1);
+          }
+        }
+      )
+
+    }else if(req.body['timeEnded'] || req.body['progress'] || req.body['timeBonus'] ||
+    req.body['points'] || req.body['totalPoint'] || req.body['finalEnergy']){
       TaskT.updateOne(
         query,
         {$set : query1}, 

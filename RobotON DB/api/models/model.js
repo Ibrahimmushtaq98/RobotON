@@ -7,9 +7,10 @@
     name: {
         type: String,
         unique: true,
-        required: 'Please Enter your name'
+        required: 'Please Enter your name!'
     },
     timeStarted: String,
+    totalPoints: String,
     levels:[{
         name: String,
         time: String,
@@ -18,7 +19,9 @@
         timeEnded: String,
         stars: String,
         points: String,
+        totalPoint: String,
         timeBonus: String,
+        finalEnergy: String,
         tools :[{
             name: String,
             correctLine: String,
@@ -62,6 +65,11 @@
             movement: String,
             vision: String,
 
+        }],
+        upgrades: [{
+            name: String,
+            timestamp: String,
+            points: String,
         }]
     }]
 });
