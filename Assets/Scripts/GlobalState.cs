@@ -16,6 +16,7 @@ public static class GlobalState
     public static string CurrentONLevel { get; set; }
     public static int CurrentLevelPoints {get;set;}
     public static int CurrentLevelEnergy {get;set;}
+    public static int RunningScore  = 0; 
     public static string Language ="c++"; 
     public static string CurrentBUGLevel { get; set; }
     public static string GameMode { get; set; }
@@ -38,6 +39,9 @@ public static class GlobalState
     public static string bugLine{get; set;}
     public static CharacterStats Stats{get;set;}
 
+    public static int totalPoints {get; set;}
+    public static int currentLevelStar {get; set;}
+    public static int currentLevelTimeBonus {get; set;}
     public static string URL_MOVIE {get; set;}
     public static string URL_MOVIE_MENU {get; set;}
     public static string URL_MOVIE_BUG {get; set;}

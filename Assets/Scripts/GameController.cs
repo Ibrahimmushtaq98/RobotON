@@ -171,9 +171,13 @@ public class GameController : MonoBehaviour, ITimeUser
         logger.onGameEnd(startDate, true, EnergyController.currentEnergy);
         GlobalState.timeBonus = logger.CalculateTimeBonus();
         GlobalState.timeBonus = CalculateTimeBonus();
+        GlobalState.currentLevelTimeBonus = GlobalState.timeBonus;
         GlobalState.CurrentLevelEnergy = (int)EnergyController.currentEnergy; 
-        GlobalState.CurrentLevelPoints = stateLib.DEFAULT_BUG_POINTS; 
-        logger.sendPoints();
+        if (GlobalState.GameMode == stringLib.GAME_MODE_BUG){
+            GlobalState.CurrentLevelPoints = stateLib.DEFAULT_BUG_POINTS; 
+        }
+        GlobalState.RunningScore+= GlobalState.CurrentLevelPoints; 
+        //logger.sendPoints();
         do
         {
             yield return new WaitForSecondsRealtime(2.2f);
