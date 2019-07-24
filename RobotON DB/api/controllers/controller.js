@@ -86,6 +86,8 @@ exports.retrieve_comp_level_ON = function(req, res){
     }
   });
 }
+
+// TODO ADD CHANGES TO BUG
 //Updates the current level with the related info
 exports.put_current_level_ON = function(req, res){
   var objName = req.params.name;
@@ -113,29 +115,39 @@ exports.put_current_level_ON = function(req, res){
     var query = {};
     var criteria = "name";
     query[criteria] = sessionID;
+
+    console.log(req.body);
     
-    if(req.body['totalPoints']){
+    if(req.body['totalPoints'] || req.body['upgrades']){
 
       var query2 = {}
       var criteria2 = objName; 
       query2[criteria2] = req.body[objName];
-
-      Task.updateOne(
-        query,
-        {$set : query2}, 
-        {new:true},
-        function(err1,task1){
-          if(err){
-            res.json("ERR " + err1);
-          }else{
-            //console.log("task: " + task);
-            res.json(task1);
+      var updateTypes;
+      if(req.body['totalPoints']){
+        Task.updateOne(
+          query,{$set : query2}, {new:true},function(err1,task1){
+            if(err){
+              res.json("ERR " + err1);
+            }else{
+              res.json(task1);
+            }
           }
-        }
-      )
-
-    }else if(req.body['timeEnded'] || req.body['progress'] || req.body['timeBonus'] ||
-    req.body['points'] || req.body['totalPoint'] || req.body['finalEnergy'], req.body['time']){
+        )
+      }else{
+        Task.updateOne(
+          query,{$push : query2}, {new:true},function(err1,task1){
+            if(err){
+              res.json("ERR " + err1);
+            }else{
+              res.json(task1);
+            }
+          }
+        )
+      }
+    }
+    else if(req.body["totalPoint"] ||req.body["timeEnded"] || req.body["finalEnergy"] || req.body["progress"] || req.body["time"] || req.body["progress"] || req.body["points"] || req.body["timeBonus"]){
+      console.log("TEST");
       Task.updateOne(
         query,
         {$set : query1}, 
@@ -144,7 +156,7 @@ exports.put_current_level_ON = function(req, res){
           if(err){
             res.json("ERR " + err1);
           }else{
-            //console.log("task: " + task);
+            console.log("task: " + task);
             res.json(task1);
           }
         }
@@ -244,6 +256,7 @@ exports.retrieve_comp_level_BUG = function(req, res){
   });
 }
 
+//Updates the current level with the related info
 exports.put_current_level_BUG = function(req, res){
   var objName = req.params.name;
   var sessionID = req.params.sessionID.toString();
@@ -270,28 +283,35 @@ exports.put_current_level_BUG = function(req, res){
     var criteria = "name";
     query[criteria] = sessionID;
     
-    if(req.body['totalPoints']){
+    if(req.body['totalPoints'] || req.body['upgrades']){
 
       var query2 = {}
       var criteria2 = objName; 
       query2[criteria2] = req.body[objName];
-
-      TaskT.updateOne(
-        query,
-        {$set : query2}, 
-        {new:true},
-        function(err1,task1){
-          if(err){
-            res.json("ERR " + err1);
-          }else{
-            //console.log("task: " + task);
-            res.json(task1);
+      var updateTypes;
+      if(req.body['totalPoints']){
+        TaskT.updateOne(
+          query,{$set : query2}, {new:true},function(err1,task1){
+            if(err){
+              res.json("ERR " + err1);
+            }else{
+              res.json(task1);
+            }
           }
-        }
-      )
-
-    }else if(req.body['timeEnded'] || req.body['progress'] || req.body['timeBonus'] ||
-    req.body['points'] || req.body['totalPoint'] || req.body['finalEnergy'], req.body['time']){
+        )
+      }else{
+        TaskT.updateOne(
+          query,{$push : query2}, {new:true},function(err1,task1){
+            if(err){
+              res.json("ERR " + err1);
+            }else{
+              res.json(task1);
+            }
+          }
+        )
+      }
+    }
+    else if(req.body["totalPoint"] ||req.body["timeEnded"] || req.body["finalEnergy"] || req.body["progress"] || req.body["time"] || req.body["progress"] || req.body["points"] || req.body["timeBonus"]){
       TaskT.updateOne(
         query,
         {$set : query1}, 
@@ -300,7 +320,6 @@ exports.put_current_level_BUG = function(req, res){
           if(err){
             res.json("ERR " + err1);
           }else{
-            //console.log("task: " + task);
             res.json(task1);
           }
         }

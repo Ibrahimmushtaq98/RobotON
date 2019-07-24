@@ -11,6 +11,12 @@
     },
     timeStarted: String,
     totalPoints: String,
+    upgrades: [{
+        name: String,
+        timestamp: String,
+        prePoints: String,
+        curPoints: String,
+    }],
     levels:[{
         name: String,
         time: String,
@@ -66,11 +72,6 @@
             vision: String,
 
         }],
-        upgrades: [{
-            name: String,
-            timestamp: String,
-            points: String,
-        }]
     }]
 });
 
