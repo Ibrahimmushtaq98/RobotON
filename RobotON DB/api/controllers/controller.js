@@ -71,13 +71,9 @@ exports.retrieve_comp_level_ON = function(req, res){
       if(task != null && typeof task == "object"){
         var jsonObjects = task.toJSON();
         Object.entries(jsonObjects.levels).forEach(([key, value]) =>{
-
           currentLevel = value.name;
-
-          if(value.progress == "Passed" && currentLevel != ""){
-            compLevel.push(currentLevel + " " + 1);
-            currentLevel = "";
-          }
+          compLevel.push(currentLevel + " " + 1);
+          currentLevel = "";
         });
       };
       compLevel = compLevel.filter(onlyUnique);
@@ -240,13 +236,9 @@ exports.retrieve_comp_level_BUG = function(req, res){
       if(task != null && typeof task == "object"){
         var jsonObjects = task.toJSON();
         Object.entries(jsonObjects.levels).forEach(([key, value]) =>{
-
           currentLevel = value.name;
-
-          if(value.progress == "Passed" && currentLevel != ""){
-            compLevel.push(currentLevel + " " + 1);
-            currentLevel = "";
-          }
+          compLevel.push(currentLevel + " " + 1);
+          currentLevel = "";
         });
       };
       compLevel = compLevel.filter(onlyUnique);
