@@ -36,14 +36,22 @@ http.createServer(function (req, res) {
   if(req.method === "POST"){
     // Within this statement, it will check if it recieved a payload from GitHub, and start the autocompiler
     try{
+      if(req.url.includes("user") || req.url.includes("page") || req.url.includes("size")){
+        console.log("Could not complete request");
+        res.statusCode = 501
+        res.end("Server Does not have functionility");
+        return;
+      }
       let body = '';
       req.on('data', chunk => {
           body += chunk.toString();
       }); 
       req.on('end', () => {
-        var parsString = body.toString();        
-          var jsonString = JSON.parse(parsString);
-          console.log("commits :" + jsonString.commits);
+        var parsString = body.toString();
+            var jsonString = JSON.parse(parsString);
+          if(jsonString['commits']){
+            console.log("commits :" + jsonString.commits);
+          }
 
           try{
             if(jsonString.commits.length != 0){
