@@ -27,14 +27,12 @@ exports.create_a_log_ON = function(req, res) {
     if (err)
       res.send(err);
     res.json(task);
-    console.log(task);
   });
 };
 
 
 //GET REQUEST FOR info Related to the SessionID
 exports.read_a_log_ON = function(req, res) {
-    console.log(req.params);
   Task.findOne({name: req.params.sessionID}, function(err, task) {
     if (err)
       res.send(err);
@@ -54,7 +52,6 @@ exports.update_a_log_ON = function(req, res) {
       res.send(err);
     }
     res.json(task);
-    console.log(task);
   });
   Task.find
 };
@@ -112,7 +109,6 @@ exports.put_current_level_ON = function(req, res){
     var criteria = "name";
     query[criteria] = sessionID;
 
-    console.log(req.body);
     
     if(req.body['totalPoints'] || req.body['upgrades']){
 
@@ -143,7 +139,6 @@ exports.put_current_level_ON = function(req, res){
       }
     }
     else if(req.body["totalPoint"] ||req.body["timeEnded"] || req.body["finalEnergy"] || req.body["progress"] || req.body["time"] || req.body["progress"] || req.body["points"] || req.body["timeBonus"]){
-      console.log("TEST");
       Task.updateOne(
         query,
         {$set : query1}, 
@@ -152,7 +147,6 @@ exports.put_current_level_ON = function(req, res){
           if(err){
             res.json("ERR " + err1);
           }else{
-            console.log("task: " + task);
             res.json(task1);
           }
         }
@@ -167,7 +161,6 @@ exports.put_current_level_ON = function(req, res){
           if(err){
             res.json("ERR " + err1);
           }else{
-            //console.log("task: " + task);
             res.json(task1);
           }
         }
@@ -193,13 +186,11 @@ exports.create_a_log_BUG = function(req, res) {
     if (err)
       res.send(err);
     res.json(task);
-    console.log(task);
   });
 };
 
 
 exports.read_a_log_BUG = function(req, res) {
-  console.log(req.params);
   TaskT.findOne({name: req.params.sessionID}, function(err, task) {
     if (err)
       res.send(err);
@@ -209,19 +200,15 @@ exports.read_a_log_BUG = function(req, res) {
 
 
 exports.update_a_log_BUG = function(req, res) {
-  console.log(req.body);
   TaskT.findOneAndUpdate({name: req.params.sessionID}, 
     {$push : {levels: req.body['levels']}}, 
     {new: true},
     function(err, task) {
-    console.log("PUT");
-    console.log(req.body);
     if (err)
       res.send(err);
     
     if(task == null)
     res.json(task);
-    console.log(task);
   });
   TaskT.find
 };
@@ -326,7 +313,6 @@ exports.put_current_level_BUG = function(req, res){
           if(err){
             res.json("ERR " + err1);
           }else{
-            //console.log("task: " + task);
             res.json(task1);
           }
         }
