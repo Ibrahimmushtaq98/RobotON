@@ -4,5 +4,38 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/TitleScene.unity
+    guid: e7ff797985b615d4990571fa46911b83
+  - enabled: 1
+    path: Assets/CharacterSelect.unity
+    guid: d9fce6f13e688f3419e015880879de9d
+  - enabled: 1
+    path: Assets/Cinematic.unity
+    guid: 8f4da42722c0cec4581c1fd86a834976
+  - enabled: 1
+    path: Assets/Credits.unity
+    guid: 38fe8b54002fc1f48a51b0016b7e7579
+  - enabled: 1
+    path: Assets/IntroScene.unity
+    guid: 8078525e607875949967830ca37d172c
+  - enabled: 1
+    path: Assets/MainMenu.unity
+    guid: eedbf13a456cd2e4d807f9f8bfb5fab9
+  - enabled: 1
+    path: Assets/Progression.unity
+    guid: 52603c2c4ca178240b3d3f6f7a17d9df
+  - enabled: 1
+    path: Assets/newgame.unity
+    guid: 9abd8467a13e13148bf7370789937b0b
+  - enabled: 1
+    path: Assets/TitleMenu.unity
+    guid: c31e53013458d9444936ebccb9bcbb0f
+  - enabled: 1
+    path: Assets/Transition.unity
+    guid: 864e70aee7b26f8448106c8d01e577d0
+  - enabled: 1
+    path: Assets/TutorialDemo.unity
+    guid: 3a77bf03bc860334f9838838ecdff5e1
   m_configObjects: {}
