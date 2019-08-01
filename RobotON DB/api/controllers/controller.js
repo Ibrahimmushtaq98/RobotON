@@ -69,7 +69,12 @@ exports.retrieve_comp_level_ON = function(req, res){
         var jsonObjects = task.toJSON();
         Object.entries(jsonObjects.levels).forEach(([key, value]) =>{
           currentLevel = value.name;
-          compLevel.push(currentLevel + " " + 1);
+          if(value.progress == "Passed" && currentLevel != ""){
+            compLevel.push(currentLevel + " " + 1);
+            currentLevel = "";
+          }else{
+            compLevel.push(currentLevel + " " + 0);
+          }
           currentLevel = "";
         });
       };
@@ -224,7 +229,12 @@ exports.retrieve_comp_level_BUG = function(req, res){
         var jsonObjects = task.toJSON();
         Object.entries(jsonObjects.levels).forEach(([key, value]) =>{
           currentLevel = value.name;
-          compLevel.push(currentLevel + " " + 1);
+          if(value.progress == "Passed" && currentLevel != ""){
+            compLevel.push(currentLevel + " " + 1);
+            currentLevel = "";
+          }else{
+            compLevel.push(currentLevel + " " + 0);
+          }
           currentLevel = "";
         });
       };
