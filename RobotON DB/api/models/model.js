@@ -11,6 +11,7 @@
     },
     timeStarted: String,
     totalPoints: String,
+    currentPoints: String,
     speedUpgrades: String,
     xpUpgrades: String,
     resistanceUpgrade: String,

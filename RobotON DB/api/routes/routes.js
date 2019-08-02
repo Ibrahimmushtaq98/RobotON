@@ -23,7 +23,7 @@ module.exports = function(app){
     app.route('/logsON/completedlevels/:sessionID')
     .get(logControl.retrieve_comp_level_ON);
 
-    app.route('/logsON/completedlevels/:sessionID')
+    app.route('/logsON/points/:sessionID/:name')
     .get(logControl.retrieve_upgrade_points_ON)
     .put(logControl.put_upgrade_points_ON);
 
@@ -40,5 +40,9 @@ module.exports = function(app){
 
     app.route('/logsBUG/currentlevel/:sessionID/:name')
     .put(logControl.put_current_level_BUG);
+
+    app.route('/logsBUG/points/:sessionID/:name')
+    .get(logControl.retrieve_upgrade_points_BUG)
+    .put(logControl.put_upgrade_points_BUG);
 
 };

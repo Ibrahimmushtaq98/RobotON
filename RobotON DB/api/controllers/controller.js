@@ -177,29 +177,27 @@ exports.put_current_level_ON = function(req, res){
 };
 
 
-exports.retrieve_upgrade_points_ON = function(res,req){
-  Task.findOne({name: req.params.sessionID} ,{'totalPoints': 1, 'speedUpgrades': 1, 'xpUpgrades': 1, 'resistanceUpgrade': 1, 'energyUpgrades': 1} ,function(err, task) {
+exports.retrieve_upgrade_points_ON = function(req,res){
+  var queryCl = {};
+  var criteria = req.params.name;
+  var criteria2 = "_id";
+
+  queryCl[criteria] = 1;
+  queryCl[criteria2] = 0;
+  Task.findOne({name: req.params.sessionID} ,queryCl, function(err, task) {
     if (err)
       res.send(err);
     res.json(task);
   });
 
-}
+};
 
-exports.put_upgrade_points_ON = function(res,req){
-  if(req.body['upgradePoints']){
+exports.put_upgrade_points_ON = function(req,res){
+  console.log(req.body[ req.params.name]);
     var queryCl = {};
-    var criteriaiTP = "totalPoints";
-    var criteriaSU = "speedUpgrades";
-    var criterialXPU = "xpUpgrades";
-    var criteriaLRU = "resistanceUpgrade";
-    var criteriaEU = "energyUpgrades";
+    var criteria = req.params.name;
 
-    queryCl[criteriaiTP] = req.body.upgradePoints.totalPoints;
-    queryCl[criteriaSU] = req.body.upgradePoints.speedUpgrades;
-    queryCl[criterialXPU] = req.body.upgradePoints.xpUpgrades;
-    queryCl[criteriaLRU] = req.body.upgradePoints.resistanceUpgrade;
-    queryCl[criteriaEU] = req.body.upgradePoints.energyUpgrades;
+    queryCl[criteria] = req.body[ req.params.name];
 
     console.log(queryCl);
     
@@ -211,7 +209,6 @@ exports.put_upgrade_points_ON = function(res,req){
               res.json(task1);
           }
       });
-  }
 
 }
 
@@ -371,3 +368,38 @@ exports.put_current_level_BUG = function(req, res){
 
   });
 };
+
+exports.retrieve_upgrade_points_BUG = function(req,res){
+  var queryCl = {};
+  var criteria = req.params.name;
+  var criteria2 = "_id";
+
+  queryCl[criteria] = 1;
+  queryCl[criteria2] = 0;
+  TaskT.findOne({name: req.params.sessionID} ,queryCl, function(err, task) {
+    if (err)
+      res.send(err);
+    res.json(task);
+  });
+
+};
+
+exports.put_upgrade_points_BUG = function(req,res){
+  console.log(req.body[ req.params.name]);
+    var queryCl = {};
+    var criteria = req.params.name;
+
+    queryCl[criteria] = req.body[ req.params.name];
+
+    console.log(queryCl);
+    
+    TaskT.updateOne({name: req.params.sessionID},
+      {$set  : queryCl}, function(err1, task1){
+          if(err1){
+              res.send(err1);
+          }else{
+              res.json(task1);
+          }
+      });
+
+}
