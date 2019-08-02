@@ -176,6 +176,45 @@ exports.put_current_level_ON = function(req, res){
   });
 };
 
+
+exports.retrieve_upgrade_points_ON = function(res,req){
+  Task.findOne({name: req.params.sessionID} ,{'totalPoints': 1, 'speedUpgrades': 1, 'xpUpgrades': 1, 'resistanceUpgrade': 1, 'energyUpgrades': 1} ,function(err, task) {
+    if (err)
+      res.send(err);
+    res.json(task);
+  });
+
+}
+
+exports.put_upgrade_points_ON = function(res,req){
+  if(req.body['upgradePoints']){
+    var queryCl = {};
+    var criteriaiTP = "totalPoints";
+    var criteriaSU = "speedUpgrades";
+    var criterialXPU = "xpUpgrades";
+    var criteriaLRU = "resistanceUpgrade";
+    var criteriaEU = "energyUpgrades";
+
+    queryCl[criteriaiTP] = req.body.upgradePoints.totalPoints;
+    queryCl[criteriaSU] = req.body.upgradePoints.speedUpgrades;
+    queryCl[criterialXPU] = req.body.upgradePoints.xpUpgrades;
+    queryCl[criteriaLRU] = req.body.upgradePoints.resistanceUpgrade;
+    queryCl[criteriaEU] = req.body.upgradePoints.energyUpgrades;
+
+    console.log(queryCl);
+    
+    Task.updateOne({name: req.params.sessionID},
+      {$set  : queryCl}, function(err1, task1){
+          if(err1){
+              res.send(err1);
+          }else{
+              res.json(task1);
+          }
+      });
+  }
+
+}
+
 //------------------------------------------------------------------------------->
 exports.list_all_logs_BUG = function(req,res){
   TaskT.find({}, function(err, task) {

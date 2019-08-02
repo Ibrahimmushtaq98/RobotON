@@ -11,6 +11,10 @@
     },
     timeStarted: String,
     totalPoints: String,
+    speedUpgrades: String,
+    xpUpgrades: String,
+    resistanceUpgrade: String,
+    energyUpgrades: String,
     upgrades: [{
         name: String,
         timestamp: String,
