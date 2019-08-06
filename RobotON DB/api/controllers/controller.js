@@ -193,13 +193,10 @@ exports.retrieve_upgrade_points_ON = function(req,res){
 };
 
 exports.put_upgrade_points_ON = function(req,res){
-  console.log(req.body[ req.params.name]);
     var queryCl = {};
     var criteria = req.params.name;
 
     queryCl[criteria] = req.body[ req.params.name];
-
-    console.log(queryCl);
     
     Task.updateOne({name: req.params.sessionID},
       {$set  : queryCl}, function(err1, task1){
@@ -385,13 +382,10 @@ exports.retrieve_upgrade_points_BUG = function(req,res){
 };
 
 exports.put_upgrade_points_BUG = function(req,res){
-  console.log(req.body[ req.params.name]);
     var queryCl = {};
     var criteria = req.params.name;
 
     queryCl[criteria] = req.body[ req.params.name];
-
-    console.log(queryCl);
     
     TaskT.updateOne({name: req.params.sessionID},
       {$set  : queryCl}, function(err1, task1){
