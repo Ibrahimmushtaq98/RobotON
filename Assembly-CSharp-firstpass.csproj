@@ -81,12 +81,6 @@
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -111,10 +105,14 @@
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
+<<<<<<< HEAD
 <<<<<<< HEAD
  <HintPath>C:/Users/kashi/Documents/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
 >>>>>>> master
@@ -130,6 +128,10 @@
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
 =======
 =======
+>>>>>>> master
+=======
+ <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ </Reference>
 >>>>>>> master
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
 <<<<<<< HEAD
