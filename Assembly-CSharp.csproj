@@ -403,12 +403,6 @@
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -445,12 +439,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  <HintPath>C:/Users/kashi/Documents/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
@@ -502,6 +500,10 @@
  <HintPath>C:/Users/kashi/Documents/RobotON/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
 >>>>>>> master
 =======
+=======
+ <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ </Reference>
+>>>>>>> master
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
 >>>>>>> master
