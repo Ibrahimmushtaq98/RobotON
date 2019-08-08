@@ -1,5 +1,6 @@
 <level>
 <next-level>level3-3b.xml</next-level>
+<failure_level>level3-1.xml</failure_level>
 <description>While on the Subject</description>
 <introtext>Finally, we need to decrypt our data! </introtext>
 <endtext>Splendid!
@@ -12,6 +13,7 @@ You're mastering the loops!</endtext>
 </tools>
 <code language="python">
 	<comment type="description" correct="true"  groupid="10">as you saw earlier, while loops can imitate for loops</comment>
+	<comment type="description" correct="false"  groupid="10">While loops can't imitate For loops.</comment>
 	i = 0
 	text = "1"
 	while (i &lt; 5):
@@ -29,7 +31,7 @@ You're mastering the loops!</endtext>
 		i++
 	
 <beacon flow-order="5" />		#pay close attention to how the words change!
-	print<question text="What is the word now?
+	print(<question text="What is the word now?
 	Select your answer: " options="00000,hello,helloo,hellooo" answer="hello">word</question>)
 </code>
 </level>
