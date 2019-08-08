@@ -8,6 +8,10 @@ var mongoose = require('mongoose'),
 function onlyUnique(value, index, self){
   return self.indexOf(value) === index;
 }
+
+function sortJsonArrByPoints(a,b){
+  return b.points - a.points;
+}
 //-------------------------------EOF EXTERNAL FUNCTIONS!--------------------------------------->
 
 
@@ -19,6 +23,181 @@ exports.list_all_logs_ON = function(req,res){
         res.json(task);
       });
 };
+
+exports.list_all_leaderboard_ON = function(req,res){
+  var levelName = req.params.levelName
+  console.log(levelName);
+  Task.aggregate([
+    {$match: {'levels.name' : levelName}},
+    {$unwind: '$levels'},
+    {$project:{name: 1, _id:0, "levels":{
+      $map :{
+        input: {
+          $filter:{
+            input: ['$levels'],
+            as: 'level',
+            cond:{ $and:[
+              {$eq: ['$$level.name', levelName]},
+              {$eq : ['$$level.progress', 'Passed']},
+              {$gte : ['$$level.points', "10"]},
+              {$ne :['$$level', null]}
+            ]}
+          }},
+          as: 'levelM',
+          in: {
+            'level_name': '$$levelM.name',
+            'level_point': '$$levelM.points'
+          }
+        }
+      }
+    }},
+    {$sort: {'levels.level_point': -1}}
+
+  ]).exec(function(err,task){
+    if(err){
+      res.send(err);
+    }
+    
+    var scores = {
+      leaderscores:[]
+    };
+
+    var tmp = "";
+    var iter = 0;
+    for(var i in task){
+      var item = task[i];
+      if(item.levels[0] != null && !(tmp.includes(item.name))){
+        tmp += item.name + " ";
+        var item2 = item.levels[0]
+        scores.leaderscores.push({
+          "name": item.name,
+          "levelName" : item2.level_name,
+          "points": item2.level_point,
+          "rank": ""
+        });
+      }
+    }
+    scores.leaderscores = scores.leaderscores.sort(sortJsonArrByPoints);
+
+    scores.leaderscores.forEach(function(arr){
+      arr.rank = iter + 1;
+      iter +=1;
+    });
+    res.json(scores);
+  })
+}
+
+exports.list_all_leaderboard_id_ON = function(req,res){
+  var levelName = req.params.levelName
+  console.log(levelName);
+  var leaderJson1;
+  var leaderJson2;
+
+  Task.aggregate([
+    {$match: {'name' : req.params.sessionID}},
+    {$unwind: '$levels'},
+    {$project:{name: 1, _id:0, "levels":{
+      $map :{
+        input: {
+          $filter:{
+            input: ['$levels'],
+            as: 'level',
+            cond:{ $and:[
+              {$eq: ['$$level.name', levelName]},
+              {$eq : ['$$level.progress', 'Passed']},
+              {$gte : ['$$level.points', "10"]},
+              {$ne :['$$level', null]}
+            ]}
+          }},
+          as: 'levelM',
+          in: {
+            'level_name': '$$levelM.name',
+            'level_point': '$$levelM.points'
+          }
+        }
+      }
+    }},
+    {$sort: {'levels.level_point': -1}}
+
+  ]).exec(function(err,task){
+    if(err){
+      res.send(err);
+    }
+      leaderJson1 = task;
+      Task.aggregate([
+        {$match: {'levels.name' : levelName}},
+        {$unwind: '$levels'},
+        {$project:{name: 1, _id:0, "levels":{
+          $map :{
+            input: {
+              $filter:{
+                input: ['$levels'],
+                as: 'level',
+                cond:{ $and:[
+                  {$eq: ['$$level.name', levelName]},
+                  {$eq : ['$$level.progress', 'Passed']},
+                  {$gte : ['$$level.points', "10"]},
+                  {$ne :['$$level', null]}
+                ]}
+              }},
+              as: 'levelM',
+              in: {
+                'level_name': '$$levelM.name',
+                'level_point': '$$levelM.points'
+              }
+            }
+          }
+        }},
+        {$sort: {'levels.level_point': -1}}
+    
+      ]).exec(function(err1,task1){
+        if(err){
+          res.send(err1);
+        }
+        leaderJson2 = task1;
+        var scores = {
+          leaderscores:[]
+        };
+        var tmp = "";
+        var iter = 0;
+        for(var i in leaderJson2){
+          var item = leaderJson2[i];
+          if(item.levels[0] != null && !(tmp.includes(item.name)) && iter != 10){
+            tmp += item.name + " ";
+            var item2 = item.levels[0]
+            scores.leaderscores.push({
+              "name": item.name,
+              "levelName" : item2.level_name,
+              "points": item2.level_point,
+              "rank": ""
+            });
+            iter+=1;
+          }
+        }
+        iter = 0;
+        scores.leaderscores = scores.leaderscores.sort(sortJsonArrByPoints);
+        scores.leaderscores.forEach(function(arr){
+          arr.rank = iter + 1;
+          iter +=1;
+        });
+
+
+        var items = leaderJson1[0];
+        console.log(leaderJson1);
+        if(items !=null && items.levels[0] !=null){
+          var items2 = items.levels[0];
+          scores.leaderscores.push({
+            "name": items.name,
+            "levelName" : items2.level_name,
+            "points": items2.level_point,
+            "rank": "11"
+          })
+        }
+        res.json(scores)
+
+      });
+  });
+}
 
 //Creates a new log for that sessionID
 exports.create_a_log_ON = function(req, res) {
@@ -56,7 +235,6 @@ exports.update_a_log_ON = function(req, res) {
   Task.find
 };
 
-//Todo: Clean the retreived level from sub level, such as level2.1.xml is accepted, however level2.1b.xml isnt
 //Gets the retrieved list of completed level
 exports.retrieve_comp_level_ON = function(req, res){
   var compLevel = [];
@@ -85,7 +263,6 @@ exports.retrieve_comp_level_ON = function(req, res){
   });
 }
 
-// TODO ADD CHANGES TO BUG
 //Updates the current level with the related info
 exports.put_current_level_ON = function(req, res){
   var objName = req.params.name;
@@ -396,4 +573,179 @@ exports.put_upgrade_points_BUG = function(req,res){
           }
       });
 
+}
+
+exports.list_all_leaderboard_BUG = function(req,res){
+  var levelName = req.params.levelName
+  console.log(levelName);
+  TaskT.aggregate([
+    {$match: {'levels.name' : levelName}},
+    {$unwind: '$levels'},
+    {$project:{name: 1, _id:0, "levels":{
+      $map :{
+        input: {
+          $filter:{
+            input: ['$levels'],
+            as: 'level',
+            cond:{ $and:[
+              {$eq: ['$$level.name', levelName]},
+              {$eq : ['$$level.progress', 'Passed']},
+              {$gte : ['$$level.points', "10"]},
+              {$ne :['$$level', null]}
+            ]}
+          }},
+          as: 'levelM',
+          in: {
+            'level_name': '$$levelM.name',
+            'level_point': '$$levelM.points'
+          }
+        }
+      }
+    }},
+    {$sort: {'levels.level_point': -1}}
+
+  ]).exec(function(err,task){
+    if(err){
+      res.send(err);
+    }
+    
+    var scores = {
+      leaderscores:[]
+    };
+
+    var tmp = "";
+    var iter = 0;
+    for(var i in task){
+      var item = task[i];
+      if(item.levels[0] != null && !(tmp.includes(item.name))){
+        tmp += item.name + " ";
+        var item2 = item.levels[0]
+        scores.leaderscores.push({
+          "name": item.name,
+          "levelName" : item2.level_name,
+          "points": item2.level_point,
+          "rank": ""
+        });
+      }
+    }
+    scores.leaderscores = scores.leaderscores.sort(sortJsonArrByPoints);
+
+    scores.leaderscores.forEach(function(arr){
+      arr.rank = iter + 1;
+      iter +=1;
+    });
+    res.json(scores);
+  })
+}
+
+exports.list_all_leaderboard_id_BUG = function(req,res){
+  var levelName = req.params.levelName
+  console.log(levelName);
+  var leaderJson1;
+  var leaderJson2;
+
+  TaskT.aggregate([
+    {$match: {'name' : req.params.sessionID}},
+    {$unwind: '$levels'},
+    {$project:{name: 1, _id:0, "levels":{
+      $map :{
+        input: {
+          $filter:{
+            input: ['$levels'],
+            as: 'level',
+            cond:{ $and:[
+              {$eq: ['$$level.name', levelName]},
+              {$eq : ['$$level.progress', 'Passed']},
+              {$gte : ['$$level.points', "10"]},
+              {$ne :['$$level', null]}
+            ]}
+          }},
+          as: 'levelM',
+          in: {
+            'level_name': '$$levelM.name',
+            'level_point': '$$levelM.points'
+          }
+        }
+      }
+    }},
+    {$sort: {'levels.level_point': -1}}
+
+  ]).exec(function(err,task){
+    if(err){
+      res.send(err);
+    }
+      leaderJson1 = task;
+      TaskT.aggregate([
+        {$match: {'levels.name' : levelName}},
+        {$unwind: '$levels'},
+        {$project:{name: 1, _id:0, "levels":{
+          $map :{
+            input: {
+              $filter:{
+                input: ['$levels'],
+                as: 'level',
+                cond:{ $and:[
+                  {$eq: ['$$level.name', levelName]},
+                  {$eq : ['$$level.progress', 'Passed']},
+                  {$gte : ['$$level.points', "10"]},
+                  {$ne :['$$level', null]}
+                ]}
+              }},
+              as: 'levelM',
+              in: {
+                'level_name': '$$levelM.name',
+                'level_point': '$$levelM.points'
+              }
+            }
+          }
+        }},
+        {$sort: {'levels.level_point': -1}}
+    
+      ]).exec(function(err1,task1){
+        if(err){
+          res.send(err1);
+        }
+        leaderJson2 = task1;
+        var scores = {
+          leaderscores:[]
+        };
+        var tmp = "";
+        var iter = 0;
+        for(var i in leaderJson2){
+          var item = leaderJson2[i];
+          if(item.levels[0] != null && !(tmp.includes(item.name)) && iter != 10){
+            tmp += item.name + " ";
+            var item2 = item.levels[0]
+            scores.leaderscores.push({
+              "name": item.name,
+              "levelName" : item2.level_name,
+              "points": item2.level_point,
+              "rank": ""
+            });
+            iter+=1;
+          }
+        }
+        iter = 0;
+        scores.leaderscores = scores.leaderscores.sort(sortJsonArrByPoints);
+        scores.leaderscores.forEach(function(arr){
+          arr.rank = iter + 1;
+          iter +=1;
+        });
+
+
+        var items = leaderJson1[0];
+        console.log(leaderJson1);
+        if(items !=null && items.levels[0] !=null){
+          var items2 = items.levels[0];
+          scores.leaderscores.push({
+            "name": items.name,
+            "levelName" : items2.level_name,
+            "points": items2.level_point,
+            "rank": "11"
+          })
+        }
+        res.json(scores)
+
+      });
+  });
 }

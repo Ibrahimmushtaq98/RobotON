@@ -9,6 +9,7 @@
         unique: true,
         required: 'Please Enter your name!'
     },
+    username: String,
     timeStarted: String,
     totalPoints: String,
     currentPoints: String,
