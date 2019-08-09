@@ -275,6 +275,25 @@ exports.put_upgrade_points_ON = function(req,res){
 
 }
 
+exports.check_word_ON = function(req,res){
+  var Filter = require('bad-words'),
+    filter = new Filter();
+
+    if(filter.isProfane(req.params.word)){
+      res.send(true);
+    }else{
+      Task.findOne({username: req.params.word}, function(err, task){
+        if(err){
+          res.send(true);
+        }else if(task){
+          res.send(true);
+        }else{
+          res.send(false);
+        }
+      })
+    }
+}
+
 //------------------------------------------------------------------------------->
 exports.list_all_logs_BUG = function(req,res){
   TaskT.find({}, function(err, task) {
@@ -526,4 +545,23 @@ exports.list_all_leaderboard_BUG = function(req,res){
     });
     res.json(scores);
   })
+}
+
+exports.check_word_BUG = function(req,res){
+  var Filter = require('bad-words'),
+    filter = new Filter();
+
+    if(filter.isProfane(req.params.word)){
+      res.send(true);
+    }else{
+      TaskT.findOne({username: req.params.word}, function(err, task){
+        if(err){
+          res.send(true);
+        }else if(task){
+          res.send(true);
+        }else{
+          res.send(false);
+        }
+      })
+    }
 }

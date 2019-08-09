@@ -30,6 +30,9 @@ module.exports = function(app){
     .get(logControl.retrieve_upgrade_points_ON)
     .put(logControl.put_upgrade_points_ON);
 
+    app.route('/logsON/check/:word')
+    .get(logControl.check_word_ON);
+
     app.route('/logsBUG')
     .get(logControl.list_all_logs_BUG)
     .post(logControl.create_a_log_BUG);
@@ -50,5 +53,8 @@ module.exports = function(app){
 
     app.route('/logsBUG/leaderboard/:levelName')
     .get(logControl.list_all_leaderboard_BUG);
+
+    // app.route('/logsBUG/check/:word')
+    // .get(logControl.check_word_BUG);
 
 };
