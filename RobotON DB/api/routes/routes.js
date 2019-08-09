@@ -12,9 +12,6 @@ module.exports = function(app){
     app.route('/logsON/leaderboard/:levelName')
     .get(logControl.list_all_leaderboard_ON);
 
-    app.route('/logsON/leaderboard/:sessionID/:levelName')
-    .get(logControl.list_all_leaderboard_id_ON);
-
     //A Get Request will show only the information that is tied with the sessionID
     //A Put requst will update the information related to the sessionID
     app.route('/logsON/:sessionID')
@@ -53,8 +50,5 @@ module.exports = function(app){
 
     app.route('/logsBUG/leaderboard/:levelName')
     .get(logControl.list_all_leaderboard_BUG);
-
-    app.route('/logsBUG/leaderboard/:sessionID/:levelName')
-    .get(logControl.list_all_leaderboard_id_BUG);
 
 };
