@@ -89,6 +89,12 @@
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.DataPrivacy">
+ <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -120,49 +126,6 @@
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
->>>>>>> master
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.DataPrivacy">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
- <HintPath>C:/Users/kashi/Documents/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
->>>>>>> master
-=======
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
->>>>>>> master
- </Reference>
-<<<<<<< HEAD
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-=======
-=======
->>>>>>> master
-=======
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
->>>>>>> master
-=======
->>>>>>> master
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
 <<<<<<< HEAD
 <<<<<<< HEAD
