@@ -54,7 +54,7 @@ module.exports = function(app){
     app.route('/logsBUG/leaderboard/:levelName')
     .get(logControl.list_all_leaderboard_BUG);
 
-    // app.route('/logsBUG/check/:word')
-    // .get(logControl.check_word_BUG);
+    app.route('/logsBUG/check/:word')
+    .get(logControl.check_word_BUG);
 
 };

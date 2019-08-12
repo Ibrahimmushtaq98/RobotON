@@ -13,7 +13,9 @@ public class WebGLBuilder
 
         BuildPlayerOptions buildPlayer = new BuildPlayerOptions();
         buildPlayer.scenes = new [] {"Assets/TitleScene.unity",
-                            "Assets/TitleMenu.unity", 
+                            "Assets/TitleMenu.unity",
+                            "Assets/StartScene.unity",
+                            "Assets/Leaderboard.unity", 
                             "Assets/MainMenu.unity",
                             "Assets/newgame.unity",
                             "Assets/Cinematic.unity",
