@@ -26,7 +26,7 @@ public class WebGLBuilder
                             "Assets/TutorialDemo.unity",
                             "Assets/Progression.unity"};
 
-        buildPlayer.locationPathName = "/home/ibrahim/Desktop/WebGLBuilds/RoboON";
+        buildPlayer.locationPathName = "/home/ibrahim/Desktop/WebGLBuilds/RoboBUG";
         buildPlayer.target = BuildTarget.WebGL;
         Application.targetFrameRate = 30;
 
