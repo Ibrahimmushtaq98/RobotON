@@ -72,10 +72,14 @@
         }],
         enemy: [{
             name: String,
-            preEenergy: String,
+            preEnergy: String,
             finEnergy: String,
-            movement: String,
-            vision: String,
+            position: {
+                line:String,
+                x_pos:String,
+                y_pos:String
+            },
+            timestamp: String
 
         }],
     }]
