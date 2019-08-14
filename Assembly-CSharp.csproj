@@ -386,25 +386,7 @@
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-<<<<<<< HEAD
-=======
-=======
- <HintPath>C:/Users/kashi/Documents/RobotON/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
->>>>>>> master
-=======
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
->>>>>>> master
-=======
- <HintPath>C:/Users/kashi/Documents/RobotON/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
->>>>>>> master
-=======
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
->>>>>>> master
  </Reference>
  <Reference Include="Unity.Timeline">
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
@@ -412,143 +394,11 @@
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
->>>>>>> master
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-=======
- <HintPath>C:/Users/kashi/Documents/RobotON/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
-=======
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
->>>>>>> master
-=======
- <HintPath>C:/Users/kashi/Documents/RobotON/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
->>>>>>> master
-=======
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
->>>>>>> master
- </Reference>
- <Reference Include="UnityEditor.SpatialTracking">
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
- </Reference>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
->>>>>>> master
-=======
->>>>>>> master
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.DataPrivacy">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
- <HintPath>C:/Users/kashi/Documents/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
->>>>>>> master
-=======
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
->>>>>>> master
- </Reference>
-<<<<<<< HEAD
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
  <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-=======
-=======
->>>>>>> master
-=======
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
->>>>>>> master
-=======
->>>>>>> master
- <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-<<<<<<< HEAD
-<<<<<<< HEAD
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> 66993409f96120c6e24dca5e72f5b6d5610e2e2a
->>>>>>> master
-=======
- <HintPath>C:/Users/kashi/Documents/RobotON/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
->>>>>>> master
-=======
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
->>>>>>> master
-=======
-=======
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/kashi/Documents/RobotON/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/kashi/Documents/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
->>>>>>> master
- <Reference Include="UnityEditor.XR.LegacyInputHelpers">
- <HintPath>C:/Users/kashi/Documents/RobotON/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
->>>>>>> master
-=======
-=======
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
->>>>>>> master
-=======
->>>>>>> master
-=======
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
->>>>>>> master
-=======
->>>>>>> master
-=======
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
->>>>>>> master
-=======
->>>>>>> master
-=======
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
->>>>>>> master
- <Reference Include="UnityEditor.XR.LegacyInputHelpers">
- <HintPath>C:/Users/Ibrahim/Desktop/RobotON/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
->>>>>>> master
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

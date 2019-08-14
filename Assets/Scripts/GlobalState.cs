@@ -31,7 +31,7 @@ public static class GlobalState
     public static bool IsDark = true; 
     public static int[] toolUse; 
     public static int TextSize = 1; 
-    public static bool soundon;
+    public static bool soundon = true;
     public static string FilePath = (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor) ? @"\" : @"/";
     public static Level level; 
     public static int timeBonus = 0; 

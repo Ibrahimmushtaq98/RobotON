@@ -796,7 +796,8 @@ public class OldMenu : MonoBehaviour
             GlobalState.TextSize = PlayerPrefs.GetInt("textsize", 1);
         }
         if(PlayerPrefs.HasKey("soundon")){
-            GlobalState.soundon = Convert.ToBoolean(PlayerPrefs.GetInt("soundon", 0));
+            GlobalState.soundon = Convert.ToBoolean(PlayerPrefs.GetInt("soundon", 1));
+            soundon = GlobalState.soundon;
         }
         if(PlayerPrefs.HasKey("themes")){
             GlobalState.IsDark = Convert.ToBoolean(PlayerPrefs.GetInt("themes", 1));
