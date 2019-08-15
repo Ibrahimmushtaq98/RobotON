@@ -37,7 +37,7 @@ public class WebGLBuilder
         AspectRatio aspectRatio = AspectRatio.Aspect16by9;
         PlayerSettings.SetAspectRatio(aspectRatio, true);
         PlayerSettings.productName = "RoboGames";
-        PlayerSettings.companyName = "UOIT";
+        PlayerSettings.companyName = "OnTechU";
 
         WebGLExceptionSupport web = WebGLExceptionSupport.FullWithoutStacktrace;
         PlayerSettings.WebGL.exceptionSupport = web;
