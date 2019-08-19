@@ -23,9 +23,9 @@ using UnityEditor.Build.Reporting;
 public class WebGLBuilder
 {
     const string TEMPLATE_NAME = "OnTechU Template";
-    const string BUILD_PATH = @"C:\Users\Ibrahim\Desktop\Builsd";
+    const string BUILD_PATH = @"/home/ibrahim/Desktop/WebGLBuilds/RoboGames";
     static void build() {
-        File.AppendAllText(@"C:\Users\Ibrahim\Desktop\RobotON\stdout.log", "Build Started!, time: " + System.DateTime.Now.ToString());
+        File.AppendAllText(@"/home/ibrahim/Desktop/RobotON/stdout1.log", "Build Started!, time: " + System.DateTime.Now.ToString());
         string template_path = Path.Combine(Application.dataPath, "WebGLTemplates", TEMPLATE_NAME);
 
         FileUtilExtended.CreateOrCleanDirectory(Path.Combine(BUILD_PATH, "TemplateData"));
@@ -73,10 +73,10 @@ public class WebGLBuilder
         BuildSummary summary = report.summary;
 
         if(summary.result == BuildResult.Succeeded){
-            File.AppendAllText(@"C:\Users\Ibrahim\Desktop\RobotON\stdout1.log", "Build Succed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
+            File.AppendAllText(@"/home/ibrahim/Desktop/RobotON/stdout1.log", "Build Succeed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
 
         }else if(summary.result == BuildResult.Failed){
-            File.AppendAllText(@"C:\Users\Ibrahim\Desktop\RobotON\stdout1.log", "Build Failed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
+            File.AppendAllText(@"/home/ibrahim/Desktop/RobotON/stdout1.log", "Build Failed: " + summary.totalSize + " bytes, Date :" + System.DateTime.Now.ToString()+"\n");
         }
     }
 
