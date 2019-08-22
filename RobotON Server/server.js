@@ -66,12 +66,6 @@ http.createServer(function (req, res) {
                 console.log('Exit code: ${code}');
                 //sendMail("Unity Compilation Notice!", "Finished Compiling at " + dateTime );
               });
-
-              // exec("run.bat", function(err, stdout, stderr) {
-              //   console.log("run.bat: " + err + " : "  + stdout);
-              // });
-
-              // exec.on
             }
           }catch(e){
 
