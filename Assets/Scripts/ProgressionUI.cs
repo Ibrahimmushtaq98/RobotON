@@ -98,7 +98,7 @@ public class ProgressionUI : MonoBehaviour
 		yield return new WaitForSeconds(0.1f); 
 		text.font = Resources.Load<Font>("Fonts/Inconsolata"); 
         yield return new WaitForSecondsRealtime(10); 
-        text.font = Resources.GetBuiltinResource(typeof(Font), "LiberationSans.ttf") as Font;
+        text.font = Resources.Load<Font>("Fonts/Inconsolata"); 
         glitching = false; 
     }
 
