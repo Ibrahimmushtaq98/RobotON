@@ -35,6 +35,7 @@ public class ProgressionUI : MonoBehaviour
         Points = transform.Find("TotalPoints").gameObject;
         int points = GlobalState.Stats.Points; 
         Points.GetComponent<Text>().text = points.ToString(); 
+        Points.GetComponent<Text>().font = Resources.Load<Font>("Fonts/Inconsolata"); 
         if (!GlobalState.IsDark){
             Points.GetComponent<Text>().color = Color.black; 
             GameObject.Find("PointsHeader").GetComponent<Text>().color = Color.black; 
@@ -49,6 +50,7 @@ public class ProgressionUI : MonoBehaviour
             image.color = new Color(image.color.r, image.color.g, image.color.b, image.color.a + 0.02f); 
             yield return null; 
         }
+        Points.GetComponent<Text>().font = Resources.Load<Font>("Fonts/Inconsolata"); 
     }
     public void AnimateButtons(List<GameObject> buttons){
         StartCoroutine(AnimButtons(buttons)); 
