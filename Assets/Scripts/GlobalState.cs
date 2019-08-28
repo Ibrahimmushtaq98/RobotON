@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public static class GlobalState 
 {
-    public static bool RestrictGameMode = true; 
+    public static bool RestrictGameMode = false; 
     public static bool GamemodeON_BUG = false; //true == ON, false == BUG
     public static bool LeaderBoardMode = false;
     public static bool LoggingMode = true;
