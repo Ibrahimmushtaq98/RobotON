@@ -23,7 +23,7 @@ using UnityEditor.Build.Reporting;
 public class WebGLBuilder
 {
     const string TEMPLATE_NAME = "OnTechU Template";
-    const string BUILD_PATH = @"/home/ibrahim/Desktop/WebGLBuilds/RoboON";
+    const string BUILD_PATH = @"/home/ibrahim/Desktop/WebGLBuildServer/RoboON";
     static void build() {
         File.AppendAllText(@"/home/ibrahim/Desktop/RobotON/stdout1.log", "Build Started!, time: " + System.DateTime.Now.ToString());
         string template_path = Path.Combine(Application.dataPath, "WebGLTemplates", TEMPLATE_NAME);
@@ -38,8 +38,8 @@ public class WebGLBuilder
         Application.targetFrameRate = 30;
 
         PlayerSettings.WebGL.dataCaching = true;
-        PlayerSettings.defaultWebScreenHeight = 720;
-        PlayerSettings.defaultWebScreenWidth = 1280;
+        //PlayerSettings.defaultWebScreenHeight = 720;
+        //PlayerSettings.defaultWebScreenWidth = 1280;
         PlayerSettings.runInBackground = true;
         AspectRatio aspectRatio = AspectRatio.Aspect16by9;
         PlayerSettings.SetAspectRatio(aspectRatio, true);
