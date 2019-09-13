@@ -200,7 +200,7 @@ public const string XML_ATTRIBUTE_OPTIONS = "options";
     public string syntax_color_include = "<color=#e6005cff>";
     public float LEFT_CODESCREEN_X_COORDINATE = -10;
 
-    public const string SERVER_URL = "https://robogames.science.uoit.ca/";
+    public const string SERVER_URL = "http://127.0.0.1:8080/";
     public const string DB_URL = "https://robogames.science.uoit.ca//logs";
     //public const string DB_URL = "http://127.0.0.1:3000/logs";
     public const string CURRENT_LEVEL = "currentlevel/";
