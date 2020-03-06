@@ -206,7 +206,7 @@ public const string XML_ATTRIBUTE_OPTIONS = "options";
 
     //public const string SERVER_URL = "https://robogames.science.uoit.ca/";
     //public const string DB_URL = "https://robogames.science.uoit.ca/logs";
-    public const string SERVER_URL = "http://sqrlab2.science.uoit.ca:808/";
+    public const string SERVER_URL = "http://sqrlab2.science.uoit.ca:8080/";
     public const string DB_URL = "http://sqrlab2.science.uoit.ca:3000/logs";
 	//public const string DB_URL = "http://127.0.0.1:3000/logs";
     public const string CURRENT_LEVEL = "currentlevel/";
