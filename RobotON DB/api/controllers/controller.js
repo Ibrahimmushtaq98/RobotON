@@ -209,7 +209,7 @@ exports.put_current_level_ON = function(req, res){
         )
       }
     }
-    else if(req.body["totalPoint"] ||req.body["timeEnded"] || req.body["finalEnergy"] || req.body["progress"] || req.body["time"] || req.body["progress"] || req.body["points"] || req.body["timeBonus"]){
+    else if(req.body["AdaptiveMode"]||req.body["HintMode"]||req.body["totalPoint"] ||req.body["timeEnded"] || req.body["finalEnergy"] || req.body["progress"] || req.body["time"] || req.body["progress"] || req.body["points"] || req.body["timeBonus"]){
       Task.updateOne(
         query,
         {$set : query1}, 
@@ -418,7 +418,7 @@ exports.put_current_level_BUG = function(req, res){
         )
       }
     }
-    else if(req.body["totalPoint"] ||req.body["timeEnded"] || req.body["finalEnergy"] || req.body["progress"] || req.body["time"] || req.body["progress"] || req.body["points"] || req.body["timeBonus"]){
+    else if(req.body["AdaptiveMode"]||req.body["HintMode"]||req.body["totalPoint"] ||req.body["timeEnded"] || req.body["finalEnergy"] || req.body["progress"] || req.body["time"] || req.body["progress"] || req.body["points"] || req.body["timeBonus"]){
       TaskT.updateOne(
         query,
         {$set : query1}, 
